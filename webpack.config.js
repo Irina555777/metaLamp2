@@ -23,8 +23,16 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, 'src', 'index.html')
+        //template: path.resolve(__dirname, 'src', 'index.html')
+        template: path.resolve(__dirname, 'src/pug/pages', 'index.html'),
+        //template: path.resolve(__dirname, 'src/pug/pages', 'index.pug'),
+        filename: 'index.html'
     }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src/pug/pages', 'about.html'),
+      filename: 'about.html'
+  }),
+   
     new MiniCssExtractPlugin({
         filename: '[name].[contenthash].css',
     })

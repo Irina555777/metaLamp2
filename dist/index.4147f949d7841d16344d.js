@@ -216,10 +216,10 @@ module.exports = function (item) {
 
 /***/ }),
 
-/***/ "./src/index.html":
-/*!************************!*\
-  !*** ./src/index.html ***!
-  \************************/
+/***/ "./src/pug/pages/index.html":
+/*!**********************************!*\
+  !*** ./src/pug/pages/index.html ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -227,7 +227,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 // Module
-var code = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>MetaLamp</title>\n</head>\n<body>\n    <h1>Hello1</h1>\n    <p>Good</p>\n    <div class=\"image\"></div>\n</body>\n</html>\n";
+var code = "<!DOCTYPE html><html lang=\"en\"><head><title></title><" + "script type=\"text/javascript\">if (foo) bar(1 + 5);<" + "/script></head><body><h1>Pug - node template engine</h1><div class=\"col\" id=\"container\"><p>Get on it!</p><p>Pug is a terse and simple templating language with a\nstrong focus on performance and powerful features.</p></div></body></html>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -708,9 +708,10 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/index.html");
+/* harmony import */ var _pug_pages_index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pug/pages/index.html */ "./src/pug/pages/index.html");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
 /* harmony import */ var _modules_calc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/calc */ "./src/modules/calc.js");
+//import './index.html';
 
 
 
@@ -721,4 +722,4 @@ console.log((0,_modules_calc__WEBPACK_IMPORTED_MODULE_2__.sum)(3, 4));
 
 /******/ })()
 ;
-//# sourceMappingURL=index.f5e97bfbe496fa163899.js.map
+//# sourceMappingURL=index.4147f949d7841d16344d.js.map
