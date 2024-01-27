@@ -43,7 +43,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `body {
-  background-color: tomato;
+  background-color: yellow;
 }
 
 h1 {
@@ -55,7 +55,7 @@ h1 {
   height: 300px;
   background-size: cover;
   background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
-}`, "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;EACI,wBAAA;AACJ;;AACA;EACI,WAAA;AAEJ;;AAAA;EACI,YAAA;EACA,aAAA;EACA,sBAAA;EACA,yDAAA;AAGJ","sourcesContent":["body {\n    background-color: tomato;\n}\nh1 {\n    color: blue;\n}\n.image {\n    width: 300px;\n    height: 300px;\n    background-size: cover;\n    background-image: url('img/image.png');\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;EACI,wBAAA;AACJ;;AACA;EACI,WAAA;AAEJ;;AAAA;EACI,YAAA;EACA,aAAA;EACA,sBAAA;EACA,yDAAA;AAGJ","sourcesContent":["body {\n    background-color: yellow;\n}\nh1 {\n    color: blue;\n}\n.image {\n    width: 300px;\n    height: 300px;\n    background-size: cover;\n    background-image: url('img/image.png');\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -227,7 +227,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 // Module
-var code = "<!DOCTYPE html><html lang=\"en\"><head><title></title><" + "script type=\"text/javascript\">if (foo) bar(1 + 5);<" + "/script></head><body><h1>Pug - node template engine</h1><div class=\"col\" id=\"container\"><p>Get on it!</p><p>Pug is a terse and simple templating language with a\nstrong focus on performance and powerful features.</p></div></body></html>";
+var code = "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Pug template</title></head><body><h1>Pug <div class=\"col\" id=\"container\"><p>Get on it!</p><p>Pug is a terse and simple templating language with a\nstrong focus on performance and powerful features.</p></div></h1></body></html>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -722,4 +722,4 @@ console.log((0,_modules_calc__WEBPACK_IMPORTED_MODULE_2__.sum)(3, 4));
 
 /******/ })()
 ;
-//# sourceMappingURL=index.4147f949d7841d16344d.js.map
+//# sourceMappingURL=index.f98adbafd9fbb748f1a0.js.map

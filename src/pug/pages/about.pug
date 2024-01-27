@@ -1,16 +1,4 @@
-doctype html
-html(lang="en")
-  head
-    title= pageTitle
-    script(type='text/javascript').
-      if (foo) bar(1 + 5);
-  body
-    h1 Hello
-    #container.col
-      if youAreUsingPug
-        p vvv
-      else
-        p nnn
-      p.
-        Pug 
-   
+extends ../layout
+block content
+  +header 
+  h1 VVV  
