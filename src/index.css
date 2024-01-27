@@ -10,3 +10,15 @@ h1 {
     background-size: cover;
     background-image: url('img/image.png');
 }
+.pugg {
+    background-color: green;
+}
+.but {
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    margin-left: 50px;
+}
+.but-color {
+    color: white;
+}

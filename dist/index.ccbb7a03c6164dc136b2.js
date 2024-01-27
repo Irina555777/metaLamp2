@@ -55,7 +55,22 @@ h1 {
   height: 300px;
   background-size: cover;
   background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
-}`, "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;EACI,wBAAA;AACJ;;AACA;EACI,WAAA;AAEJ;;AAAA;EACI,YAAA;EACA,aAAA;EACA,sBAAA;EACA,yDAAA;AAGJ","sourcesContent":["body {\n    background-color: yellow;\n}\nh1 {\n    color: blue;\n}\n.image {\n    width: 300px;\n    height: 300px;\n    background-size: cover;\n    background-image: url('img/image.png');\n}"],"sourceRoot":""}]);
+}
+
+.pugg {
+  background-color: green;
+}
+
+.but {
+  width: 100px;
+  height: 30px;
+  background-color: red;
+  margin-left: 50px;
+}
+
+.but-color {
+  color: white;
+}`, "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;EACI,wBAAA;AACJ;;AACA;EACI,WAAA;AAEJ;;AAAA;EACI,YAAA;EACA,aAAA;EACA,sBAAA;EACA,yDAAA;AAGJ;;AADA;EACI,uBAAA;AAIJ;;AAFA;EACI,YAAA;EACA,YAAA;EACA,qBAAA;EACA,iBAAA;AAKJ;;AAHA;EACI,YAAA;AAMJ","sourcesContent":["body {\n    background-color: yellow;\n}\nh1 {\n    color: blue;\n}\n.image {\n    width: 300px;\n    height: 300px;\n    background-size: cover;\n    background-image: url('img/image.png');\n}\n.pugg {\n    background-color: green;\n}\n.but {\n    width: 100px;\n    height: 30px;\n    background-color: red;\n    margin-left: 50px;\n}\n.but-color {\n    color: white;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -722,4 +737,4 @@ console.log((0,_modules_calc__WEBPACK_IMPORTED_MODULE_2__.sum)(3, 4));
 
 /******/ })()
 ;
-//# sourceMappingURL=index.f98adbafd9fbb748f1a0.js.map
+//# sourceMappingURL=index.ccbb7a03c6164dc136b2.js.map
