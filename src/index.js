@@ -1,5 +1,5 @@
 //import './index.html';
-import './pug/pages/index.html';
+//import './pug/pages/index.html';
 import './styles/index.css';
 import {mult} from'./modules/calc';
 import {sum} from'./modules/calc';

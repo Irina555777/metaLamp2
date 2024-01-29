@@ -1,0 +1,22 @@
+h3 {
+    color: blueviolet;
+}
+
+.uiColorsTypeContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    margin: 0 auto;
+    padding-left: 10%;
+    padding-top: 145px;
+    .columnLeft, .columnRight {
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        width: 200px;
+    }
+    .columnRight {
+        display: flex;
+        width: 100px;
+    }
+}
