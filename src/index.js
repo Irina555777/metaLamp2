@@ -1,6 +1,6 @@
 //import './index.html';
 import './pug/pages/index.html';
-import './index.css';
+import './styles/index.css';
 import {mult} from'./modules/calc';
 import {sum} from'./modules/calc';
 
