@@ -8,15 +8,17 @@ h3 {
     width: 1440px;
     margin: 0 auto;
     padding-left: 10%;
+    padding-right: 10%;
     padding-top: 145px;
     .columnLeft, .columnRight {
         display: flex;
         flex-direction:column;
         justify-content: space-between;
-        width: 200px;
+    }
+    .columnLeft {
+        width: 20%;
     }
     .columnRight {
         display: flex;
-        width: 100px;
     }
 }

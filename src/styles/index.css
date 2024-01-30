@@ -93,17 +93,19 @@ h3 {
   width: 1440px;
   margin: 0 auto;
   padding-left: 10%;
+  padding-right: 10%;
   padding-top: 145px;
 }
 .uiColorsTypeContainer .columnLeft, .uiColorsTypeContainer .columnRight {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 200px;
+}
+.uiColorsTypeContainer .columnLeft {
+  width: 20%;
 }
 .uiColorsTypeContainer .columnRight {
   display: flex;
-  width: 100px;
 }
 
 .ui-color-wrap {
@@ -111,15 +113,30 @@ h3 {
   justify-content: space-between;
 }
 
+.ui-color-block-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
 .ui-color-square {
   width: 70px;
   height: 70px;
-  background-color: blue;
-  border: green 1px solid;
 }
 
-.lll {
-  color: green;
+.Primary-Color {
+  background-color: #BC9CFF;
+}
+
+.Secondary-color {
+  background-color: #6FCF97;
+}
+
+.Dark-color {
+  background-color: #1F2041;
+}
+
+.ui-colot-text {
+  width: 170px;
 }
 
 /*# sourceMappingURL=index.css.map */

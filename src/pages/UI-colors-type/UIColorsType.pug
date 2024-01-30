@@ -3,7 +3,8 @@ extends ../layout
 block content
   div.uiColorsTypeContainer
     div.columnLeft 
-      +MMM('ui-color-square') 
+      each letColor in ['Primary-Color', 'Secondary-color', 'Dark-color']
+        +colorBlock(letColor) 
     div.columnRight right1
 
     

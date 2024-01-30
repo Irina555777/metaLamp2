@@ -3,12 +3,24 @@
     display: flex;
     justify-content: space-between;
 }
+.ui-color-block-wrap {
+    display: flex;
+    justify-content: space-between;
+}
 .ui-color-square {
     width: 70px;
     height: 70px;
-    background-color: blue;
-    border: green 1px solid;
 }
-.lll {
-    color: green;
+.Primary-Color {
+    background-color: $primary-color;
 }
+.Secondary-color {
+    background-color: $secondary-color;
+}
+.Dark-color {
+    background-color: $dark;
+}
+.ui-colot-text {
+    width: 170px;
+}
+
