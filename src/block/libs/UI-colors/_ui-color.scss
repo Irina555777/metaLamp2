@@ -7,9 +7,13 @@
     display: flex;
     justify-content: space-between;
 }
+.ui-color-block-mb {
+    margin-bottom: 20px;
+}
 .ui-color-square {
     width: 70px;
     height: 70px;
+    border-radius: 6px;
 }
 .Primary-Color {
     background-color: $primary-color;
@@ -19,6 +23,22 @@
 }
 .Dark-color {
     background-color: $dark;
+}
+.Dark-color75 {
+    background-color: $dark;
+    opacity: .75;
+}
+.Dark-color50 {
+    background-color: $dark;
+    opacity: .5;
+}
+.Dark-color25 {
+    background-color: $dark;
+    opacity: .25;
+}
+.Dark-color5 {
+    background-color: $dark;
+    opacity: .05;
 }
 .ui-colot-text {
     width: 170px;

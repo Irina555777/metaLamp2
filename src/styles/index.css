@@ -118,6 +118,10 @@ h3 {
   justify-content: space-between;
 }
 
+.ui-color-block-mb {
+  margin-bottom: 20px;
+}
+
 .ui-color-square {
   width: 70px;
   height: 70px;
@@ -133,6 +137,26 @@ h3 {
 
 .Dark-color {
   background-color: #1F2041;
+}
+
+.Dark-color75 {
+  background-color: #1F2041;
+  opacity: 0.75;
+}
+
+.Dark-color50 {
+  background-color: #1F2041;
+  opacity: 0.5;
+}
+
+.Dark-color25 {
+  background-color: #1F2041;
+  opacity: 0.25;
+}
+
+.Dark-color5 {
+  background-color: #1F2041;
+  opacity: 0.05;
 }
 
 .ui-colot-text {

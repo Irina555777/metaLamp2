@@ -1,8 +1,9 @@
-mixin colorBlock(x)
-  .ui-color-block-wrap
-    //div(class=x) color
-    .ui-color-square(class=x) color
-    .ui-colot-text text
+mixin colorBlock(x, colorName, colorValue)
+  .ui-color-block-wrap.ui-color-block-mb
+    .ui-color-square(class=x)
+    .ui-colot-text() 
+      p= colorName
+      p= colorValue
 
     
   
