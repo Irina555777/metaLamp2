@@ -1,10 +1,12 @@
 extends ../layout
 
+
 block content
   div.uiColorsTypeContainer
     div.columnLeft 
-      each letColor in ['Dark-color', 'Dark-color75', 'Dark-color50', 'Dark-color25', 'Dark-color5', 'Primary-Color', 'Secondary-color']
-        +colorBlock(letColor, 'text', '#1F2041') 
+      //-each letColor in ['Dark-color', 'Dark-color75', 'Dark-color50', 'Dark-color25', 'Dark-color5', 'Primary-Color', 'Secondary-color']
+        +colorBlock(letColor, text, '#1F2041') //
+      +colorBlock(x, objColors)  
     div.columnRight right1
 
     

@@ -125,6 +125,7 @@ h3 {
 .ui-color-square {
   width: 70px;
   height: 70px;
+  border-radius: 6px;
 }
 
 .Primary-Color {
