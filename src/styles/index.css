@@ -1,3 +1,4 @@
+@import '../fonts/Montserrat.css';
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -83,18 +84,15 @@ h2 {
   color: white;
 }
 
-h3 {
-  color: blueviolet;
-}
-
 .uiColorsTypeContainer {
   display: flex;
   justify-content: space-between;
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 145px;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 .uiColorsTypeContainer .columnLeft, .uiColorsTypeContainer .columnRight {
   display: flex;

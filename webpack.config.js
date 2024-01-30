@@ -46,12 +46,14 @@ module: {
             ],
           },
           {
-            test: /\.(woff,woff2,ttf)$/,
+            test: /\.(woff,woff2,ttf)$/i,
             type: 'asset/resource',
             generator:{
                 filename: 'fonts/[name][ext]'
+    
             }
           },
+
           {
             test: /\.(jpe?g|png|webp|gif|svg)$/i,
             use: devMode
