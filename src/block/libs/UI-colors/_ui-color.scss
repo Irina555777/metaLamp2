@@ -1,0 +1,14 @@
+@import '../variables';
+.ui-color-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.ui-color-square {
+    width: 170px;
+    height: 70px;
+    background-color: blue;
+    border: green 1px solid;
+}
+.lll {
+    color: green;
+}

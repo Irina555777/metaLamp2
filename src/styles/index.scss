@@ -1,8 +1,8 @@
 @import 'reset.scss';
+@import '../block/libs/_variables.scss';
 
 body {
     box-sizing: border-box;
-    background-color: yellow;
     width: 100%;
 }
 h1 {
@@ -22,4 +22,5 @@ h2 {
 }
 @import '../block/libs/buttons/but.scss';
 @import '../pages/UI-colors-type/UIColorsType.scss';
+@import '../block/libs/UI-colors/_ui-color.scss';
 

@@ -94,7 +94,6 @@ table {
 
 body {
   box-sizing: border-box;
-  background-color: yellow;
   width: 100%;
 }
 
@@ -142,18 +141,34 @@ h3 {
 }
 
 .uiColorsTypeContainer .columnLeft, .uiColorsTypeContainer .columnRight {
-  /* display: flex;
-   flex-direction:column;
-   justify-content: space-between;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 200px;
 }
 
 .uiColorsTypeContainer .columnRight {
-  /*display: flex;*/
+  display: flex;
   width: 100px;
 }
 
-`, "",{"version":3,"sources":["webpack://./src/styles/index.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;EAaE,SAAA;EACA,UAAA;EACA,SAAA;EACA,eAAA;EACA,aAAA;EACA,wBAAA;AACF;;AAEA,gDAAA;AACA;;EAEE,cAAA;AACF;;AAEA;EACE,cAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;;EAEE,WAAA;EACA,aAAA;AACF;;AAEA;EACE,yBAAA;EACA,iBAAA;AACF;;AAEA;EACE,sBAAA;EACA,wBAAA;EACA,WAAA;AACF;;AAEA;EACE,WAAA;AACF;;AAEA;EACE,UAAA;AACF;;AAEA;EACE,YAAA;EACA,aAAA;EACA,sBAAA;EACA,yDAAA;AACF;;AAEA;EACE,uBAAA;AACF;;AAEA;EACE,YAAA;EACA,YAAA;EACA,qBAAA;EACA,iBAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;EACE,iBAAA;AACF;;AAEA;EACE,aAAA;EACA,8BAAA;EACA,aAAA;EACA,cAAA;EACA,iBAAA;EACA,kBAAA;AACF;;AACA;EACE;;mCAAA;EAGA,YAAA;AAEF;;AAAA;EACE,iBAAA;EACA,YAAA;AAGF","sourcesContent":["html, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block;\n}\n\nbody {\n  line-height: 1;\n}\n\nol, ul {\n  list-style: none;\n}\n\nblockquote, q {\n  quotes: none;\n}\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: \"\";\n  content: none;\n}\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\nbody {\n  box-sizing: border-box;\n  background-color: yellow;\n  width: 100%;\n}\n\nh1 {\n  color: blue;\n}\n\nh2 {\n  color: red;\n}\n\n.image {\n  width: 300px;\n  height: 300px;\n  background-size: cover;\n  background-image: url(\"../img/image.png\");\n}\n\n.pugg {\n  background-color: green;\n}\n\n.but {\n  width: 100px;\n  height: 30px;\n  background-color: red;\n  margin-left: 50px;\n}\n\n.but-color {\n  color: white;\n}\n\nh3 {\n  color: blueviolet;\n}\n\n.uiColorsTypeContainer {\n  display: flex;\n  justify-content: space-between;\n  width: 1440px;\n  margin: 0 auto;\n  padding-left: 10%;\n  padding-top: 145px;\n}\n.uiColorsTypeContainer .columnLeft, .uiColorsTypeContainer .columnRight {\n  /* display: flex;\n   flex-direction:column;\n   justify-content: space-between;*/\n  width: 200px;\n}\n.uiColorsTypeContainer .columnRight {\n  /*display: flex;*/\n  width: 100px;\n}\n\n/*# sourceMappingURL=index.css.map */\n"],"sourceRoot":""}]);
+.ui-color-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ui-color-square {
+  width: 170px;
+  height: 70px;
+  background-color: blue;
+  border: green 1px solid;
+}
+
+.lll {
+  color: green;
+}
+
+`, "",{"version":3,"sources":["webpack://./src/styles/index.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;EAaE,SAAA;EACA,UAAA;EACA,SAAA;EACA,eAAA;EACA,aAAA;EACA,wBAAA;AACF;;AAEA,gDAAA;AACA;;EAEE,cAAA;AACF;;AAEA;EACE,cAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;;EAEE,WAAA;EACA,aAAA;AACF;;AAEA;EACE,yBAAA;EACA,iBAAA;AACF;;AAEA;EACE,sBAAA;EACA,WAAA;AACF;;AAEA;EACE,WAAA;AACF;;AAEA;EACE,UAAA;AACF;;AAEA;EACE,YAAA;EACA,aAAA;EACA,sBAAA;EACA,yDAAA;AACF;;AAEA;EACE,uBAAA;AACF;;AAEA;EACE,YAAA;EACA,YAAA;EACA,qBAAA;EACA,iBAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;EACE,iBAAA;AACF;;AAEA;EACE,aAAA;EACA,8BAAA;EACA,aAAA;EACA,cAAA;EACA,iBAAA;EACA,kBAAA;AACF;;AACA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,YAAA;AAEF;;AAAA;EACE,aAAA;EACA,YAAA;AAGF;;AAAA;EACE,aAAA;EACA,8BAAA;AAGF;;AAAA;EACE,YAAA;EACA,YAAA;EACA,sBAAA;EACA,uBAAA;AAGF;;AAAA;EACE,YAAA;AAGF","sourcesContent":["html, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block;\n}\n\nbody {\n  line-height: 1;\n}\n\nol, ul {\n  list-style: none;\n}\n\nblockquote, q {\n  quotes: none;\n}\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: \"\";\n  content: none;\n}\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\nbody {\n  box-sizing: border-box;\n  width: 100%;\n}\n\nh1 {\n  color: blue;\n}\n\nh2 {\n  color: red;\n}\n\n.image {\n  width: 300px;\n  height: 300px;\n  background-size: cover;\n  background-image: url(\"../img/image.png\");\n}\n\n.pugg {\n  background-color: green;\n}\n\n.but {\n  width: 100px;\n  height: 30px;\n  background-color: red;\n  margin-left: 50px;\n}\n\n.but-color {\n  color: white;\n}\n\nh3 {\n  color: blueviolet;\n}\n\n.uiColorsTypeContainer {\n  display: flex;\n  justify-content: space-between;\n  width: 1440px;\n  margin: 0 auto;\n  padding-left: 10%;\n  padding-top: 145px;\n}\n.uiColorsTypeContainer .columnLeft, .uiColorsTypeContainer .columnRight {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  width: 200px;\n}\n.uiColorsTypeContainer .columnRight {\n  display: flex;\n  width: 100px;\n}\n\n.ui-color-wrap {\n  display: flex;\n  justify-content: space-between;\n}\n\n.ui-color-square {\n  width: 170px;\n  height: 70px;\n  background-color: blue;\n  border: green 1px solid;\n}\n\n.lll {\n  color: green;\n}\n\n/*# sourceMappingURL=index.css.map */\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -802,4 +817,4 @@ console.log((0,_modules_calc__WEBPACK_IMPORTED_MODULE_1__.sum)(3, 4));
 
 /******/ })()
 ;
-//# sourceMappingURL=index.fc71dee3445900141b4c.js.map
+//# sourceMappingURL=index.9b77f556fa7adc058cfb.js.map

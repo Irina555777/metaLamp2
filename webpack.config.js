@@ -22,16 +22,6 @@ module.exports = {
         assetModuleFilename: 'assets/[name][ext]'
     },
     plugins: [
-       // new HtmlWebpackPlugin({
-        //template: path.resolve(__dirname, 'src', 'index.html')
-        //template: path.resolve(__dirname, 'src/pug/pages', 'index.html'),
-        //template: path.resolve(__dirname, 'src/pug/pages', 'index.pug'),
-       // filename: 'index.html'
-   // }),
-    //new HtmlWebpackPlugin({
-     // template: path.resolve(__dirname, 'src/pug/pages', 'about.html'),
-     // filename: 'about.html'
- // }),
   new HtmlWebpackPlugin({
     template: path.resolve(__dirname, 'src/pages/UI-colors-type', 'UIColorsType.html'),
     filename: 'UiColorsType.html'

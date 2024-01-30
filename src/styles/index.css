@@ -50,7 +50,6 @@ table {
 
 body {
   box-sizing: border-box;
-  background-color: yellow;
   width: 100%;
 }
 
@@ -97,14 +96,30 @@ h3 {
   padding-top: 145px;
 }
 .uiColorsTypeContainer .columnLeft, .uiColorsTypeContainer .columnRight {
-  /* display: flex;
-   flex-direction:column;
-   justify-content: space-between;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 200px;
 }
 .uiColorsTypeContainer .columnRight {
-  /*display: flex;*/
+  display: flex;
   width: 100px;
+}
+
+.ui-color-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ui-color-square {
+  width: 170px;
+  height: 70px;
+  background-color: blue;
+  border: green 1px solid;
+}
+
+.lll {
+  color: green;
 }
 
 /*# sourceMappingURL=index.css.map */
