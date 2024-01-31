@@ -50,16 +50,9 @@ table {
 }
 
 body {
+  font-family: "Montserrat", Arial, sans-serif;
   box-sizing: border-box;
   width: 100%;
-}
-
-h1 {
-  color: blue;
-}
-
-h2 {
-  color: red;
 }
 
 .image {
@@ -92,7 +85,6 @@ h2 {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 145px;
-  font-family: "Montserrat", Arial, sans-serif;
 }
 .uiColorsTypeContainer .columnLeft, .uiColorsTypeContainer .columnRight {
   display: flex;
