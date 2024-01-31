@@ -52,6 +52,7 @@ table {
 body {
   font-family: "Montserrat", Arial, sans-serif;
   box-sizing: border-box;
+  font-weight: bold;
   width: 100%;
 }
 
@@ -98,11 +99,10 @@ body {
   display: flex;
 }
 
-.ui-color-wrap {
-  display: flex;
-  justify-content: space-between;
-}
-
+/*.ui-color-wrap {
+    display: flex;
+    justify-content: space-between;
+}*/
 .ui-color-block-wrap {
   display: flex;
   justify-content: space-between;
@@ -152,6 +152,17 @@ body {
 
 .ui-colot-text {
   width: 170px;
+}
+
+.uiColorBlock-textName-style, .uiColorBlock-textValue-style {
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 34px;
+  color: #1F2041;
+}
+
+.uiColorBlock-textValue-style {
+  line-height: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -98,6 +98,7 @@ table {
 body {
   font-family: "Montserrat", Arial, sans-serif;
   box-sizing: border-box;
+  font-weight: bold;
   width: 100%;
 }
 
@@ -147,11 +148,10 @@ body {
   display: flex;
 }
 
-.ui-color-wrap {
-  display: flex;
-  justify-content: space-between;
-}
-
+/*.ui-color-wrap {
+    display: flex;
+    justify-content: space-between;
+}*/
 .ui-color-block-wrap {
   display: flex;
   justify-content: space-between;
@@ -203,7 +203,18 @@ body {
   width: 170px;
 }
 
-`, "",{"version":3,"sources":["webpack://./src/styles/index.css"],"names":[],"mappings":"AACA;;;;;;;;;;;;;EAaE,SAAA;EACA,UAAA;EACA,SAAA;EACA,eAAA;EACA,aAAA;EACA,wBAAA;AACF;;AAEA,gDAAA;AACA;;EAEE,cAAA;AACF;;AAEA;EACE,cAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;;EAEE,WAAA;EACA,aAAA;AACF;;AAEA;EACE,yBAAA;EACA,iBAAA;AACF;;AAEA;EACE,4CAAA;EACA,sBAAA;EACA,WAAA;AACF;;AAEA;EACE,YAAA;EACA,aAAA;EACA,sBAAA;EACA,yDAAA;AACF;;AAEA;EACE,uBAAA;AACF;;AAEA;EACE,YAAA;EACA,YAAA;EACA,qBAAA;EACA,iBAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;EACE,aAAA;EACA,8BAAA;EACA,iBAAA;EACA,cAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;AACF;;AACA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;AAEF;;AAAA;EACE,UAAA;AAGF;;AADA;EACE,aAAA;AAIF;;AADA;EACE,aAAA;EACA,8BAAA;AAIF;;AADA;EACE,aAAA;EACA,8BAAA;AAIF;;AADA;EACE,mBAAA;AAIF;;AADA;EACE,WAAA;EACA,YAAA;EACA,kBAAA;AAIF;;AADA;EACE,yBAAA;AAIF;;AADA;EACE,yBAAA;AAIF;;AADA;EACE,yBAAA;AAIF;;AADA;EACE,yBAAA;EACA,aAAA;AAIF;;AADA;EACE,yBAAA;EACA,YAAA;AAIF;;AADA;EACE,yBAAA;EACA,aAAA;AAIF;;AADA;EACE,yBAAA;EACA,aAAA;AAIF;;AADA;EACE,YAAA;AAIF","sourcesContent":["@import '../fonts/Montserrat.css';\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block;\n}\n\nbody {\n  line-height: 1;\n}\n\nol, ul {\n  list-style: none;\n}\n\nblockquote, q {\n  quotes: none;\n}\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: \"\";\n  content: none;\n}\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\nbody {\n  font-family: \"Montserrat\", Arial, sans-serif;\n  box-sizing: border-box;\n  width: 100%;\n}\n\n.image {\n  width: 300px;\n  height: 300px;\n  background-size: cover;\n  background-image: url(\"../img/image.png\");\n}\n\n.pugg {\n  background-color: green;\n}\n\n.but {\n  width: 100px;\n  height: 30px;\n  background-color: red;\n  margin-left: 50px;\n}\n\n.but-color {\n  color: white;\n}\n\n.uiColorsTypeContainer {\n  display: flex;\n  justify-content: space-between;\n  max-width: 1440px;\n  margin: 0 auto;\n  padding-left: 10%;\n  padding-right: 10%;\n  padding-top: 145px;\n}\n.uiColorsTypeContainer .columnLeft, .uiColorsTypeContainer .columnRight {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n.uiColorsTypeContainer .columnLeft {\n  width: 20%;\n}\n.uiColorsTypeContainer .columnRight {\n  display: flex;\n}\n\n.ui-color-wrap {\n  display: flex;\n  justify-content: space-between;\n}\n\n.ui-color-block-wrap {\n  display: flex;\n  justify-content: space-between;\n}\n\n.ui-color-block-mb {\n  margin-bottom: 20px;\n}\n\n.ui-color-square {\n  width: 70px;\n  height: 70px;\n  border-radius: 6px;\n}\n\n.Primary-Color {\n  background-color: #BC9CFF;\n}\n\n.Secondary-color {\n  background-color: #6FCF97;\n}\n\n.Dark-color {\n  background-color: #1F2041;\n}\n\n.Dark-color75 {\n  background-color: #1F2041;\n  opacity: 0.75;\n}\n\n.Dark-color50 {\n  background-color: #1F2041;\n  opacity: 0.5;\n}\n\n.Dark-color25 {\n  background-color: #1F2041;\n  opacity: 0.25;\n}\n\n.Dark-color5 {\n  background-color: #1F2041;\n  opacity: 0.05;\n}\n\n.ui-colot-text {\n  width: 170px;\n}\n\n/*# sourceMappingURL=index.css.map */\n"],"sourceRoot":""}]);
+.uiColorBlock-textName-style, .uiColorBlock-textValue-style {
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 34px;
+  color: #1F2041;
+}
+
+.uiColorBlock-textValue-style {
+  line-height: 20px;
+}
+
+`, "",{"version":3,"sources":["webpack://./src/styles/index.css"],"names":[],"mappings":"AACA;;;;;;;;;;;;;EAaE,SAAA;EACA,UAAA;EACA,SAAA;EACA,eAAA;EACA,aAAA;EACA,wBAAA;AACF;;AAEA,gDAAA;AACA;;EAEE,cAAA;AACF;;AAEA;EACE,cAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;;EAEE,WAAA;EACA,aAAA;AACF;;AAEA;EACE,yBAAA;EACA,iBAAA;AACF;;AAEA;EACE,4CAAA;EACA,sBAAA;EACA,iBAAA;EACA,WAAA;AACF;;AAEA;EACE,YAAA;EACA,aAAA;EACA,sBAAA;EACA,yDAAA;AACF;;AAEA;EACE,uBAAA;AACF;;AAEA;EACE,YAAA;EACA,YAAA;EACA,qBAAA;EACA,iBAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;EACE,aAAA;EACA,8BAAA;EACA,iBAAA;EACA,cAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;AACF;;AACA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;AAEF;;AAAA;EACE,UAAA;AAGF;;AADA;EACE,aAAA;AAIF;;AADA;;;EAAA;AAIA;EACE,aAAA;EACA,8BAAA;AAIF;;AADA;EACE,mBAAA;AAIF;;AADA;EACE,WAAA;EACA,YAAA;EACA,kBAAA;AAIF;;AADA;EACE,yBAAA;AAIF;;AADA;EACE,yBAAA;AAIF;;AADA;EACE,yBAAA;AAIF;;AADA;EACE,yBAAA;EACA,aAAA;AAIF;;AADA;EACE,yBAAA;EACA,YAAA;AAIF;;AADA;EACE,yBAAA;EACA,aAAA;AAIF;;AADA;EACE,yBAAA;EACA,aAAA;AAIF;;AADA;EACE,YAAA;AAIF;;AADA;EACE,gBAAA;EACA,eAAA;EACA,iBAAA;EACA,cAAA;AAIF;;AADA;EACE,iBAAA;AAIF","sourcesContent":["@import '../fonts/Montserrat.css';\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block;\n}\n\nbody {\n  line-height: 1;\n}\n\nol, ul {\n  list-style: none;\n}\n\nblockquote, q {\n  quotes: none;\n}\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: \"\";\n  content: none;\n}\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\nbody {\n  font-family: \"Montserrat\", Arial, sans-serif;\n  box-sizing: border-box;\n  font-weight: bold;\n  width: 100%;\n}\n\n.image {\n  width: 300px;\n  height: 300px;\n  background-size: cover;\n  background-image: url(\"../img/image.png\");\n}\n\n.pugg {\n  background-color: green;\n}\n\n.but {\n  width: 100px;\n  height: 30px;\n  background-color: red;\n  margin-left: 50px;\n}\n\n.but-color {\n  color: white;\n}\n\n.uiColorsTypeContainer {\n  display: flex;\n  justify-content: space-between;\n  max-width: 1440px;\n  margin: 0 auto;\n  padding-left: 10%;\n  padding-right: 10%;\n  padding-top: 145px;\n}\n.uiColorsTypeContainer .columnLeft, .uiColorsTypeContainer .columnRight {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n.uiColorsTypeContainer .columnLeft {\n  width: 20%;\n}\n.uiColorsTypeContainer .columnRight {\n  display: flex;\n}\n\n/*.ui-color-wrap {\n    display: flex;\n    justify-content: space-between;\n}*/\n.ui-color-block-wrap {\n  display: flex;\n  justify-content: space-between;\n}\n\n.ui-color-block-mb {\n  margin-bottom: 20px;\n}\n\n.ui-color-square {\n  width: 70px;\n  height: 70px;\n  border-radius: 6px;\n}\n\n.Primary-Color {\n  background-color: #BC9CFF;\n}\n\n.Secondary-color {\n  background-color: #6FCF97;\n}\n\n.Dark-color {\n  background-color: #1F2041;\n}\n\n.Dark-color75 {\n  background-color: #1F2041;\n  opacity: 0.75;\n}\n\n.Dark-color50 {\n  background-color: #1F2041;\n  opacity: 0.5;\n}\n\n.Dark-color25 {\n  background-color: #1F2041;\n  opacity: 0.25;\n}\n\n.Dark-color5 {\n  background-color: #1F2041;\n  opacity: 0.05;\n}\n\n.ui-colot-text {\n  width: 170px;\n}\n\n.uiColorBlock-textName-style, .uiColorBlock-textValue-style {\n  font-weight: 900;\n  font-size: 19px;\n  line-height: 34px;\n  color: #1F2041;\n}\n\n.uiColorBlock-textValue-style {\n  line-height: 20px;\n}\n\n/*# sourceMappingURL=index.css.map */\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -239,11 +250,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Generated by Fontie <http://fontie.
 @font-face {
     font-family:'Montserrat';
     src: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) format('truetype');
-    font-weight: 400;
-    font-style: normal;
+    /*font-style: normal;
     font-stretch: normal;
-    unicode-range: U+0020-2044;
-}`, "",{"version":3,"sources":["webpack://./src/fonts/Montserrat.css"],"names":[],"mappings":"AAAA,0DAA0D;;AAE1D;IACI,wBAAwB;IACxB,+DAAoD;IACpD,gBAAgB;IAChB,kBAAkB;IAClB,oBAAoB;IACpB,0BAA0B;AAC9B","sourcesContent":["/* Generated by Fontie <http://fontie.pixelsvsbytes.com> */\n\n@font-face {\n    font-family:'Montserrat';\n    src: url('MontserratRegular.ttf') format('truetype');\n    font-weight: 400;\n    font-style: normal;\n    font-stretch: normal;\n    unicode-range: U+0020-2044;\n}"],"sourceRoot":""}]);
+    unicode-range: U+0020-2044;*/
+}`, "",{"version":3,"sources":["webpack://./src/fonts/Montserrat.css"],"names":[],"mappings":"AAAA,0DAA0D;;AAE1D;IACI,wBAAwB;IACxB,+DAAoD;IACpD;;gCAE4B;AAChC","sourcesContent":["/* Generated by Fontie <http://fontie.pixelsvsbytes.com> */\n\n@font-face {\n    font-family:'Montserrat';\n    src: url('MontserratRegular.ttf') format('truetype');\n    /*font-style: normal;\n    font-stretch: normal;\n    unicode-range: U+0020-2044;*/\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -902,4 +912,4 @@ console.log((0,_modules_calc__WEBPACK_IMPORTED_MODULE_1__.sum)(3, 4));
 
 /******/ })()
 ;
-//# sourceMappingURL=index.5e2f486d5f0a8174dfda.js.map
+//# sourceMappingURL=index.831d3baaa7cf01ed61b1.js.map
