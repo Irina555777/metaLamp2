@@ -2,6 +2,7 @@
 
 
 .uiColorsTypeContainer {
+    position: relative;
     display: flex;
     justify-content: space-between;
     max-width: 1440px;
@@ -21,6 +22,12 @@
         display: flex;
     }
 }
-.wo {
-    font-weight: bold;
+.uiColorsType__logo {
+    position: absolute;
+    z-index: 500;
+    width: 48px;
+    height: 48px;
+    left: 30px;
+    top: 30px;
 }
+

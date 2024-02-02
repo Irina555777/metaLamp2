@@ -79,6 +79,7 @@ body {
 }
 
 .uiColorsTypeContainer {
+  position: relative;
   display: flex;
   justify-content: space-between;
   max-width: 1440px;
@@ -99,8 +100,13 @@ body {
   display: flex;
 }
 
-.wo {
-  font-weight: bold;
+.uiColorsType__logo {
+  position: absolute;
+  z-index: 500;
+  width: 48px;
+  height: 48px;
+  left: 30px;
+  top: 30px;
 }
 
 /*.ui-color-wrap {
@@ -181,7 +187,6 @@ body {
 .ui-text-block-mb {
   height: auto;
   margin-bottom: 50px;
-  background-color: yellow;
 }
 
 .ui-tex__tag {
