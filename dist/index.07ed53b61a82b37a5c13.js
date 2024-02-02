@@ -33,9 +33,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_fonts_Montserrat_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!../fonts/Montserrat.css */ "./node_modules/css-loader/dist/cjs.js!./src/fonts/Montserrat.css");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_fonts_MontserratBold_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!../fonts/MontserratBold.css */ "./node_modules/css-loader/dist/cjs.js!./src/fonts/MontserratBold.css");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_4__);
 // Imports
+
 
 
 
@@ -43,7 +45,8 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../img/image.png */ "./src/img/image.png"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_fonts_Montserrat_css__WEBPACK_IMPORTED_MODULE_2__["default"]);
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default()(___CSS_LOADER_URL_IMPORT_0___);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_fonts_MontserratBold_css__WEBPACK_IMPORTED_MODULE_3__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_4___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -96,9 +99,8 @@ table {
 }
 
 body {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "MontserratBold", Arial, sans-serif;
   box-sizing: border-box;
-  font-weight: bold;
   width: 100%;
 }
 
@@ -146,6 +148,10 @@ body {
 
 .uiColorsTypeContainer .columnRight {
   display: flex;
+}
+
+.wo {
+  font-weight: bold;
 }
 
 /*.ui-color-wrap {
@@ -204,7 +210,6 @@ body {
 }
 
 .uiColorBlock-textName-style, .uiColorBlock-textValue-style {
-  font-weight: 900;
   font-size: 19px;
   line-height: 34px;
   color: #1F2041;
@@ -214,7 +219,63 @@ body {
   line-height: 20px;
 }
 
-`, "",{"version":3,"sources":["webpack://./src/styles/index.css"],"names":[],"mappings":"AACA;;;;;;;;;;;;;EAaE,SAAA;EACA,UAAA;EACA,SAAA;EACA,eAAA;EACA,aAAA;EACA,wBAAA;AACF;;AAEA,gDAAA;AACA;;EAEE,cAAA;AACF;;AAEA;EACE,cAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;;EAEE,WAAA;EACA,aAAA;AACF;;AAEA;EACE,yBAAA;EACA,iBAAA;AACF;;AAEA;EACE,4CAAA;EACA,sBAAA;EACA,iBAAA;EACA,WAAA;AACF;;AAEA;EACE,YAAA;EACA,aAAA;EACA,sBAAA;EACA,yDAAA;AACF;;AAEA;EACE,uBAAA;AACF;;AAEA;EACE,YAAA;EACA,YAAA;EACA,qBAAA;EACA,iBAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;EACE,aAAA;EACA,8BAAA;EACA,iBAAA;EACA,cAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;AACF;;AACA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;AAEF;;AAAA;EACE,UAAA;AAGF;;AADA;EACE,aAAA;AAIF;;AADA;;;EAAA;AAIA;EACE,aAAA;EACA,8BAAA;AAIF;;AADA;EACE,mBAAA;AAIF;;AADA;EACE,WAAA;EACA,YAAA;EACA,kBAAA;AAIF;;AADA;EACE,yBAAA;AAIF;;AADA;EACE,yBAAA;AAIF;;AADA;EACE,yBAAA;AAIF;;AADA;EACE,yBAAA;EACA,aAAA;AAIF;;AADA;EACE,yBAAA;EACA,YAAA;AAIF;;AADA;EACE,yBAAA;EACA,aAAA;AAIF;;AADA;EACE,yBAAA;EACA,aAAA;AAIF;;AADA;EACE,YAAA;AAIF;;AADA;EACE,gBAAA;EACA,eAAA;EACA,iBAAA;EACA,cAAA;AAIF;;AADA;EACE,iBAAA;AAIF","sourcesContent":["@import '../fonts/Montserrat.css';\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block;\n}\n\nbody {\n  line-height: 1;\n}\n\nol, ul {\n  list-style: none;\n}\n\nblockquote, q {\n  quotes: none;\n}\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: \"\";\n  content: none;\n}\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\nbody {\n  font-family: \"Montserrat\", Arial, sans-serif;\n  box-sizing: border-box;\n  font-weight: bold;\n  width: 100%;\n}\n\n.image {\n  width: 300px;\n  height: 300px;\n  background-size: cover;\n  background-image: url(\"../img/image.png\");\n}\n\n.pugg {\n  background-color: green;\n}\n\n.but {\n  width: 100px;\n  height: 30px;\n  background-color: red;\n  margin-left: 50px;\n}\n\n.but-color {\n  color: white;\n}\n\n.uiColorsTypeContainer {\n  display: flex;\n  justify-content: space-between;\n  max-width: 1440px;\n  margin: 0 auto;\n  padding-left: 10%;\n  padding-right: 10%;\n  padding-top: 145px;\n}\n.uiColorsTypeContainer .columnLeft, .uiColorsTypeContainer .columnRight {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n.uiColorsTypeContainer .columnLeft {\n  width: 20%;\n}\n.uiColorsTypeContainer .columnRight {\n  display: flex;\n}\n\n/*.ui-color-wrap {\n    display: flex;\n    justify-content: space-between;\n}*/\n.ui-color-block-wrap {\n  display: flex;\n  justify-content: space-between;\n}\n\n.ui-color-block-mb {\n  margin-bottom: 20px;\n}\n\n.ui-color-square {\n  width: 70px;\n  height: 70px;\n  border-radius: 6px;\n}\n\n.Primary-Color {\n  background-color: #BC9CFF;\n}\n\n.Secondary-color {\n  background-color: #6FCF97;\n}\n\n.Dark-color {\n  background-color: #1F2041;\n}\n\n.Dark-color75 {\n  background-color: #1F2041;\n  opacity: 0.75;\n}\n\n.Dark-color50 {\n  background-color: #1F2041;\n  opacity: 0.5;\n}\n\n.Dark-color25 {\n  background-color: #1F2041;\n  opacity: 0.25;\n}\n\n.Dark-color5 {\n  background-color: #1F2041;\n  opacity: 0.05;\n}\n\n.ui-colot-text {\n  width: 170px;\n}\n\n.uiColorBlock-textName-style, .uiColorBlock-textValue-style {\n  font-weight: 900;\n  font-size: 19px;\n  line-height: 34px;\n  color: #1F2041;\n}\n\n.uiColorBlock-textValue-style {\n  line-height: 20px;\n}\n\n/*# sourceMappingURL=index.css.map */\n"],"sourceRoot":""}]);
+.ui-text-block-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 430px;
+}
+
+.ui-text-block-mb {
+  margin-bottom: 50px;
+}
+
+.ui-tex__tag {
+  width: 37px;
+  height: 20px;
+  margin-right: 30px;
+  background-color: green;
+}
+
+.ui-text__text {
+  width: 370px;
+  height: 20px;
+  font-weight: 900;
+}
+
+.ui-text__tagh1_style, .ui-text__tagh2_style, .ui-text__tagh3_style {
+  font-size: 24px;
+  color: #1F2041;
+  opacity: 0.25;
+  text-align: right;
+}
+
+.ui-text__tagh2_style {
+  font-size: 19px;
+  text-align: right;
+}
+
+.ui-text__tagh3_style {
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: right;
+}
+
+.ui-text__taghBody_style {
+  font-size: 14px;
+  color: #1F2041;
+  opacity: 0.25;
+  text-align: right;
+}
+
+.ui-text__text_opasity {
+  opacity: 1;
+}
+
+.ui-text__text_opasity75 {
+  opacity: 0.75;
+}
+
+`, "",{"version":3,"sources":["webpack://./src/styles/index.css"],"names":[],"mappings":"AAEA;;;;;;;;;;;;;EAaE,SAAA;EACA,UAAA;EACA,SAAA;EACA,eAAA;EACA,aAAA;EACA,wBAAA;AACF;;AAEA,gDAAA;AACA;;EAEE,cAAA;AACF;;AAEA;EACE,cAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;;EAEE,WAAA;EACA,aAAA;AACF;;AAEA;EACE,yBAAA;EACA,iBAAA;AACF;;AAEA;EACE,gDAAA;EACA,sBAAA;EACA,WAAA;AACF;;AAEA;EACE,YAAA;EACA,aAAA;EACA,sBAAA;EACA,yDAAA;AACF;;AAEA;EACE,uBAAA;AACF;;AAEA;EACE,YAAA;EACA,YAAA;EACA,qBAAA;EACA,iBAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;EACE,aAAA;EACA,8BAAA;EACA,iBAAA;EACA,cAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;AACF;;AACA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;AAEF;;AAAA;EACE,UAAA;AAGF;;AADA;EACE,aAAA;AAIF;;AADA;EACE,iBAAA;AAIF;;AADA;;;EAAA;AAIA;EACE,aAAA;EACA,8BAAA;AAIF;;AADA;EACE,mBAAA;AAIF;;AADA;EACE,WAAA;EACA,YAAA;EACA,kBAAA;AAIF;;AADA;EACE,yBAAA;AAIF;;AADA;EACE,yBAAA;AAIF;;AADA;EACE,yBAAA;AAIF;;AADA;EACE,yBAAA;EACA,aAAA;AAIF;;AADA;EACE,yBAAA;EACA,YAAA;AAIF;;AADA;EACE,yBAAA;EACA,aAAA;AAIF;;AADA;EACE,yBAAA;EACA,aAAA;AAIF;;AADA;EACE,YAAA;AAIF;;AADA;EACE,eAAA;EACA,iBAAA;EACA,cAAA;AAIF;;AADA;EACE,iBAAA;AAIF;;AADA;EACE,aAAA;EACA,8BAAA;EACA,YAAA;AAIF;;AADA;EACE,mBAAA;AAIF;;AADA;EACE,WAAA;EACA,YAAA;EACA,kBAAA;EACA,uBAAA;AAIF;;AADA;EACE,YAAA;EACA,YAAA;EACA,gBAAA;AAIF;;AADA;EACE,eAAA;EACA,cAAA;EACA,aAAA;EACA,iBAAA;AAIF;;AADA;EACE,eAAA;EACA,iBAAA;AAIF;;AADA;EACE,yBAAA;EACA,eAAA;EACA,iBAAA;AAIF;;AADA;EACE,eAAA;EACA,cAAA;EACA,aAAA;EACA,iBAAA;AAIF;;AADA;EACE,UAAA;AAIF;;AADA;EACE,aAAA;AAIF","sourcesContent":["@import '../fonts/Montserrat.css';\n@import '../fonts/MontserratBold.css';\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block;\n}\n\nbody {\n  line-height: 1;\n}\n\nol, ul {\n  list-style: none;\n}\n\nblockquote, q {\n  quotes: none;\n}\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: \"\";\n  content: none;\n}\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\nbody {\n  font-family: \"MontserratBold\", Arial, sans-serif;\n  box-sizing: border-box;\n  width: 100%;\n}\n\n.image {\n  width: 300px;\n  height: 300px;\n  background-size: cover;\n  background-image: url(\"../img/image.png\");\n}\n\n.pugg {\n  background-color: green;\n}\n\n.but {\n  width: 100px;\n  height: 30px;\n  background-color: red;\n  margin-left: 50px;\n}\n\n.but-color {\n  color: white;\n}\n\n.uiColorsTypeContainer {\n  display: flex;\n  justify-content: space-between;\n  max-width: 1440px;\n  margin: 0 auto;\n  padding-left: 10%;\n  padding-right: 10%;\n  padding-top: 145px;\n}\n.uiColorsTypeContainer .columnLeft, .uiColorsTypeContainer .columnRight {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n.uiColorsTypeContainer .columnLeft {\n  width: 20%;\n}\n.uiColorsTypeContainer .columnRight {\n  display: flex;\n}\n\n.wo {\n  font-weight: bold;\n}\n\n/*.ui-color-wrap {\n    display: flex;\n    justify-content: space-between;\n}*/\n.ui-color-block-wrap {\n  display: flex;\n  justify-content: space-between;\n}\n\n.ui-color-block-mb {\n  margin-bottom: 20px;\n}\n\n.ui-color-square {\n  width: 70px;\n  height: 70px;\n  border-radius: 6px;\n}\n\n.Primary-Color {\n  background-color: #BC9CFF;\n}\n\n.Secondary-color {\n  background-color: #6FCF97;\n}\n\n.Dark-color {\n  background-color: #1F2041;\n}\n\n.Dark-color75 {\n  background-color: #1F2041;\n  opacity: 0.75;\n}\n\n.Dark-color50 {\n  background-color: #1F2041;\n  opacity: 0.5;\n}\n\n.Dark-color25 {\n  background-color: #1F2041;\n  opacity: 0.25;\n}\n\n.Dark-color5 {\n  background-color: #1F2041;\n  opacity: 0.05;\n}\n\n.ui-colot-text {\n  width: 170px;\n}\n\n.uiColorBlock-textName-style, .uiColorBlock-textValue-style {\n  font-size: 19px;\n  line-height: 34px;\n  color: #1F2041;\n}\n\n.uiColorBlock-textValue-style {\n  line-height: 20px;\n}\n\n.ui-text-block-wrap {\n  display: flex;\n  justify-content: space-between;\n  width: 430px;\n}\n\n.ui-text-block-mb {\n  margin-bottom: 50px;\n}\n\n.ui-tex__tag {\n  width: 37px;\n  height: 20px;\n  margin-right: 30px;\n  background-color: green;\n}\n\n.ui-text__text {\n  width: 370px;\n  height: 20px;\n  font-weight: 900;\n}\n\n.ui-text__tagh1_style, .ui-text__tagh2_style, .ui-text__tagh3_style {\n  font-size: 24px;\n  color: #1F2041;\n  opacity: 0.25;\n  text-align: right;\n}\n\n.ui-text__tagh2_style {\n  font-size: 19px;\n  text-align: right;\n}\n\n.ui-text__tagh3_style {\n  text-transform: uppercase;\n  font-size: 12px;\n  text-align: right;\n}\n\n.ui-text__taghBody_style {\n  font-size: 14px;\n  color: #1F2041;\n  opacity: 0.25;\n  text-align: right;\n}\n\n.ui-text__text_opasity {\n  opacity: 1;\n}\n\n.ui-text__text_opasity75 {\n  opacity: 0.75;\n}\n\n/*# sourceMappingURL=index.css.map */\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -250,10 +311,50 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Generated by Fontie <http://fontie.
 @font-face {
     font-family:'Montserrat';
     src: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) format('truetype');
-    /*font-style: normal;
+    font-style: normal;
     font-stretch: normal;
-    unicode-range: U+0020-2044;*/
-}`, "",{"version":3,"sources":["webpack://./src/fonts/Montserrat.css"],"names":[],"mappings":"AAAA,0DAA0D;;AAE1D;IACI,wBAAwB;IACxB,+DAAoD;IACpD;;gCAE4B;AAChC","sourcesContent":["/* Generated by Fontie <http://fontie.pixelsvsbytes.com> */\n\n@font-face {\n    font-family:'Montserrat';\n    src: url('MontserratRegular.ttf') format('truetype');\n    /*font-style: normal;\n    font-stretch: normal;\n    unicode-range: U+0020-2044;*/\n}"],"sourceRoot":""}]);
+    unicode-range: U+0020-2044;
+}`, "",{"version":3,"sources":["webpack://./src/fonts/Montserrat.css"],"names":[],"mappings":"AAAA,0DAA0D;;AAE1D;IACI,wBAAwB;IACxB,+DAAoD;IACpD,kBAAkB;IAClB,oBAAoB;IACpB,0BAA0B;AAC9B","sourcesContent":["/* Generated by Fontie <http://fontie.pixelsvsbytes.com> */\n\n@font-face {\n    font-family:'Montserrat';\n    src: url('MontserratRegular.ttf') format('truetype');\n    font-style: normal;\n    font-stretch: normal;\n    unicode-range: U+0020-2044;\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/fonts/MontserratBold.css":
+/*!****************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/fonts/MontserratBold.css ***!
+  \****************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+// Imports
+
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! MontserratBold.woff2 */ "./src/fonts/MontserratBold.woff2"), __webpack_require__.b);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `/* Generated by Fontie <http://fontie.pixelsvsbytes.com> */
+
+@font-face {
+    font-family:'MontserratBold';
+	src: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2044;
+}`, "",{"version":3,"sources":["webpack://./src/fonts/MontserratBold.css"],"names":[],"mappings":"AAAA,0DAA0D;;AAE1D;IACI,4BAA4B;CAC/B,4DAAgD;IAC7C,gBAAgB;IAChB,kBAAkB;IAClB,oBAAoB;IACpB,0BAA0B;AAC9B","sourcesContent":["/* Generated by Fontie <http://fontie.pixelsvsbytes.com> */\n\n@font-face {\n    font-family:'MontserratBold';\n\tsrc: url('MontserratBold.woff2') format('woff2');\n    font-weight: 700;\n    font-style: normal;\n    font-stretch: normal;\n    unicode-range: U+0020-2044;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -735,6 +836,16 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
+/***/ "./src/fonts/MontserratBold.woff2":
+/*!****************************************!*\
+  !*** ./src/fonts/MontserratBold.woff2 ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/MontserratBold.woff2";
+
+/***/ }),
+
 /***/ "./src/fonts/MontserratRegular.ttf":
 /*!*****************************************!*\
   !*** ./src/fonts/MontserratRegular.ttf ***!
@@ -912,4 +1023,4 @@ console.log((0,_modules_calc__WEBPACK_IMPORTED_MODULE_1__.sum)(3, 4));
 
 /******/ })()
 ;
-//# sourceMappingURL=index.831d3baaa7cf01ed61b1.js.map
+//# sourceMappingURL=index.07ed53b61a82b37a5c13.js.map

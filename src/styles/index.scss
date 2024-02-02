@@ -1,11 +1,11 @@
 @import 'reset.scss';
 @import '../block/libs/_variables.scss';
 @import '../fonts/Montserrat.css';
+@import '../fonts/MontserratBold.css';
 
 body {
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'MontserratBold', Arial, sans-serif;
     box-sizing: border-box;
-    font-weight: bold;
     width: 100%;
 }
 .image {
@@ -17,7 +17,11 @@ body {
 .pugg {
     background-color: green;
 }
+
+
 @import '../block/libs/buttons/but.scss';
 @import '../pages/UI-colors-type/UIColorsType.scss';
 @import '../block/libs/UI-colors/_ui-color.scss';
+@import '../block/libs/UI-text/ui-text';
+
 

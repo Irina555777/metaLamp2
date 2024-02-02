@@ -1,0 +1,14 @@
+-var objText = [{tag: 'h1', text: 'This one is the sub-section orwidget title', textClass: 'ui-text__tagh1_style', textClassOpasity: 'ui-text__text_opasity'}, {tag: 'H2', text: 'Next one is the item title insidewidgets',textClass: 'ui-text__tagh2_style',textClassOpasity: 'ui-text__text_opasity'},{tag: 'h3', text: 'This is a label or CTA text',textClass: 'ui-text__tagh3_style',textClassOpasity: 'ui-text__text_opasity'},{tag: 'Body', text: 'This is the body text which is used for mostof the design, like paragraphs, lists, etc.',textClass: 'ui-text__taghBody_style',textClassOpasity: 'ui-text__text_opasity75'}];
+
+
+
+mixin textBlosk(x,arr) 
+  div 
+    each x in objText
+      .ui-text-block-wrap.ui-text-block-mb
+        .ui-text__tag 
+          p(class=x.textClass)= x.tag
+        .ui-text__text 
+          p(class=x.textClass)(class=x.textClassOpasity)= x.text
+      
+      
