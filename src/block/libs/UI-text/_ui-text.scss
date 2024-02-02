@@ -7,18 +7,19 @@
     height: auto;
     margin-bottom: 50px;
 }
-.ui-tex__tag {
+.ui-tex__tag_wrap {
     width: 37px;
     margin-right: 30px;
 }
-.ui-text__text {
+.ui-text__text_wrap {
     width: 370px;
 }
 /*Style for tags*/
 .ui-text__tagh1_style, .ui-text__tagh2_style, .ui-text__tagh3_style, .ui-text__taghBody_style {
     color: $dark;
     opacity: .25;
-    text-align: right;
+    width: 37px;
+    text-align: right;  
 }
 .ui-text__tagh1_style {
     line-height: 29px;
@@ -33,7 +34,7 @@
 .ui-text__tagh3_style {
     text-transform: uppercase;
     line-height: 14px;
-    font-size: 12px;
+    font-size: 12px; 
 }
 .ui-text__taghBody_style {
     line-height: 24px;

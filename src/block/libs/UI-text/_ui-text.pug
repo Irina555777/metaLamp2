@@ -6,9 +6,9 @@ mixin textBlosk(x,arr)
   div 
     each x in objText
       .ui-text-block-wrap.ui-text-block-mb
-        .ui-text__tag 
+        .ui-text__tag_wrap 
           p(class=x.tagClass)= x.tag
-        .ui-text__text 
+        .ui-text__text_wrap 
           p(class=x.textClass)= x.text
       
       
