@@ -5,7 +5,7 @@
 }*/
 .ui-color-block-wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
 }
 .ui-color-block-mb {
     margin-bottom: 20px;
@@ -13,6 +13,7 @@
 .ui-color-square {
     width: 70px;
     height: 70px;
+    margin-right: 40px;
     border-radius: 6px;
 }
 .Primary-Color {
@@ -44,11 +45,14 @@
     width: 170px;
 }
 .uiColorBlock-textName-style, .uiColorBlock-textValue-style {
+    width: 180px;
     font-size: 19px;
     line-height: 34px;
     color: $dark;
+    font-family: 'MontserratBold', Arial, sans-serif;
 }
 .uiColorBlock-textValue-style {
     line-height: 20px;
+    font-family: 'Montserrat', Arial, sans-serif;
 }
 
