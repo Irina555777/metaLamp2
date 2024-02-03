@@ -20,9 +20,11 @@ body {
 
 
 @import '../block/libs/buttons/but.scss';
-@import '../pages/UI-colors-type/UIColorsType.scss';
+@import '../pages/pages/UI-colors-type/UIColorsType.scss';
+@import '../pages/pages/UI-form-elements/UIFormElements.scss';
 @import '../block/libs/UI-colors/_ui-color.scss';
 @import '../block/libs/UI-text/ui-text';
 @import '../block/libs/logo/logo';
+@import '../block/libs/text-field/text-field';
 
 

@@ -1,2 +1,8 @@
-h2 UI Forms Elements
-  +colorBlock(x, objColors)
+extends ../../layout
+
+block content
+  +logo
+  div.uiFormElementsContainer
+    div.columnLeft 
+      +TextField('email', 'email', 'Email')   
+      +TextField('text', 'text', 'This is pretty awesome')

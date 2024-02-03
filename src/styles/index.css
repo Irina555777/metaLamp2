@@ -110,6 +110,15 @@ body {
   top: 30px;
 }
 
+.uiFormElementsContainer {
+  display: flex;
+  padding-left: 140px;
+  padding-top: 140px;
+}
+.uiFormElementsContainer .columnLeft {
+  margin-right: 126px;
+}
+
 /*.ui-color-wrap {
     display: flex;
     justify-content: space-between;
@@ -267,6 +276,13 @@ body {
   height: 48px;
   left: 30px;
   top: 30px;
+}
+
+.textField {
+  width: 320px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=index.css.map */
