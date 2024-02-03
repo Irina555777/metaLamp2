@@ -22,11 +22,34 @@ module.exports = {
         assetModuleFilename: 'assets/[name][ext]'
     },
     plugins: [
-  new HtmlWebpackPlugin({
-    template: path.resolve(__dirname, 'src/pages/UI-colors-type', 'UIColorsType.html'),
-    filename: 'UiColorsType.html'
+  //new HtmlWebpackPlugin({
+   // template: path.resolve(__dirname, 'src/pages/UI-colors-type', 'UIColorsType.html')
+  
+//}),
+new HtmlWebpackPlugin({
+  template: path.resolve(__dirname, 'src/pages', 'index.html')
+
 }),
-   
+
+new HtmlWebpackPlugin({
+  template: path.resolve(__dirname, 'src/pages/pages/UI-form-elements', 'UIFormElements.html'),
+  filename: 'UiFormElements.html'
+}),
+new HtmlWebpackPlugin({
+  template: path.resolve(__dirname, 'src/pages/pages/UI-cards', 'UiCards.html'),
+  filename: 'UiCards.html'
+}),
+new HtmlWebpackPlugin({
+  template: path.resolve(__dirname, 'src/pages/pages/UI-headers-footers', 'UiheadersFooters.html'),
+  filename: 'UiheadersFooters.html'
+}),
+new HtmlWebpackPlugin({
+  template: path.resolve(__dirname, 'src/pages/pages/UI-colors-type', 'UIColorsType.html'),
+  filename: 'UiColorsType.html'
+}),
+
+
+
     new MiniCssExtractPlugin({
         filename: '[name].[contenthash].css',
     })
