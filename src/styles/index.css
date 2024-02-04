@@ -116,6 +116,7 @@ body {
   padding-top: 140px;
 }
 .uiFormElementsContainer .columnLeft {
+  display: block;
   margin-right: 126px;
 }
 
@@ -279,10 +280,63 @@ body {
 }
 
 .textField {
+  box-sizing: border-box;
   width: 320px;
   height: 44px;
+  padding-left: 15px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
+  outline: none;
+}
+
+::placeholder {
+  font-size: 14px;
+  color: #1F2041;
+  opacity: 0.25;
+}
+
+.textField:hover::-webkit-input-placeholder {
+  color: #1F2041;
+  opacity: 0.5;
+}
+
+.textField:focus::-webkit-input-placeholder {
+  color: #1F2041;
+  opacity: 0.5;
+}
+
+.textField:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  outline: none;
+}
+
+.textField:focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  background-color: white;
+  outline: none;
+}
+
+.inputDropdownTitleWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputDropdownTitle, .inputDropdownTitleDefault {
+  width: auto;
+}
+.inputDropdownTitle p, .inputDropdownTitleDefault p {
+  color: #1F2041;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.inputDropdownTitleDefault p {
+  opacity: 0.5;
+}
+
+.width320 {
+  width: 320px;
 }
 
 /*# sourceMappingURL=index.css.map */

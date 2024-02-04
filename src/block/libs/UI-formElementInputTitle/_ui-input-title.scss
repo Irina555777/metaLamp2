@@ -1,0 +1,22 @@
+
+.inputDropdownTitleWrap {
+    display: flex;
+    justify-content: space-between;
+}
+.inputDropdownTitle, .inputDropdownTitleDefault {
+    width: auto;
+    p {
+        color: $dark;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;
+    }
+}
+.inputDropdownTitleDefault {
+    p {
+        opacity: .5;
+    }
+}
+.width320 {
+    width: 320px;
+}

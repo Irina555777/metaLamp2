@@ -1,6 +1,31 @@
 .textField {
+    box-sizing: border-box;
     width: 320px;
     height: 44px;
+    padding-left: 15px;
     border: 1px solid rgba(31, 32, 65, .25);
     border-radius: 4px;
+    outline:none;
+}
+::placeholder {
+    font-size: 14px;
+    color: $dark;
+    opacity: .25;
+}
+.textField:hover::-webkit-input-placeholder {
+    color: $dark;
+    opacity: .5;
+}
+.textField:focus::-webkit-input-placeholder {
+    color: $dark;
+    opacity: .5;
+}
+.textField:hover {
+    border: 1px solid rgba(31, 32, 65, .50);
+    outline:none;
+}
+.textField:focus {
+    border: 1px solid rgba(31, 32, 65, .50);
+    background-color: white;
+    outline:none;
 }
