@@ -120,6 +120,16 @@ body {
   margin-right: 126px;
 }
 
+.mb5 {
+  width: 320px;
+  height: 5px;
+}
+
+.mb20 {
+  width: 320px;
+  height: 20px;
+}
+
 /*.ui-color-wrap {
     display: flex;
     justify-content: space-between;
@@ -337,6 +347,31 @@ body {
 
 .width320 {
   width: 320px;
+}
+
+.dropdownSumWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 320px;
+  height: 44px;
+  padding-left: 15px;
+  padding-right: 10px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+
+.dropdownSumText {
+  color: #1F2041;
+  opacity: 0.75;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.dropdownSumBtn {
+  border: none;
+  background-color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

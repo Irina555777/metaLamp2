@@ -1,0 +1,22 @@
+.dropdownSumWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 320px;
+    height: 44px;
+    padding-left: 15px;
+    padding-right: 10px;
+    border: 1px solid rgba(31, 32, 65, .25);
+    border-radius: 4px;
+}
+.dropdownSumText {
+    color: $dark;
+    opacity: .75;
+    font-size: 14px;
+    line-height: 24px;
+}
+.dropdownSumBtn {
+    border: none;
+    background-color: white;
+}

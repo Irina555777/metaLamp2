@@ -3,8 +3,15 @@ extends ../../layout
 block content
   +logo
   div.uiFormElementsContainer
-    div.columnLeft 
+    div.columnLeft
       +inputDropdownTitle('Text Field', 'Default', 'width320')
-      +TextField('email', 'email', 'Email')   
+      div.mb5
+      +TextField('email', 'email', 'Email')
+      div.mb20 
       +inputDropdownTitle('Text Field', 'Hover / Focus', 'width320')
+      div.mb5  
       +TextField('text', 'text', 'This is pretty awesome')
+      div.mb20  
+      +inputDropdownTitle('Dropdown', '', 'width320')
+      div.mb5 
+      +dropdownSum
