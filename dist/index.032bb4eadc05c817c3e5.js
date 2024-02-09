@@ -1,16 +1,6 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
-
-/***/ "./src/block/libs/dropdownSum/dropdownSum.js":
-/*!***************************************************!*\
-  !*** ./src/block/libs/dropdownSum/dropdownSum.js ***!
-  \***************************************************/
-/***/ (() => {
-
-const button = document.getElementById('dropdownSumBtn');
-button.addEventListener('click', () => alert('Hello world'));
-
-/***/ }),
 
 /***/ "./src/modules/calc.js":
 /*!*****************************!*\
@@ -18,7 +8,6 @@ button.addEventListener('click', () => alert('Hello world'));
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   mult: () => (/* binding */ mult),
@@ -35,7 +24,6 @@ const sum = (a, b) => a + b;
   \***********************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -114,6 +102,10 @@ body {
   font-family: "Montserrat", Arial, sans-serif;
   box-sizing: border-box;
   width: 100%;
+}
+
+div {
+  box-sizing: border-box;
 }
 
 .image {
@@ -414,7 +406,7 @@ body {
   width: 320px;
 }
 
-.dropdownSumWrap {
+.dropdownSum__Wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -427,19 +419,76 @@ body {
   border-radius: 4px;
 }
 
-.dropdownSumText {
+.borderRadiusBottomNone {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.dropdownSum_Text {
   color: #1F2041;
   opacity: 0.75;
   font-size: 14px;
   line-height: 24px;
 }
 
-.dropdownSumBtn {
+.dropdownSum_Btn {
   border: none;
   background-color: white;
 }
 
-`, "",{"version":3,"sources":["webpack://./src/styles/index.css"],"names":[],"mappings":"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","sourcesContent":["@import '../fonts/Montserrat.css';\n@import '../fonts/MontserratBold.css';\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block;\n}\n\nbody {\n  line-height: 1;\n}\n\nol, ul {\n  list-style: none;\n}\n\nblockquote, q {\n  quotes: none;\n}\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: \"\";\n  content: none;\n}\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\nbody {\n  font-family: \"Montserrat\", Arial, sans-serif;\n  box-sizing: border-box;\n  width: 100%;\n}\n\n.image {\n  width: 300px;\n  height: 300px;\n  background-size: cover;\n  background-image: url(\"../img/image.png\");\n}\n\n.pugg {\n  background-color: green;\n}\n\n.but {\n  width: 100px;\n  height: 30px;\n  background-color: red;\n  margin-left: 50px;\n}\n\n.but-color {\n  color: white;\n}\n\n.uiColorsTypeContainer {\n  position: relative;\n  display: flex;\n  justify-content: flex-start;\n  max-width: 1440px;\n  margin: 0 auto;\n  padding-left: 10.6%;\n  padding-top: 145px;\n  margin-bottom: 1000px;\n}\n.uiColorsTypeContainer .columnLeft, .uiColorsTypeContainer .columnRight {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n.uiColorsTypeContainer .columnLeft {\n  width: 280px;\n  margin-right: 415px;\n}\n.uiColorsTypeContainer .columnRight {\n  display: flex;\n}\n\n.uiColorsType__logo {\n  position: absolute;\n  z-index: 500;\n  width: 48px;\n  height: 48px;\n  left: 30px;\n  top: 30px;\n}\n\n.uiFormElementsContainer {\n  display: flex;\n  padding-left: 140px;\n  padding-top: 140px;\n}\n.uiFormElementsContainer .columnLeft {\n  display: block;\n  margin-right: 126px;\n}\n\n.mb5 {\n  width: 320px;\n  height: 5px;\n}\n\n.mb20 {\n  width: 320px;\n  height: 20px;\n}\n\n/*.ui-color-wrap {\n    display: flex;\n    justify-content: space-between;\n}*/\n.ui-color-block-wrap {\n  display: flex;\n  justify-content: start;\n}\n\n.ui-color-block-mb {\n  margin-bottom: 20px;\n}\n\n.ui-color-square {\n  width: 70px;\n  height: 70px;\n  margin-right: 40px;\n  border-radius: 6px;\n}\n\n.Primary-Color {\n  background-color: #BC9CFF;\n}\n\n.Secondary-color {\n  background-color: #6FCF97;\n}\n\n.Dark-color {\n  background-color: #1F2041;\n}\n\n.Dark-color75 {\n  background-color: #1F2041;\n  opacity: 0.75;\n}\n\n.Dark-color50 {\n  background-color: #1F2041;\n  opacity: 0.5;\n}\n\n.Dark-color25 {\n  background-color: #1F2041;\n  opacity: 0.25;\n}\n\n.Dark-color5 {\n  background-color: #1F2041;\n  opacity: 0.05;\n}\n\n.ui-colot-text {\n  width: 170px;\n}\n\n.uiColorBlock-textName-style, .uiColorBlock-textValue-style {\n  width: 180px;\n  font-size: 19px;\n  line-height: 38px;\n  color: #1F2041;\n  font-family: \"MontserratBold\", Arial, sans-serif;\n}\n\n.uiColorBlock-textValue-style {\n  line-height: 20px;\n  font-family: \"Montserrat\", Arial, sans-serif;\n}\n\n.ui-text-block-wrap {\n  display: flex;\n  justify-content: space-between;\n  width: 430px;\n}\n\n.ui-text-block-mb {\n  height: auto;\n  margin-bottom: 50px;\n}\n\n.ui-text__tag_wrap {\n  width: 37px;\n  margin-right: 30px;\n}\n\n.ui-text__text_wrap {\n  width: 370px;\n}\n\n/*Style for tags*/\n.ui-text__tagh1_style, .ui-text__tagh2_style, .ui-text__tagh3_style, .ui-text__taghBody_style {\n  color: #1F2041;\n  opacity: 0.25;\n  width: 37px;\n  text-align: right;\n}\n\n.ui-text__tagh1_style {\n  line-height: 29px;\n  font-size: 24px;\n  text-transform: uppercase;\n}\n\n.ui-text__tagh2_style {\n  line-height: 23px;\n  font-size: 19px;\n  text-transform: uppercase;\n}\n\n.ui-text__tagh3_style {\n  text-transform: uppercase;\n  line-height: 14px;\n  font-size: 12px;\n}\n\n.ui-text__taghBody_style {\n  line-height: 24px;\n  font-size: 14px;\n}\n\n/*Style for text*/\n.ui-text__tagh1text_style, .ui-text__tagh2text_style, .ui-text__tagh3text_style, .ui-text__taghBodytext_style {\n  color: #1F2041;\n}\n\n.ui-text__tagh1text_style {\n  font-family: \"MontserratBold\", Arial, sans-serif;\n  line-height: 29px;\n  font-size: 24px;\n}\n\n.ui-text__tagh2text_style {\n  font-family: \"MontserratBold\", Arial, sans-serif;\n  line-height: 23px;\n  font-size: 19px;\n}\n\n.ui-text__tagh3text_style {\n  font-family: \"MontserratBold\", Arial, sans-serif;\n  text-transform: uppercase;\n  line-height: 18px;\n  font-size: 12px;\n}\n\n.ui-text__taghBodytext_style {\n  line-height: 23px;\n  font-size: 14px;\n  opacity: 0.75;\n}\n\n.logoStyles {\n  position: absolute;\n  z-index: 500;\n  width: 48px;\n  height: 48px;\n  left: 30px;\n  top: 30px;\n}\n\n.textField {\n  box-sizing: border-box;\n  width: 320px;\n  height: 44px;\n  padding-left: 15px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n  outline: none;\n}\n\n::placeholder {\n  font-size: 14px;\n  color: #1F2041;\n  opacity: 0.25;\n}\n\n.textField:hover::-webkit-input-placeholder {\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.textField:focus::-webkit-input-placeholder {\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.textField:hover {\n  border: 1px solid rgba(31, 32, 65, 0.5);\n  outline: none;\n}\n\n.textField:focus {\n  border: 1px solid rgba(31, 32, 65, 0.5);\n  background-color: white;\n  outline: none;\n}\n\n.inputDropdownTitleWrap {\n  display: flex;\n  justify-content: space-between;\n}\n\n.inputDropdownTitle, .inputDropdownTitleDefault {\n  width: auto;\n}\n.inputDropdownTitle p, .inputDropdownTitleDefault p {\n  color: #1F2041;\n  font-size: 12px;\n  line-height: 14px;\n  text-transform: uppercase;\n}\n\n.inputDropdownTitleDefault p {\n  opacity: 0.5;\n}\n\n.width320 {\n  width: 320px;\n}\n\n.dropdownSumWrap {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  box-sizing: border-box;\n  width: 320px;\n  height: 44px;\n  padding-left: 15px;\n  padding-right: 10px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n}\n\n.dropdownSumText {\n  color: #1F2041;\n  opacity: 0.75;\n  font-size: 14px;\n  line-height: 24px;\n}\n\n.dropdownSumBtn {\n  border: none;\n  background-color: white;\n}\n\n/*# sourceMappingURL=index.css.map */\n"],"sourceRoot":""}]);
+.dropdownSum_Context {
+  width: 320px;
+  padding: 15px 7px 7px 13px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-top: none;
+  border-radius: 4px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.RedVVV {
+  background-color: red;
+}
+
+.dropdownSum_Context__Wrap {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-bottom: 7px;
+}
+
+.dropdownSum_Context__Wrap .title {
+  width: 206px;
+  color: #1F2041;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.dropdownSum_Context__Wrap .BtnMinus, .dropdownSum_Context__Wrap .BtnPlus {
+  text-align: center;
+  padding-top: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+}
+
+.dropdownSum_Context__Wrap .Result {
+  margin-right: 8px;
+  font-size: 12px;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+
+.dropdownSum_Context__Wrap .BtnMinus {
+  margin-right: 8px;
+}
+
+`, "",{"version":3,"sources":["webpack://./src/styles/index.css"],"names":[],"mappings":"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","sourcesContent":["@import '../fonts/Montserrat.css';\n@import '../fonts/MontserratBold.css';\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block;\n}\n\nbody {\n  line-height: 1;\n}\n\nol, ul {\n  list-style: none;\n}\n\nblockquote, q {\n  quotes: none;\n}\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: \"\";\n  content: none;\n}\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\nbody {\n  font-family: \"Montserrat\", Arial, sans-serif;\n  box-sizing: border-box;\n  width: 100%;\n}\n\ndiv {\n  box-sizing: border-box;\n}\n\n.image {\n  width: 300px;\n  height: 300px;\n  background-size: cover;\n  background-image: url(\"../img/image.png\");\n}\n\n.pugg {\n  background-color: green;\n}\n\n.but {\n  width: 100px;\n  height: 30px;\n  background-color: red;\n  margin-left: 50px;\n}\n\n.but-color {\n  color: white;\n}\n\n.uiColorsTypeContainer {\n  position: relative;\n  display: flex;\n  justify-content: flex-start;\n  max-width: 1440px;\n  margin: 0 auto;\n  padding-left: 10.6%;\n  padding-top: 145px;\n  margin-bottom: 1000px;\n}\n.uiColorsTypeContainer .columnLeft, .uiColorsTypeContainer .columnRight {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n.uiColorsTypeContainer .columnLeft {\n  width: 280px;\n  margin-right: 415px;\n}\n.uiColorsTypeContainer .columnRight {\n  display: flex;\n}\n\n.uiColorsType__logo {\n  position: absolute;\n  z-index: 500;\n  width: 48px;\n  height: 48px;\n  left: 30px;\n  top: 30px;\n}\n\n.uiFormElementsContainer {\n  display: flex;\n  padding-left: 140px;\n  padding-top: 140px;\n}\n.uiFormElementsContainer .columnLeft {\n  display: block;\n  margin-right: 126px;\n}\n\n.mb5 {\n  width: 320px;\n  height: 5px;\n}\n\n.mb20 {\n  width: 320px;\n  height: 20px;\n}\n\n/*.ui-color-wrap {\n    display: flex;\n    justify-content: space-between;\n}*/\n.ui-color-block-wrap {\n  display: flex;\n  justify-content: start;\n}\n\n.ui-color-block-mb {\n  margin-bottom: 20px;\n}\n\n.ui-color-square {\n  width: 70px;\n  height: 70px;\n  margin-right: 40px;\n  border-radius: 6px;\n}\n\n.Primary-Color {\n  background-color: #BC9CFF;\n}\n\n.Secondary-color {\n  background-color: #6FCF97;\n}\n\n.Dark-color {\n  background-color: #1F2041;\n}\n\n.Dark-color75 {\n  background-color: #1F2041;\n  opacity: 0.75;\n}\n\n.Dark-color50 {\n  background-color: #1F2041;\n  opacity: 0.5;\n}\n\n.Dark-color25 {\n  background-color: #1F2041;\n  opacity: 0.25;\n}\n\n.Dark-color5 {\n  background-color: #1F2041;\n  opacity: 0.05;\n}\n\n.ui-colot-text {\n  width: 170px;\n}\n\n.uiColorBlock-textName-style, .uiColorBlock-textValue-style {\n  width: 180px;\n  font-size: 19px;\n  line-height: 38px;\n  color: #1F2041;\n  font-family: \"MontserratBold\", Arial, sans-serif;\n}\n\n.uiColorBlock-textValue-style {\n  line-height: 20px;\n  font-family: \"Montserrat\", Arial, sans-serif;\n}\n\n.ui-text-block-wrap {\n  display: flex;\n  justify-content: space-between;\n  width: 430px;\n}\n\n.ui-text-block-mb {\n  height: auto;\n  margin-bottom: 50px;\n}\n\n.ui-text__tag_wrap {\n  width: 37px;\n  margin-right: 30px;\n}\n\n.ui-text__text_wrap {\n  width: 370px;\n}\n\n/*Style for tags*/\n.ui-text__tagh1_style, .ui-text__tagh2_style, .ui-text__tagh3_style, .ui-text__taghBody_style {\n  color: #1F2041;\n  opacity: 0.25;\n  width: 37px;\n  text-align: right;\n}\n\n.ui-text__tagh1_style {\n  line-height: 29px;\n  font-size: 24px;\n  text-transform: uppercase;\n}\n\n.ui-text__tagh2_style {\n  line-height: 23px;\n  font-size: 19px;\n  text-transform: uppercase;\n}\n\n.ui-text__tagh3_style {\n  text-transform: uppercase;\n  line-height: 14px;\n  font-size: 12px;\n}\n\n.ui-text__taghBody_style {\n  line-height: 24px;\n  font-size: 14px;\n}\n\n/*Style for text*/\n.ui-text__tagh1text_style, .ui-text__tagh2text_style, .ui-text__tagh3text_style, .ui-text__taghBodytext_style {\n  color: #1F2041;\n}\n\n.ui-text__tagh1text_style {\n  font-family: \"MontserratBold\", Arial, sans-serif;\n  line-height: 29px;\n  font-size: 24px;\n}\n\n.ui-text__tagh2text_style {\n  font-family: \"MontserratBold\", Arial, sans-serif;\n  line-height: 23px;\n  font-size: 19px;\n}\n\n.ui-text__tagh3text_style {\n  font-family: \"MontserratBold\", Arial, sans-serif;\n  text-transform: uppercase;\n  line-height: 18px;\n  font-size: 12px;\n}\n\n.ui-text__taghBodytext_style {\n  line-height: 23px;\n  font-size: 14px;\n  opacity: 0.75;\n}\n\n.logoStyles {\n  position: absolute;\n  z-index: 500;\n  width: 48px;\n  height: 48px;\n  left: 30px;\n  top: 30px;\n}\n\n.textField {\n  box-sizing: border-box;\n  width: 320px;\n  height: 44px;\n  padding-left: 15px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n  outline: none;\n}\n\n::placeholder {\n  font-size: 14px;\n  color: #1F2041;\n  opacity: 0.25;\n}\n\n.textField:hover::-webkit-input-placeholder {\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.textField:focus::-webkit-input-placeholder {\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.textField:hover {\n  border: 1px solid rgba(31, 32, 65, 0.5);\n  outline: none;\n}\n\n.textField:focus {\n  border: 1px solid rgba(31, 32, 65, 0.5);\n  background-color: white;\n  outline: none;\n}\n\n.inputDropdownTitleWrap {\n  display: flex;\n  justify-content: space-between;\n}\n\n.inputDropdownTitle, .inputDropdownTitleDefault {\n  width: auto;\n}\n.inputDropdownTitle p, .inputDropdownTitleDefault p {\n  color: #1F2041;\n  font-size: 12px;\n  line-height: 14px;\n  text-transform: uppercase;\n}\n\n.inputDropdownTitleDefault p {\n  opacity: 0.5;\n}\n\n.width320 {\n  width: 320px;\n}\n\n.dropdownSum__Wrap {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  box-sizing: border-box;\n  width: 320px;\n  height: 44px;\n  padding-left: 15px;\n  padding-right: 10px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n}\n\n.borderRadiusBottomNone {\n  border-bottom-left-radius: 0px;\n  border-bottom-right-radius: 0px;\n}\n\n.dropdownSum_Text {\n  color: #1F2041;\n  opacity: 0.75;\n  font-size: 14px;\n  line-height: 24px;\n}\n\n.dropdownSum_Btn {\n  border: none;\n  background-color: white;\n}\n\n.dropdownSum_Context {\n  width: 320px;\n  padding: 15px 7px 7px 13px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-top: none;\n  border-radius: 4px;\n  border-top-right-radius: 0px;\n  border-top-left-radius: 0px;\n}\n\n.displayNone {\n  display: none;\n}\n\n.RedVVV {\n  background-color: red;\n}\n\n.dropdownSum_Context__Wrap {\n  display: flex;\n  align-items: center;\n  height: 30px;\n  margin-bottom: 7px;\n}\n.dropdownSum_Context__Wrap .title {\n  width: 206px;\n  color: #1F2041;\n  font-size: 12px;\n  text-transform: uppercase;\n}\n.dropdownSum_Context__Wrap .BtnMinus, .dropdownSum_Context__Wrap .BtnPlus {\n  text-align: center;\n  padding-top: 5px;\n  width: 30px;\n  height: 30px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 50%;\n}\n.dropdownSum_Context__Wrap .Result {\n  margin-right: 8px;\n  font-size: 12px;\n  color: #1F2041;\n  text-transform: uppercase;\n}\n.dropdownSum_Context__Wrap .BtnMinus {\n  margin-right: 8px;\n}\n\n/*# sourceMappingURL=index.css.map */\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -452,7 +501,6 @@ body {
   \************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -492,7 +540,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Generated by Fontie <http://fontie.
   \****************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -533,7 +580,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Generated by Fontie <http://fontie.
   \*****************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /*
@@ -628,7 +674,6 @@ module.exports = function (cssWithMappingToString) {
   \********************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 module.exports = function (url, options) {
@@ -664,7 +709,6 @@ module.exports = function (url, options) {
   \************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 module.exports = function (item) {
@@ -690,7 +734,6 @@ module.exports = function (item) {
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -745,7 +788,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 var stylesInDOM = [];
@@ -839,7 +881,6 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 var memo = {};
@@ -883,7 +924,6 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -903,7 +943,6 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -923,7 +962,6 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -994,7 +1032,6 @@ module.exports = domAPI;
   \*********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -1018,7 +1055,6 @@ module.exports = styleTagTransform;
   \****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 module.exports = __webpack_require__.p + "assets/MontserratBold.woff2";
 
 /***/ }),
@@ -1029,7 +1065,6 @@ module.exports = __webpack_require__.p + "assets/MontserratBold.woff2";
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 module.exports = __webpack_require__.p + "assets/MontserratRegular.ttf";
 
 /***/ }),
@@ -1040,7 +1075,6 @@ module.exports = __webpack_require__.p + "assets/MontserratRegular.ttf";
   \***************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 module.exports = __webpack_require__.p + "assets/image.png";
 
 /***/ })
@@ -1183,27 +1217,44 @@ module.exports = __webpack_require__.p + "assets/image.png";
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/index.css */ "./src/styles/index.css");
 /* harmony import */ var _modules_calc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/calc */ "./src/modules/calc.js");
-/* harmony import */ var _block_libs_dropdownSum_dropdownSum_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./block/libs/dropdownSum/dropdownSum.js */ "./src/block/libs/dropdownSum/dropdownSum.js");
-/* harmony import */ var _block_libs_dropdownSum_dropdownSum_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_block_libs_dropdownSum_dropdownSum_js__WEBPACK_IMPORTED_MODULE_2__);
-//import './index.html';
-//import './pug/pages/index.html';
 
 
 
+//import './block/libs/dropdownSum/dropdownSum.js';
 
 console.log((0,_modules_calc__WEBPACK_IMPORTED_MODULE_1__.mult)(2, 10));
 console.log((0,_modules_calc__WEBPACK_IMPORTED_MODULE_1__.sum)(3, 4));
+const button = document.getElementById('dropdownSumBtn');
+const showDropdownSumContext = function () {
+  dropdownSumContextId.classList.toggle("displayNone");
+  dropdownSumWrapId.classList.toggle("borderRadiusBottomNone");
+};
+button.addEventListener('click', showDropdownSumContext);
+let count = 0;
+const BtnMinusAdults = document.getElementById('BtnMinusAdults');
+const BtnPlusAdults = document.getElementById('BtnPlusAdults');
+const ResultAdults = document.getElementById('ResultAdults');
+const BtnMinusAdultsClick = function () {
+  count--;
+  ResultAdults.innerHTML = count;
+};
+const BtnPlusAdultsClick = function () {
+  count++;
+  ResultAdults.innerHTML = count;
+};
+BtnMinusAdults.addEventListener('click', BtnMinusAdultsClick);
+//BtnPlusAdults.addEventListener('click', BtnPlusAdultsClick);
+BtnPlusAdults.addEventListener('click', BtnPlusAdultsClick);
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=index.6242151182cbba4e15cd.js.map
+//# sourceMappingURL=index.032bb4eadc05c817c3e5.js.map

@@ -56,6 +56,10 @@ body {
   width: 100%;
 }
 
+div {
+  box-sizing: border-box;
+}
+
 .image {
   width: 300px;
   height: 300px;
@@ -349,7 +353,7 @@ body {
   width: 320px;
 }
 
-.dropdownSumWrap {
+.dropdownSum__Wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -362,16 +366,69 @@ body {
   border-radius: 4px;
 }
 
-.dropdownSumText {
+.borderRadiusBottomNone {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.dropdownSum_Text {
   color: #1F2041;
   opacity: 0.75;
   font-size: 14px;
   line-height: 24px;
 }
 
-.dropdownSumBtn {
+.dropdownSum_Btn {
   border: none;
   background-color: white;
+}
+
+.dropdownSum_Context {
+  width: 320px;
+  padding: 15px 7px 7px 13px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-top: none;
+  border-radius: 4px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.RedVVV {
+  background-color: red;
+}
+
+.dropdownSum_Context__Wrap {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-bottom: 7px;
+}
+.dropdownSum_Context__Wrap .title {
+  width: 206px;
+  color: #1F2041;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.dropdownSum_Context__Wrap .BtnMinus, .dropdownSum_Context__Wrap .BtnPlus {
+  text-align: center;
+  padding-top: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+}
+.dropdownSum_Context__Wrap .Result {
+  margin-right: 8px;
+  font-size: 12px;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+.dropdownSum_Context__Wrap .BtnMinus {
+  margin-right: 8px;
 }
 
 /*# sourceMappingURL=index.css.map */

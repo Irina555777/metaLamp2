@@ -1,5 +1,23 @@
+
 mixin dropdownSum 
-  .dropdownSumWrap
-    .dropdownSumText Сколько гостей
-    button#dropdownSumBtn.dropdownSumBtn
+  .dropdownSum__Wrap#dropdownSumWrapId
+    .dropdownSum_Text Сколько гостей
+    button#dropdownSumBtn.dropdownSum_Btn
       img(src="../../../block/libs/dropdownSum/dropdownSumBtn.png", alt="Btn")  
+  div.dropdownSum_Context.displayNone#dropdownSumContextId
+    .dropdownSum_Context__Wrap 
+      .title взрослые
+      .BtnMinus#BtnMinusAdults -
+      .Result#ResultAdults 0
+      .BtnPlus#BtnPlusAdults +
+    .dropdownSum_Context__Wrap  
+      .title дети
+      .BtnMinus#BtnMinusChildren -
+      .Result#ResultChildren 0
+      .BtnPlus#BtnPlusChildren +
+    .dropdownSum_Context__Wrap  
+      .title младенцы
+      .BtnMinus#BtnMinusBabies -
+      .Result#ResultBabies 0
+      .BtnPlus#BtnPlusBabies +    
+      
