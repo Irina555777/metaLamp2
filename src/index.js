@@ -21,6 +21,9 @@ const BtnPlusAdults = document.getElementById('BtnPlusAdults');
 const ResultAdults = document.getElementById('ResultAdults');
 const BtnMinusAdultsClick = function(){
     countAdults--;
+    if (countAdults < 0){
+        countChildren = 0
+    }
     ResultAdults.innerHTML = countAdults
 }
 const BtnPlusAdultsClick = function(){
@@ -36,14 +39,38 @@ const ResultChildren = document.getElementById('ResultChildren');
 const BtnPlusChildren = document.getElementById('BtnPlusChildren');
 const BtnMinushCildrenClick = function(){
     countChildren--;
+    if (countChildren < 0){
+        countChildren = 0;
+    }
     ResultChildren.innerHTML = countChildren
 }
 const BtnPlushCildrenClick = function(){
     countChildren++;
-    ResultChildren.innerHTML = countChildren
+    ResultChildren.innerHTML = countChildren;
 }
 BtnMinusChildren.addEventListener('click', BtnMinushCildrenClick);
 BtnPlusChildren.addEventListener('click', BtnPlushCildrenClick);
+//Plus and minus Babies
+let countBabies = 0;
+const BtnMinusBabies = document.getElementById('BtnMinusBabies');
+const ResultBabies = document.getElementById('ResultBabies');
+const BtnPlusBabies = document.getElementById('BtnPlusBabies');
+const BtnMinushBabiesClick = function(){
+    countBabies--;
+    if (countBabies < 0){
+        countBabies = 0
+    }
+    ResultBabies.innerHTML = countBabies;
+}
+const BtnPlushBabiesClick = function(){
+    countBabies++;
+    if (countBabies < 0){
+        countBabies = 0
+    }
+    ResultBabies.innerHTML = countBabies;
+}
+BtnMinusBabies.addEventListener('click', BtnMinushBabiesClick);
+BtnPlusBabies.addEventListener('click', BtnPlushBabiesClick);
 
 
 
