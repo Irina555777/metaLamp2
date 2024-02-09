@@ -14,21 +14,38 @@ const showDropdownSumContext = function(){
     dropdownSumWrapId.classList.toggle("borderRadiusBottomNone");
 } 
 button.addEventListener('click', showDropdownSumContext);
-
-let count = 0;
+//Plus and minus Adults
+let countAdults = 0;
 const BtnMinusAdults = document.getElementById('BtnMinusAdults');
 const BtnPlusAdults = document.getElementById('BtnPlusAdults');
 const ResultAdults = document.getElementById('ResultAdults');
 const BtnMinusAdultsClick = function(){
-    count--;
-    ResultAdults.innerHTML = count
+    countAdults--;
+    ResultAdults.innerHTML = countAdults
 }
 const BtnPlusAdultsClick = function(){
-    count++;
-    ResultAdults.innerHTML = count
+    countAdults++;
+    ResultAdults.innerHTML = countAdults
 }
 BtnMinusAdults.addEventListener('click', BtnMinusAdultsClick);
 BtnPlusAdults.addEventListener('click', BtnPlusAdultsClick)
+//Plus and minus Children
+let countChildren = 0;
+const BtnMinusChildren = document.getElementById('BtnMinusChildren');
+const ResultChildren = document.getElementById('ResultChildren');
+const BtnPlusChildren = document.getElementById('BtnPlusChildren');
+const BtnMinushCildrenClick = function(){
+    countChildren--;
+    ResultChildren.innerHTML = countChildren
+}
+const BtnPlushCildrenClick = function(){
+    countChildren++;
+    ResultChildren.innerHTML = countChildren
+}
+BtnMinusChildren.addEventListener('click', BtnMinushCildrenClick);
+BtnPlusChildren.addEventListener('click', BtnPlushCildrenClick);
+
+
 
 
 
