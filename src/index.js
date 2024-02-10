@@ -22,7 +22,7 @@ const ResultAdults = document.getElementById('ResultAdults');
 const BtnMinusAdultsClick = function(){
     countAdults--;
     if (countAdults < 0){
-        countChildren = 0
+        countAdults = 0
     }
     ResultAdults.innerHTML = countAdults
 }
@@ -71,6 +71,15 @@ const BtnPlushBabiesClick = function(){
 }
 BtnMinusBabies.addEventListener('click', BtnMinushBabiesClick);
 BtnPlusBabies.addEventListener('click', BtnPlushBabiesClick);
+//Button #dropdownSum_BtnApplay
+
+const dropdownSum_BtnApplay = document.getElementById('dropdownSum_BtnApplay');
+const dropdownSum_Text = document.getElementById('dropdownSum_Text');
+const dropdownSum_BtnApplayClick = function(){
+    let result = countAdults + countChildren + countBabies;
+    dropdownSum_Text.innerHTML = 'гостей' + '' + result
+}
+dropdownSum_BtnApplay.addEventListener('click', dropdownSum_BtnApplayClick)
 
 
 

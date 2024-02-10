@@ -27,7 +27,7 @@
 }
 .dropdownSum_Context {
     width: 320px;
-    padding: 15px 7px 7px 13px;
+    padding: 7px 7px 20px 15px;
     border: 1px solid rgba(31, 32, 65, .25);
     border-top: none;
     border-radius: 4px;
@@ -40,7 +40,7 @@
 .RedVVV {
     background-color: red;
 }
-.dropdownSum_Context__Wrap {
+.dropdownSum_ContexWrap {
     display: flex;
     align-items: center;
     height: 30px;
@@ -69,9 +69,13 @@
         margin-right: 8px;
     }
 }
+.dropdownSum_ContextWrap__mb0 {
+    margin-bottom: 0px;
+}
 .dropdownSum_Btn__Wrap {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
     button {
         padding: 0;
         color: $primary-color;

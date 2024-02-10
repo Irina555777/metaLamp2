@@ -385,7 +385,7 @@ div {
 
 .dropdownSum_Context {
   width: 320px;
-  padding: 15px 7px 7px 13px;
+  padding: 7px 7px 20px 15px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-top: none;
   border-radius: 4px;
@@ -401,19 +401,19 @@ div {
   background-color: red;
 }
 
-.dropdownSum_Context__Wrap {
+.dropdownSum_ContexWrap {
   display: flex;
   align-items: center;
   height: 30px;
   margin-bottom: 7px;
 }
-.dropdownSum_Context__Wrap .title {
+.dropdownSum_ContexWrap .title {
   width: 206px;
   color: #1F2041;
   font-size: 12px;
   text-transform: uppercase;
 }
-.dropdownSum_Context__Wrap .BtnMinus, .dropdownSum_Context__Wrap .BtnPlus {
+.dropdownSum_ContexWrap .BtnMinus, .dropdownSum_ContexWrap .BtnPlus {
   text-align: center;
   padding-top: 5px;
   width: 30px;
@@ -421,19 +421,24 @@ div {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 50%;
 }
-.dropdownSum_Context__Wrap .Result {
+.dropdownSum_ContexWrap .Result {
   margin-right: 8px;
   font-size: 12px;
   color: #1F2041;
   text-transform: uppercase;
 }
-.dropdownSum_Context__Wrap .BtnMinus {
+.dropdownSum_ContexWrap .BtnMinus {
   margin-right: 8px;
+}
+
+.dropdownSum_ContextWrap__mb0 {
+  margin-bottom: 0px;
 }
 
 .dropdownSum_Btn__Wrap {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .dropdownSum_Btn__Wrap button {
   padding: 0;

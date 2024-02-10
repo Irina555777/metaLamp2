@@ -1,26 +1,26 @@
 
 mixin dropdownSum(title1, title2, title3, dropdownSum_Btn__class) 
   .dropdownSum__Wrap#dropdownSumWrapId
-    .dropdownSum_Text Сколько гостей
+    .dropdownSum_Text#dropdownSum_Text Сколько гостей
     button#dropdownSumBtn.dropdownSum_Btn
       img(src="../../../block/libs/dropdownSum/dropdownSumBtn.png", alt="Btn")  
   div.dropdownSum_Context.displayNone#dropdownSumContextId
-    .dropdownSum_Context__Wrap 
+    .dropdownSum_ContexWrap 
       .title=title1
       .BtnMinus#BtnMinusAdults -
       .Result#ResultAdults 0
       .BtnPlus#BtnPlusAdults +
-    .dropdownSum_Context__Wrap  
+    .dropdownSum_ContexWrap 
       .title=title2
       .BtnMinus#BtnMinusChildren -
       .Result#ResultChildren 0
       .BtnPlus#BtnPlusChildren +
-    .dropdownSum_Context__Wrap  
+    .dropdownSum_ContexWrap.dropdownSum_ContextWrap__mb0
       .title=title3
       .BtnMinus#BtnMinusBabies -
       .Result#ResultBabies 0
       .BtnPlus#BtnPlusBabies +    
     .div(class=dropdownSum_Btn__class)
       button очистить
-      button применить  
+      button#dropdownSum_BtnApplay применить  
       
