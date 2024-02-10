@@ -3,7 +3,6 @@ import './styles/index.css';
 
 import {mult} from'./modules/calc';
 import {sum} from'./modules/calc';
-//import './block/libs/dropdownSum/dropdownSum.js';
 
 console.log(mult(2,10));
 console.log(sum(3,4));
@@ -14,6 +13,7 @@ const showDropdownSumContext = function(){
     dropdownSumWrapId.classList.toggle("borderRadiusBottomNone");
 } 
 button.addEventListener('click', showDropdownSumContext);
+
 //Plus and minus Adults
 let countAdults = 0;
 const BtnMinusAdults = document.getElementById('BtnMinusAdults');
@@ -32,6 +32,7 @@ const BtnPlusAdultsClick = function(){
 }
 BtnMinusAdults.addEventListener('click', BtnMinusAdultsClick);
 BtnPlusAdults.addEventListener('click', BtnPlusAdultsClick)
+
 //Plus and minus Children
 let countChildren = 0;
 const BtnMinusChildren = document.getElementById('BtnMinusChildren');
@@ -50,6 +51,7 @@ const BtnPlushCildrenClick = function(){
 }
 BtnMinusChildren.addEventListener('click', BtnMinushCildrenClick);
 BtnPlusChildren.addEventListener('click', BtnPlushCildrenClick);
+
 //Plus and minus Babies
 let countBabies = 0;
 const BtnMinusBabies = document.getElementById('BtnMinusBabies');
@@ -71,16 +73,29 @@ const BtnPlushBabiesClick = function(){
 }
 BtnMinusBabies.addEventListener('click', BtnMinushBabiesClick);
 BtnPlusBabies.addEventListener('click', BtnPlushBabiesClick);
-//Button #dropdownSum_BtnApplay
 
+//Button #dropdownSum_BtnApplay
 const dropdownSum_BtnApplay = document.getElementById('dropdownSum_BtnApplay');
 const dropdownSum_Text = document.getElementById('dropdownSum_Text');
 const dropdownSum_BtnApplayClick = function(){
     let result = countAdults + countChildren + countBabies;
-    dropdownSum_Text.innerHTML = 'гостей' + '' + result
+    dropdownSum_Text.innerHTML = 'гостей' + '' + result;
+    dropdownSum_BtnClear.classList.remove('dropdownSum_BtnClear__opasity0');
 }
 dropdownSum_BtnApplay.addEventListener('click', dropdownSum_BtnApplayClick)
 
+//Button dropdownSum_BtnClear
+const dropdownSum_BtnClear = document.getElementById('dropdownSum_BtnClear');
+const dropdownSum_BtnClearClick = function(){
+    countAdults = 0;
+    countChildren = 0;
+    countBabies = 0;
+    ResultAdults.innerHTML = countAdults;
+    ResultChildren.innerHTML = countChildren;
+    ResultBabies.innerHTML = countBabies;
+    dropdownSum_Text.innerHTML = 'сколько гостей'
+}
+dropdownSum_BtnClear.addEventListener('click', dropdownSum_BtnClearClick)
 
 
 
