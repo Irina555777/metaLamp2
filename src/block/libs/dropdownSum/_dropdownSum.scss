@@ -69,3 +69,15 @@
         margin-right: 8px;
     }
 }
+.dropdownSum_Btn__Wrap {
+    display: flex;
+    justify-content: space-between;
+    button {
+        padding: 0;
+        color: $primary-color;
+        text-transform: uppercase;
+        font-size: 15px;
+        background-color: white;
+        border: none;
+    }
+}
