@@ -14,4 +14,6 @@ block content
       div.mb20  
       +inputDropdownTitle('Dropdown', '', 'width320')
       div.mb5 
-      +dropdownSum('взрослые', 'дети', 'младенцы', 'dropdownSum_Btn__Wrap')
+      +dropdownSum('guestsSumId','Сколько гостей', 'взрослые','дети', 'младенцы', 'dropdownSum_Btn__Wrap','BtnMinusAdults', 'BtnPlusAdults','ResultAdults', 'BtnMinusChildren', 'BtnPlusChildren','ResultChildren', 'BtnMinusBabies', 'BtnPlusBabies', 'ResultBabies')
+      div.mb5 
+      +dropdownSum('roomsSumId','0 спальней, 0 кроватей, 0 ванных комнат','спальни', 'кровати', 'ванные комнаты', 'displayNone', 'BtnMinusBedrooms', 'BtnPlusBedrooms','ResultBedrooms', 'BtnMinusBeds', 'BtnPlusBeds','ResultBeds', 'BtnMinusBathroom', 'BtnPlusBathroom', 'ResultBathroom')

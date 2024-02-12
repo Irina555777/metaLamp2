@@ -4,15 +4,22 @@ import './styles/index.css';
 import {mult} from'./modules/calc';
 import {sum} from'./modules/calc';
 
-console.log(mult(2,10));
-console.log(sum(3,4));
+//MIXIN DROPDOWNSUM
 
-const button = document.getElementById('dropdownSumBtn');
-const showDropdownSumContext = function(){
-    dropdownSumContextId.classList.toggle("displayNone");
-    dropdownSumWrapId.classList.toggle("borderRadiusBottomNone");
+//Show dropdown
+const dropdownSumBtn = document.getElementsByClassName("dropdownSum_Btn");
+const dropdownSumContext = document.getElementsByClassName("dropdownSum_Context");
+const dropdownSumWrap = document.getElementsByClassName("dropdownSum__Wrap");
+const showDropdownSumContext0 = function(){
+    dropdownSumContext[0].classList.toggle("displayNone");
+    dropdownSumWrap[0].classList.toggle("borderRadiusBottomNone");
 } 
-button.addEventListener('click', showDropdownSumContext);
+const showDropdownSumContext1 = function(){
+    dropdownSumContext[1].classList.toggle("displayNone");
+    dropdownSumWrap[1].classList.toggle("borderRadiusBottomNone");
+} 
+dropdownSumBtn[0].addEventListener('click', showDropdownSumContext0);
+dropdownSumBtn[1].addEventListener('click', showDropdownSumContext1);
 
 //Plus and minus Adults
 let countAdults = 0;
@@ -76,10 +83,11 @@ BtnPlusBabies.addEventListener('click', BtnPlushBabiesClick);
 
 //Button #dropdownSum_BtnApplay
 const dropdownSum_BtnApplay = document.getElementById('dropdownSum_BtnApplay');
-const dropdownSum_Text = document.getElementById('dropdownSum_Text');
+//const dropdownSum_Text = document.getElementById('dropdownSum_Text');
+const guestsSumId = document.getElementById('guestsSumId');
 const dropdownSum_BtnApplayClick = function(){
     let result = countAdults + countChildren + countBabies;
-    dropdownSum_Text.innerHTML = 'гостей' + '' + result;
+    guestsSumId.innerHTML = 'гостей' + result;
     dropdownSum_BtnClear.classList.remove('dropdownSum_BtnClear__opasity0');
 }
 dropdownSum_BtnApplay.addEventListener('click', dropdownSum_BtnApplayClick)
@@ -93,9 +101,77 @@ const dropdownSum_BtnClearClick = function(){
     ResultAdults.innerHTML = countAdults;
     ResultChildren.innerHTML = countChildren;
     ResultBabies.innerHTML = countBabies;
-    dropdownSum_Text.innerHTML = 'сколько гостей'
+    guestsSumId.innerHTML = 'сколько гостей'
 }
 dropdownSum_BtnClear.addEventListener('click', dropdownSum_BtnClearClick)
+
+//Drobdown rooms
+//Plus and minus Bedrooms
+const roomsSumId = document.getElementById('roomsSumId');
+let countBdrooms = 0;
+const BtnMinusBedrooms = document.getElementById('BtnMinusBedrooms');
+const BtnPlusBedrooms = document.getElementById('BtnPlusBedrooms');
+const ResultBedrooms = document.getElementById('ResultBedrooms');
+const BtnMinusBedroomsClick = function(){
+    countBdrooms--;
+    if (countBdrooms < 0){
+        countBdrooms = 0
+    }
+    ResultBedrooms.innerHTML = countBdrooms;
+    roomsSumId.innerHTML = countBdrooms + ' спальни, ' + countBeds + ' кровати, ' + countBathroom + ' ванные комнаты ';
+}
+const BtnPlusBedroomsClick = function(){
+    countBdrooms++;
+    ResultBedrooms.innerHTML = countBdrooms;
+    roomsSumId.innerHTML = countBdrooms + ' спальни, ' + countBeds + ' кровати, ' + countBathroom + ' ванные комнаты ';
+}
+BtnMinusBedrooms.addEventListener('click', BtnMinusBedroomsClick);
+BtnPlusBedrooms.addEventListener('click', BtnPlusBedroomsClick);
+
+//Plus and minus beds
+let countBeds = 0;
+const BtnMinusBeds = document.getElementById('BtnMinusBeds');
+const BtnPlusBeds = document.getElementById('BtnPlusBeds');
+const ResultBeds = document.getElementById('ResultBeds');
+const BtnMinusBedsClick = function(){
+    countBeds--;
+    if (countBeds < 0){
+        countBeds = 0
+    }
+    ResultBeds.innerHTML = countBeds;
+    roomsSumId.innerHTML = countBdrooms + ' спальни ,' + countBeds + ' кровати, ' + countBathroom + ' ванные комнаты ';
+}
+const BtnPlusBedsClick = function(){
+    countBeds++;
+    ResultBeds.innerHTML = countBeds;
+    roomsSumId.innerHTML = countBdrooms + ' спальни, ' + countBeds + ' кровати,' + countBathroom + ' ванные комнаты ';
+}
+BtnMinusBeds.addEventListener('click', BtnMinusBedsClick);
+BtnPlusBeds.addEventListener('click', BtnPlusBedsClick);
+
+//Plus and minus bathroom
+let countBathroom = 0;
+const BtnMinusBathroom = document.getElementById('BtnMinusBathroom');
+const BtnPlusBathroom = document.getElementById('BtnPlusBathroom');
+const ResultBathroom = document.getElementById('ResultBathroom');
+const BtnMinusBathroomClick = function(){
+    countBathroom--;
+    if (countBathroom < 0){
+        countBathroom = 0
+    }
+    ResultBathroom.innerHTML = countBathroom;
+    roomsSumId.innerHTML = countBdrooms + ' спальни, ' + countBeds + ' кровати,' + countBathroom + 'ванные комнаты';
+}
+const BtnPlusBathroomClick = function(){
+    countBathroom++;
+    ResultBathroom.innerHTML = countBathroom;
+    roomsSumId.innerHTML = countBdrooms + ' спальни,' + countBeds + ' кровати, ' + countBathroom + 'ванные комнаты';
+}
+BtnMinusBathroom.addEventListener('click', BtnMinusBathroomClick);
+BtnPlusBathroom.addEventListener('click', BtnPlusBathroomClick);
+
+
+
 
 
 

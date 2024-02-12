@@ -1,25 +1,29 @@
 
-mixin dropdownSum(title1, title2, title3, dropdownSum_Btn__class) 
+mixin dropdownSum(dropdownSum_Text, mainTitle, title1,title2, title3, dropdownSum_Btn__class, dropdownMinusId1, dropdownPlus1,result1,dropdownMinusId2,dropdownPlus2,result2, dropdownMinusId3,dropdownPlus3,result3) 
   .dropdownSum__Wrap#dropdownSumWrapId
-    .dropdownSum_Text#dropdownSum_Text Сколько гостей
+    
+    .dropdownSum_Text(id=dropdownSum_Text)= mainTitle
     button#dropdownSumBtn.dropdownSum_Btn
       img(src="../../../block/libs/dropdownSum/dropdownSumBtn.png", alt="Btn")  
-  div.dropdownSum_Context.displayNone#dropdownSumContextId
+  div.dropdownSum_Context.displayNone(id=dropdownContextId)
     .dropdownSum_ContexWrap 
       .title=title1
-      .BtnMinus#BtnMinusAdults -
-      .Result#ResultAdults 0
-      .BtnPlus#BtnPlusAdults +
+      .BtnMinus(id=dropdownMinusId1) -
+      //.Result#ResultAdults 0
+      .Result(id=result1) 0
+      .BtnPlus(id=dropdownPlus1) +
     .dropdownSum_ContexWrap 
       .title=title2
-      .BtnMinus#BtnMinusChildren -
-      .Result#ResultChildren 0
-      .BtnPlus#BtnPlusChildren +
+      .BtnMinus(id=dropdownMinusId2) -
+      //.Result#ResultChildren 0
+      .Result(id=result2) 0
+      .BtnPlus(id=dropdownPlus2) +
     .dropdownSum_ContexWrap.dropdownSum_ContextWrap__mb0
       .title=title3
-      .BtnMinus#BtnMinusBabies -
-      .Result#ResultBabies 0
-      .BtnPlus#BtnPlusBabies +    
+      .BtnMinus(id=dropdownMinusId3) -
+      //.Result#ResultBabies 0
+      .Result(id=result3) 0
+      .BtnPlus(id=dropdownPlus3) +    
     .div(class=dropdownSum_Btn__class)
       button.dropdownSum_BtnClear__opasity0#dropdownSum_BtnClear очистить
       button#dropdownSum_BtnApplay применить  
