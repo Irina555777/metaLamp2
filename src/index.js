@@ -170,6 +170,24 @@ const BtnPlusBathroomClick = function(){
 BtnMinusBathroom.addEventListener('click', BtnMinusBathroomClick);
 BtnPlusBathroom.addEventListener('click', BtnPlusBathroomClick);
 
+//MIXIN DROPDOWNCHECKBOX
+const dropdownCheckboxWrap = document.getElementsByClassName('dropdownCheckbox__Wrap');
+const dropdownCheckboxContent = document.getElementsByClassName('dropdownCheckbox_content');
+const dropdownCheckboxBtn = document.getElementsByClassName('dropdownCheckbox_btn');
+const dropdownCheckboxWrapClick0 = function(){
+    dropdownCheckboxContent[0].classList.toggle("displayNone");
+    dropdownCheckboxBtn[0].classList.toggle("displayNone");
+    dropdownCheckboxBtn[1].classList.toggle("displayNone");
+}
+const dropdownCheckboxWrapClick1 = function(){
+    dropdownCheckboxContent[1].classList.toggle("displayNone");
+    dropdownCheckboxBtn[2].classList.toggle("displayNone");
+    dropdownCheckboxBtn[3].classList.toggle("displayNone");
+}
+dropdownCheckboxWrap[0].addEventListener('click', dropdownCheckboxWrapClick0);
+dropdownCheckboxWrap[1].addEventListener('click', dropdownCheckboxWrapClick1);
+
+
 
 
 
