@@ -1,0 +1,62 @@
+@import '../variables';
+.dropdownCheckbox__Wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 266px;
+    margin-bottom: 17px;
+    .title { 
+        color: $dark;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+}
+.dropdownCheckbox_btn {
+    border: none;
+    background-color: white;
+}
+.dropdownCheckbox_input__wrap {
+    position: relative;
+    width: 266px;
+    height: 20px;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+input {
+    margin-right: 10px;
+}
+label {
+    position: absolute;
+    top: 2px;
+    font-size: 14px;
+    color: $dark;
+    opacity: .5;
+}
+.dropdownCheckbox_input__custom {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .dropdownCheckbox_input__custom+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .dropdownCheckbox_input__custom+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid red;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  .dropdownCheckbox_input__custom:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    
+  }
