@@ -2,8 +2,9 @@
 .dropdownCheckbox__Wrap {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 266px;
-    margin-bottom: 17px;
+    height: 44px;
     .title { 
         color: $dark;
         font-size: 12px;
@@ -11,6 +12,7 @@
       }
 }
 .dropdownCheckbox_btn {
+    height: 44px;
     border: none;
     background-color: white;
 }
@@ -26,6 +28,7 @@ input {
 }
 label {
     position: absolute;
+    max-width: 192px;
     top: 2px;
     font-size: 14px;
     color: $dark;

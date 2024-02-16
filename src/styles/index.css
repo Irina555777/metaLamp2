@@ -129,6 +129,11 @@ div {
   height: 5px;
 }
 
+.mb40 {
+  width: 320px;
+  height: 40px;
+}
+
 .mb20 {
   width: 320px;
   height: 20px;
@@ -457,8 +462,9 @@ div {
 .dropdownCheckbox__Wrap {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 266px;
-  margin-bottom: 17px;
+  height: 44px;
 }
 .dropdownCheckbox__Wrap .title {
   color: #1F2041;
@@ -467,6 +473,7 @@ div {
 }
 
 .dropdownCheckbox_btn {
+  height: 44px;
   border: none;
   background-color: white;
 }
@@ -485,6 +492,7 @@ input {
 
 label {
   position: absolute;
+  max-width: 192px;
   top: 2px;
   font-size: 14px;
   color: #1F2041;

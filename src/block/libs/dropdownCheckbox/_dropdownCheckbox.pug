@@ -1,6 +1,6 @@
-mixin dropdownCheckbox(array) 
+mixin dropdownCheckbox(titleMain, array) 
   .dropdownCheckbox__Wrap
-    .title expandable checkbox list
+    .title=titleMain
     button.dropdownCheckbox_btn
       img(src="../../../block/libs/dropdownCheckbox/checkboxArrowUp.png", alt="Btn")  
     button.dropdownCheckbox_btn.displayNone 
