@@ -363,12 +363,19 @@ div {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  width: 320px;
   height: 44px;
   padding-left: 15px;
   padding-right: 10px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
+}
+
+.dropdownSum__Width320 {
+  width: 320px;
+}
+
+.dropdownSum__Width266 {
+  width: 266px;
 }
 
 .borderRadiusBottomNone {
@@ -389,7 +396,6 @@ div {
 }
 
 .dropdownSum_Context {
-  width: 320px;
   padding: 7px 7px 8px 15px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-top: none;
@@ -413,10 +419,16 @@ div {
   margin-bottom: 7px;
 }
 .dropdownSum_ContexWrap .title {
-  width: 206px;
+  /*width: 206px;*/
   color: #1F2041;
   font-size: 12px;
   text-transform: uppercase;
+}
+.dropdownSum_ContexWrap .title__width206 {
+  width: 206px;
+}
+.dropdownSum_ContexWrap .title__width152 {
+  width: 152px;
 }
 .dropdownSum_ContexWrap .BtnMinus, .dropdownSum_ContexWrap .BtnPlus {
   text-align: center;

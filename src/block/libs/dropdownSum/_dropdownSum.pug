@@ -1,25 +1,25 @@
 
-mixin dropdownSum(dropdownSum_Text, mainTitle, title1,title2, title3, dropdownSum_Btn__class, dropdownMinusId1, dropdownPlus1,result1,dropdownMinusId2,dropdownPlus2,result2, dropdownMinusId3,dropdownPlus3,result3) 
-  .dropdownSum__Wrap#dropdownSumWrapId
+mixin dropdownSum(dropdownSumWidth,titleWidth,dropdownSum_Text, mainTitle, title1,title2, title3, dropdownSum_Btn__class, dropdownMinusId1, dropdownPlus1,result1,dropdownMinusId2,dropdownPlus2,result2, dropdownMinusId3,dropdownPlus3,result3) 
+  .dropdownSum__Wrap(class=dropdownSumWidth)#dropdownSumWrapId
     
     .dropdownSum_Text(id=dropdownSum_Text)= mainTitle
     button#dropdownSumBtn.dropdownSum_Btn
       img(src="../../../block/libs/dropdownSum/dropdownSumBtn.png", alt="Btn")  
-  div.dropdownSum_Context.displayNone(id=dropdownContextId)
+  div.dropdownSum_Context.displayNone(class=dropdownSumWidth)(id=dropdownContextId)
     .dropdownSum_ContexWrap 
-      .title=title1
+      .title(class=titleWidth)=title1
       .BtnMinus(id=dropdownMinusId1) -
       //.Result#ResultAdults 0
       .Result(id=result1) 0
       .BtnPlus(id=dropdownPlus1) +
     .dropdownSum_ContexWrap 
-      .title=title2
+      .title(class=titleWidth)=title2
       .BtnMinus(id=dropdownMinusId2) -
       //.Result#ResultChildren 0
       .Result(id=result2) 0
       .BtnPlus(id=dropdownPlus2) +
     .dropdownSum_ContexWrap.dropdownSum_ContextWrap__mb0
-      .title=title3
+      .title(class=titleWidth)=title3
       .BtnMinus(id=dropdownMinusId3) -
       //.Result#ResultBabies 0
       .Result(id=result3) 0
