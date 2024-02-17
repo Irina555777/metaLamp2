@@ -1,11 +1,11 @@
 
-mixin dropdownSum(dropdownSumWidth,titleWidth,dropdownSum_Text, mainTitle, title1,title2, title3, dropdownSum_Btn__class, dropdownMinusId1, dropdownPlus1,result1,dropdownMinusId2,dropdownPlus2,result2, dropdownMinusId3,dropdownPlus3,result3) 
+mixin dropdownSum(dropdownSumWidth,titleWidth,dropdownSum_Text, mainTitle, title1,title2, title3, dropdownSum_Btn__class, dropdownMinusId1, dropdownPlus1,result1,dropdownMinusId2,dropdownPlus2,result2, dropdownMinusId3,dropdownPlus3,result3,dropdownSumBtnClear,dropdownSumBtnApplay) 
   .dropdownSum__Wrap(class=dropdownSumWidth)#dropdownSumWrapId
     
     .dropdownSum_Text(id=dropdownSum_Text)= mainTitle
-    button#dropdownSumBtn.dropdownSum_Btn
+    button#dropdownSum_Btn.dropdownSum_Btn
       img(src="../../../block/libs/dropdownSum/dropdownSumBtn.png", alt="Btn")  
-  div.dropdownSum_Context.displayNone(class=dropdownSumWidth)(id=dropdownContextId)
+  div.dropdownSum_Context.displayNone(class=dropdownSumWidth,id=dropdownContextId)
     .dropdownSum_ContexWrap 
       .title(class=titleWidth)=title1
       .BtnMinus(id=dropdownMinusId1) -
@@ -25,6 +25,6 @@ mixin dropdownSum(dropdownSumWidth,titleWidth,dropdownSum_Text, mainTitle, title
       .Result(id=result3) 0
       .BtnPlus(id=dropdownPlus3) +    
     .div(class=dropdownSum_Btn__class)
-      button.dropdownSum_BtnClear__opasity0#dropdownSum_BtnClear очистить
-      button#dropdownSum_BtnApplay применить  
+      button.dropdownSum_BtnClear__opasity0(id=dropdownSumBtnClear) очистить
+      button(id=dropdownSumBtnApplay) применить
       
