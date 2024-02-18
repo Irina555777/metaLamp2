@@ -40,6 +40,9 @@
     background-color: $dark;
     opacity: .25;
 }
-.toggleButtons__displayNone {
+.toggleButtons__displayNoneOn {
+    display: none;
+}
+.toggleButtons__displayNoneOff {
     display: none;
 }

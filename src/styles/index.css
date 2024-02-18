@@ -130,6 +130,10 @@ div {
   height: 5px;
 }
 
+.mb10 {
+  margin-bottom: 10px;
+}
+
 .mb16 {
   margin-bottom: 16px;
 }
@@ -657,7 +661,11 @@ label {
   opacity: 0.25;
 }
 
-.toggleButtons__displayNone {
+.toggleButtons__displayNoneOn {
+  display: none;
+}
+
+.toggleButtons__displayNoneOff {
   display: none;
 }
 

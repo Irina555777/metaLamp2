@@ -1,9 +1,9 @@
-mixin toggleButtons(text) 
-  .toggleButtons__wrap
+mixin toggleButtons(text,toggleButtonsDisplayNoneOn, toggleButtonsDisplayNoneOff) 
+  .toggleButtons__wrap(class=toggleButtonsDisplayNoneOn)
     .toggleButtons_container.toggleButtons_containerIncluded__padding.toggleButtons_container__colorPrimary
       .toggleButtons_toggle.toggleButtons_toggle__colorPrimary
     .toggleButtons_text=text
-  .toggleButtons__wrap.toggleButtons__displayNone
+  .toggleButtons__wrap(class=toggleButtonsDisplayNoneOff)
     .toggleButtons_container.toggleButtons_containerDisabled__padding.toggleButtons_container__colorDark
       .toggleButtons_toggle.toggleButtons_toggle__colorDark
     .toggleButtons_text=text  
