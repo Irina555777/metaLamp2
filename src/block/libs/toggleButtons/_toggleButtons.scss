@@ -24,7 +24,8 @@
     border-radius: 50%;
 }
 .toggleButtons_toggle__colorPrimary {
-    background-color: $primary-color;
+    /*background-color: $primary-color;*/
+    background: linear-gradient($primary-color, $primaryGradient);
 }
 .toggleButtons_text {
     font-size: 14px;

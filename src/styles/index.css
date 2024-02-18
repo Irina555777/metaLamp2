@@ -637,7 +637,8 @@ label {
 }
 
 .toggleButtons_toggle__colorPrimary {
-  background-color: #BC9CFF;
+  /*background-color: $primary-color;*/
+  background: linear-gradient(#BC9CFF, #8BA4F9);
 }
 
 .toggleButtons_text {
