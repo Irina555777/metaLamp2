@@ -202,10 +202,8 @@ const toggleButtonsClick = function(){
     toggleButtonsWrap[1].classList.toggle("toggleButtons__displayNoneOff");
     if(OnOff == 1){
         OnOff = 0;
-        console.log(OnOff);
     } else {
         OnOff = 1;
-        console.log(OnOff);
     }
 }
 toggleButtons[0].addEventListener('click', toggleButtonsClick);
@@ -215,10 +213,8 @@ const toggleButtonsClick1 = function(){
     toggleButtonsWrap[3].classList.toggle("toggleButtons__displayNoneOff");
     if(OnOff == 1){
         OnOff = 0;
-        console.log(OnOff);
     } else {
         OnOff = 1;
-        console.log(OnOff);
     }
 }
 toggleButtons[2].addEventListener('click', toggleButtonsClick1);

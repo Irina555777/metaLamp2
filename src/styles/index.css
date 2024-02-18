@@ -125,6 +125,13 @@ div {
   margin-right: 126px;
 }
 
+.uiFormElements_likeButton__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
+}
+
 .mb5 {
   width: 320px;
   height: 5px;
@@ -667,6 +674,50 @@ label {
 
 .toggleButtons__displayNoneOff {
   display: none;
+}
+
+.likeButton_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 4px;
+  padding-left: 4px;
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.likeButton_border__colorGrey {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.likeButton_border__colorPrimary {
+  border: 1px solid #BC9CFF;
+}
+
+.likeButton_img__primary {
+  width: 12px;
+  height: 12px;
+  background-image: url("../block/libs/likeButton/likePrimary.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.likeButton_img__gray {
+  width: 12px;
+  height: 12px;
+  background-image: url("../block/libs/likeButton/likeGrey.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.likeButton_sum {
+  font-size: 10px;
+  line-height: 12.19px;
+  color: #1F2041;
+  opacity: 0.25;
 }
 
 /*# sourceMappingURL=index.css.map */

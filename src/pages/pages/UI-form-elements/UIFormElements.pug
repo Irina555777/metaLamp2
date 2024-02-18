@@ -1,5 +1,4 @@
 extends ../../layout
-
 block content
   +logo
   div.uiFormElementsContainer
@@ -34,3 +33,7 @@ block content
       +toggleButtons('Получать спецпредложения', '', 'toggleButtons__displayNoneOff')
       .mb10
       +toggleButtons('Получать спецпредложения', 'toggleButtons__displayNoneOn', '')
+      .mb40
+      .uiFormElements_likeButton__wrap
+        +likeButton('likeButton_border__colorGrey','likeButton_img__gray', 6) 
+        +likeButton('likeButton_border__colorPrimary','likeButton_img__primary', 12)
