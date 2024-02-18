@@ -193,6 +193,24 @@ dropdownCheckboxWrap[0].addEventListener('click', dropdownCheckboxWrapClick0);
 dropdownCheckboxWrap[1].addEventListener('click', dropdownCheckboxWrapClick1);
 dropdownCheckboxWrap[2].addEventListener('click', dropdownCheckboxWrapClick2);
 
+//MIXIN toggleButtons
+const toggleButtons = document.getElementsByClassName('toggleButtons_container');
+const toggleButtonsWrap= document.getElementsByClassName('toggleButtons__wrap');
+let OnOff = 1;
+const toggleButtonsClick = function(){
+    toggleButtonsWrap[0].classList.toggle("toggleButtons__displayNone");
+    toggleButtonsWrap[1].classList.toggle("toggleButtons__displayNone");
+    if(OnOff == 1){
+        OnOff = 0;
+        console.log(OnOff);
+    } else {
+        OnOff = 1;
+        console.log(OnOff);
+    }
+}
+toggleButtons[0].addEventListener('click', toggleButtonsClick);
+toggleButtons[1].addEventListener('click', toggleButtonsClick);
+
 
 
 

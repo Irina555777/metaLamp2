@@ -130,14 +130,22 @@ div {
   height: 5px;
 }
 
-.mb40 {
-  width: 320px;
-  height: 40px;
+.mb16 {
+  margin-bottom: 16px;
 }
 
 .mb20 {
   width: 320px;
   height: 20px;
+}
+
+.mb36 {
+  margin-bottom: 36px;
+}
+
+.mb40 {
+  width: 320px;
+  height: 40px;
 }
 
 /*.ui-color-wrap {
@@ -547,6 +555,7 @@ label {
 .radioButtons__wrap {
   position: relative;
   display: flex;
+  height: 27px;
 }
 
 .radioClass1 {
@@ -576,8 +585,6 @@ label {
   display: inline-block;
   width: 20px;
   height: 20px;
-  /*flex-shrink: 0; 
-  flex-grow: 0;*/
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 50%;
   margin-right: 9.74px;
@@ -596,6 +603,61 @@ label {
   border-color: #BC9CFF;
   background-color: white;
   background-image: url(../block/libs/radioButtons/radioBtn.png);
+}
+
+.toggleButtons__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.toggleButtons_container {
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.toggleButtons_containerIncluded__padding {
+  padding-top: 3px;
+  padding-left: 24px;
+}
+
+.toggleButtons_container__colorPrimary {
+  border: 1px solid #BC9CFF;
+}
+
+.toggleButtons_container__colorDark {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.toggleButtons_toggle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.toggleButtons_toggle__colorPrimary {
+  background-color: #BC9CFF;
+}
+
+.toggleButtons_text {
+  font-size: 14px;
+  color: #1F2041;
+  opacity: 0.75;
+}
+
+.toggleButtons_containerDisabled__padding {
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+.toggleButtons_toggle__colorDark {
+  background-color: #1F2041;
+  opacity: 0.25;
+}
+
+.toggleButtons__displayNone {
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,7 +1,7 @@
 .radioButtons__wrap {
     position: relative;
     display: flex;
-    
+    height: 27px;
 }
 .radioClass1 {
     width: 98px;
@@ -27,8 +27,6 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    /*flex-shrink: 0; 
-    flex-grow: 0;*/
     border: 1px solid rgba(31, 32, 65, .25);
     border-radius: 50%;
     margin-right: 9.74px;
@@ -40,7 +38,6 @@
   .custom-radio>input:not(:disabled):not(:checked)+span:hover::before {
     border-color: #b3d7ff;
   }
- 
   /* стили для радиокнопки, находящейся в состоянии checked */
 .custom-radio>input:checked+span::before {
     border-color: $primary-color;
