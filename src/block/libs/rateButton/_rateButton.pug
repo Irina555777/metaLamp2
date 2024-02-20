@@ -1,0 +1,5 @@
+-let arr = ['rateButton_star__blue', 'rateButton_star__blue', 'rateButton_star__blue', 'rateButton_star__blue', 'rateButton_star__wait'];
+mixin rateButton
+  .rateButton__wrap
+    each i in arr
+      .rateButton_star(class=i)

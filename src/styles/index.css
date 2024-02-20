@@ -720,4 +720,28 @@ label {
   opacity: 0.25;
 }
 
+.rateButton__wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  height: 24px;
+}
+
+.rateButton_star {
+  width: 24px;
+  height: 24px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*background-image: url('../block/libs/rateButton/star.svg');*/
+}
+
+.rateButton_star__blue {
+  background-image: url("../block/libs/rateButton/star.svg");
+}
+
+.rateButton_star__wait {
+  background-image: url("../block/libs/rateButton/starBorder.svg");
+}
+
 /*# sourceMappingURL=index.css.map */
