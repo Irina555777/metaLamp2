@@ -7,3 +7,53 @@
 .but-color {
     color: white;
 }
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    border-radius: 20px;
+    p {
+        font-size: 12px;
+        line-height: 14.63px;
+        text-transform: uppercase;
+    }
+}
+.buttons__defaultBg {
+    background: linear-gradient($primary-color, $primaryGradient);
+    border: none;
+    color: white;
+}
+button.buttons__defaultBg:hover {
+    background: linear-gradient($primary-color, $primaryGradient);
+    border: none;
+    opacity: .5;
+    color: white;
+}
+.buttons__defaultBorder {
+    border: 3px solid transparent; 
+    background: linear-gradient($primary-color, $primaryGradient); 
+    box-shadow: inset 0px 0px 0px 20px #fff;
+    border-radius: 20px;
+    color: $primary-color;
+}
+button.buttons__defaultBorder:hover {
+    border: 3px solid transparent; 
+    background: linear-gradient($primary-color, $primaryGradient); 
+    box-shadow: inset 0px 0px 0px 20px #fff;
+    border-radius: 20px;
+    opacity: .5;
+    color: $primary-color;
+}
+.buttons__width99 {
+    width: 99px;
+}
+.buttons__width320 {
+    width: 320px;
+}
+.displayNone {
+    display: none;
+}
+.button_text__width {
+    width: 270px;
+}

@@ -83,6 +83,65 @@ div {
   color: white;
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  border-radius: 20px;
+}
+.buttons p {
+  font-size: 12px;
+  line-height: 14.63px;
+  text-transform: uppercase;
+}
+
+.buttons__defaultBg {
+  background: linear-gradient(#BC9CFF, #8BA4F9);
+  border: none;
+  color: white;
+}
+
+button.buttons__defaultBg:hover {
+  background: linear-gradient(#BC9CFF, #8BA4F9);
+  border: none;
+  opacity: 0.5;
+  color: white;
+}
+
+.buttons__defaultBorder {
+  border: 3px solid transparent;
+  background: linear-gradient(#BC9CFF, #8BA4F9);
+  box-shadow: inset 0px 0px 0px 20px #fff;
+  border-radius: 20px;
+  color: #BC9CFF;
+}
+
+button.buttons__defaultBorder:hover {
+  border: 3px solid transparent;
+  background: linear-gradient(#BC9CFF, #8BA4F9);
+  box-shadow: inset 0px 0px 0px 20px #fff;
+  border-radius: 20px;
+  opacity: 0.5;
+  color: #BC9CFF;
+}
+
+.buttons__width99 {
+  width: 99px;
+}
+
+.buttons__width320 {
+  width: 320px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.button_text__width {
+  width: 270px;
+}
+
 .uiColorsTypeContainer {
   position: relative;
   display: flex;
@@ -159,6 +218,10 @@ div {
   height: 20px;
 }
 
+.mb30 {
+  height: 30px;
+}
+
 .mb36 {
   margin-bottom: 36px;
 }
@@ -170,6 +233,10 @@ div {
 
 .w152 {
   width: 152px;
+}
+
+.w220 {
+  width: 220px;
 }
 
 /*.ui-color-wrap {
@@ -769,6 +836,80 @@ label {
 .buttonText__colorDatrk {
   color: #1F2041;
   opacity: 0.5;
+}
+
+.buttonText__colorWhite {
+  color: white;
+}
+
+.but {
+  width: 100px;
+  height: 30px;
+  background-color: red;
+  margin-left: 50px;
+}
+
+.but-color {
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  border-radius: 20px;
+}
+.buttons p {
+  font-size: 12px;
+  line-height: 14.63px;
+  text-transform: uppercase;
+}
+
+.buttons__defaultBg {
+  background: linear-gradient(#BC9CFF, #8BA4F9);
+  border: none;
+  color: white;
+}
+
+button.buttons__defaultBg:hover {
+  background: linear-gradient(#BC9CFF, #8BA4F9);
+  border: none;
+  opacity: 0.5;
+  color: white;
+}
+
+.buttons__defaultBorder {
+  border: 3px solid transparent;
+  background: linear-gradient(#BC9CFF, #8BA4F9);
+  box-shadow: inset 0px 0px 0px 20px #fff;
+  border-radius: 20px;
+  color: #BC9CFF;
+}
+
+button.buttons__defaultBorder:hover {
+  border: 3px solid transparent;
+  background: linear-gradient(#BC9CFF, #8BA4F9);
+  box-shadow: inset 0px 0px 0px 20px #fff;
+  border-radius: 20px;
+  opacity: 0.5;
+  color: #BC9CFF;
+}
+
+.buttons__width99 {
+  width: 99px;
+}
+
+.buttons__width320 {
+  width: 320px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.button_text__width {
+  width: 270px;
 }
 
 /*# sourceMappingURL=index.css.map */

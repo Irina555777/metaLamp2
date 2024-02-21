@@ -42,6 +42,18 @@ block content
       .mb16
       +rateButton
     div.columnRight 
-     .uiFormElements_btn__wrap.w152   
+      +inputDropdownTitle('buttons')
+      .mb16
+      .uiFormElements_btn__wrap.w220
+        +buttons('buttons__width99', 'buttons__defaultBg', 'displayNone', 'CLICK ME', '')
+        +buttons('buttons__width99', 'buttons__defaultBg', 'displayNone', 'CLICK ME', '')
+      .mb30  
+      .uiFormElements_btn__wrap.w220
+        +buttons('buttons__width99', 'buttons__defaultBorder', 'displayNone', 'CLICK ME', '')
+        +buttons('buttons__width99', 'buttons__defaultBorder', 'displayNone', 'CLICK ME', '') 
+      .mb30  
+      .uiFormElements_btn__wrap.w152   
         +buttonText('CLICK ME', 'buttonText__colorPrimary')
         +buttonText('CLICK ME', 'buttonText__colorDatrk')
+      .mb30 
+      +buttons('buttons__width320', 'buttons__defaultBg','', 'перейти к оплате', 'button_text__width')  
