@@ -6,12 +6,20 @@
         display: block;
         margin-right: 126px;
     }
+    .columnRight {
+        display: block;
+        margin-left: 72px; 
+    }
 }
 .uiFormElements_likeButton__wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90px;
+}
+.uiFormElements_btn__wrap {
+    display: flex;
+    justify-content: space-between;
 }
 .mb5 {
     width: 320px;
@@ -33,4 +41,7 @@
 .mb40 {
     width: 320px;
     height: 40px;
+}
+.w152 {
+    width: 152px;
 }

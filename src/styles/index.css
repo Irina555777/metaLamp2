@@ -124,12 +124,21 @@ div {
   display: block;
   margin-right: 126px;
 }
+.uiFormElementsContainer .columnRight {
+  display: block;
+  margin-left: 72px;
+}
 
 .uiFormElements_likeButton__wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90px;
+}
+
+.uiFormElements_btn__wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
 .mb5 {
@@ -157,6 +166,10 @@ div {
 .mb40 {
   width: 320px;
   height: 40px;
+}
+
+.w152 {
+  width: 152px;
 }
 
 /*.ui-color-wrap {
@@ -733,7 +746,6 @@ label {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  /*background-image: url('../block/libs/rateButton/star.svg');*/
 }
 
 .rateButton_star__blue {
@@ -742,6 +754,21 @@ label {
 
 .rateButton_star__wait {
   background-image: url("../block/libs/rateButton/starBorder.svg");
+}
+
+.buttonText__text {
+  font-size: 12px;
+  line-height: 14.63px;
+  text-transform: uppercase;
+}
+
+.buttonText__colorPrimary {
+  color: #BC9CFF;
+}
+
+.buttonText__colorDatrk {
+  color: #1F2041;
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=index.css.map */
