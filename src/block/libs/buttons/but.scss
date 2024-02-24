@@ -31,14 +31,14 @@ button.buttons__defaultBg:hover {
     color: white;
 }
 .buttons__defaultBorder {
-    border: 3px solid transparent; 
+    border: 2px solid transparent; 
     background: linear-gradient($primary-color, $primaryGradient); 
     box-shadow: inset 0px 0px 0px 20px #fff;
     border-radius: 20px;
     color: $primary-color;
 }
 button.buttons__defaultBorder:hover {
-    border: 3px solid transparent; 
+    border: 2px solid transparent; 
     background: linear-gradient($primary-color, $primaryGradient); 
     box-shadow: inset 0px 0px 0px 20px #fff;
     border-radius: 20px;

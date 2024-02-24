@@ -1,12 +1,14 @@
+//mixin dropdownCheckbox(titleMain, array) 
 mixin dropdownCheckbox(titleMain, array) 
   .dropdownCheckbox__Wrap
     .title=titleMain
     button.dropdownCheckbox_btn
       img(src="../../../block/libs/dropdownCheckbox/checkboxArrowUp.png", alt="Btn")  
-    button.dropdownCheckbox_btn.displayNone 
+    button.dropdownCheckbox_btn.displayNone
       img(src="../../../block/libs/dropdownCheckbox/checkboxArrowDoun.svg", alt="Btn")
-  .dropdownCheckbox_content.displayNone  
-    each i in array     
-      .dropdownCheckbox_input__wrap     
-        input.dropdownCheckbox_input__custom(type="checkbox" value=i id=i)   
-        label(for=i)=i 
+  .dropdownCheckbox_content.displayNone
+    //each i in array     
+    //  .dropdownCheckbox_input__wrap     
+    //    input.dropdownCheckbox_input__custom(type="checkbox" value=i id=i)   
+    //    label(for=i)=i 
+    +Checkbox(array)

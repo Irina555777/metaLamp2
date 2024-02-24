@@ -1,0 +1,7 @@
+mixin Checkbox(array)
+  each i in array
+    .Checkbox_input__wrap    
+      input.Checkbox_input__custom(type="checkbox" id=i.idd)   
+      label(for=i.idd class=i.class)=i.lab  
+    .Checkbox_text  
+      p=i.title 

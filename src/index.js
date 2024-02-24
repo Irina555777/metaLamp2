@@ -189,9 +189,9 @@ const dropdownCheckboxWrapClick2 = function(){
     dropdownCheckboxBtn[4].classList.toggle("displayNone");
     dropdownCheckboxBtn[5].classList.toggle("displayNone");
 }
-dropdownCheckboxWrap[0].addEventListener('click', dropdownCheckboxWrapClick0);
+//dropdownCheckboxWrap[0].addEventListener('click', dropdownCheckboxWrapClick0);
 dropdownCheckboxWrap[1].addEventListener('click', dropdownCheckboxWrapClick1);
-dropdownCheckboxWrap[2].addEventListener('click', dropdownCheckboxWrapClick2);
+//dropdownCheckboxWrap[2].addEventListener('click', dropdownCheckboxWrapClick2);
 
 //MIXIN toggleButtons
 const toggleButtons = document.getElementsByClassName('toggleButtons_container');

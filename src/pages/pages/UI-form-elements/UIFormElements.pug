@@ -17,14 +17,14 @@ block content
       div.mb20
       .mb40
       .mb40
-      +dropdownCheckbox('expandable checkbox list',['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь'])
+      +dropdownCheckbox('expandable checkbox list',[{idd: 'list1', lab: 'Завтрак', title: '', class:''}, {idd: 'list2', lab: 'Письменный стол', title: '', class: ''},{idd: 'list3', lab: 'Стул для кормления', title: '', class:''}, {idd: 'list4', lab: 'Кроватка', title: '', class: ''},{idd: 'list5', lab: 'Телевизор', title: '', class: ''},{idd: 'list6', lab: 'Шампунь', title: '', class: ''}])
       .mb20
-      +dropdownCheckbox('expandable checkbox list',['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь'])
+      +dropdownCheckbox('expandable checkbox list',[{idd: 'list11', lab: 'Завтрак', title: '', class:''}, {idd: 'list21', lab: 'Письменный стол', title: '', class: ''},{idd: 'list31', lab: 'Стул для кормления', title: '', class:''}, {idd: 'list41', lab: 'Кроватка', title: '', class: ''},{idd: 'list51', lab: 'Телевизор', title: '', class: ''},{idd: 'list61', lab: 'Шампунь', title: '', class: ''}])
     div.columnCentr  
-      +dropdownCheckbox('Checkbox Buttons',['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)']) 
-      div.mb5 
-      +dropdownSum('dropdownSum__Width320','title__width206','guestsSumId','Сколько гостей', 'взрослые','дети', 'младенцы', 'dropdownSum_Btn__Wrap','BtnMinusAdults', 'BtnPlusAdults','ResultAdults', 'BtnMinusChildren', 'BtnPlusChildren','ResultChildren', 'BtnMinusBabies', 'BtnPlusBabies', 'ResultBabies', 'dropdownSum_BtnClear', 'dropdownSum_BtnApplay')
-      div.mb5 
+      +inputDropdownTitle('Checkbox Buttons', '', 'width320')
+      .mb16
+      +Checkbox([{idd: 'checkboxBtn1', lab: 'Можно курить', title: '', class:''}, {idd: 'checkboxBtn2', lab: 'Можно с питомцами', title: '', class: ''},{idd: 'checkboxBtn3', lab: 'Можно пригласить гостей (до 10 человек)', title: '', class: ''}])
+      div.mb5  
       +inputDropdownTitle('Radio Buttons', '')
       +radioButtons('radioBattonName1','radioBattonValueMun', 'radioBattonIdMun', 'radioBattonValueWoman', 'radioBattonIdWoman')
       .mb36
@@ -41,6 +41,12 @@ block content
       +inputDropdownTitle('rate button')  
       .mb16
       +rateButton
+      .mb196
+      +dropdownSum('dropdownSum__Width320','title__width206','guestsSumId','Сколько гостей', 'взрослые','дети', 'младенцы', 'dropdownSum_Btn__Wrap','BtnMinusAdults', 'BtnPlusAdults','ResultAdults', 'BtnMinusChildren', 'BtnPlusChildren','ResultChildren', 'BtnMinusBabies', 'BtnPlusBabies', 'ResultBabies', 'dropdownSum_BtnClear', 'dropdownSum_BtnApplay')
+      .mb100
+      +inputDropdownTitle('rich Checkbox Buttons', '', 'width320')
+      .mb16
+      +Checkbox([{idd: '1', lab: 'Широкий коридор', title: 'Ширина коридоров в номере не менее 91 см.', class:'Checkbox_label'}, {idd: '2', lab: 'Помощник для инвалидов', title: 'На 1 этаже вас встретит специалист  и проводит до номера.', class: 'Checkbox_label'}])
     div.columnRight 
       +inputDropdownTitle('buttons')
       .mb16
