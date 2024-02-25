@@ -174,16 +174,16 @@ button.buttons__defaultBorder:hover {
   top: 30px;
 }
 
-.uiFormElementsContainer {
+.uiFormElements_Container {
   display: flex;
   padding-left: 140px;
   padding-top: 140px;
 }
-.uiFormElementsContainer .columnLeft {
+.uiFormElements_Container .columnLeft {
   display: block;
   margin-right: 126px;
 }
-.uiFormElementsContainer .columnRight {
+.uiFormElements_Container .columnRight {
   display: block;
   margin-left: 72px;
 }
@@ -198,6 +198,19 @@ button.buttons__defaultBorder:hover {
 .uiFormElements_btn__wrap {
   display: flex;
   justify-content: space-between;
+}
+
+.uiFormElements_footer {
+  display: flex;
+  padding-left: 140px;
+  padding-bottom: 131px;
+}
+.uiFormElements_footer .columnLeft {
+  display: block;
+  margin-right: 167px;
+}
+.uiFormElements_footer .columnRight {
+  display: block;
 }
 
 .mb5 {
@@ -983,6 +996,43 @@ input {
   font-size: 12px;
   color: #1F2041;
   opacity: 0.5;
+}
+
+.advantages__wrap {
+  display: flex;
+  width: 280px;
+  height: 92px;
+  padding-top: 23px;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.advantages_img {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages_img1 {
+  background-image: url("../block/libs/advantages/advantagesImg1.svg");
+}
+
+.advantages_img2 {
+  background-image: url("../block/libs/advantages/advantagesImg2.svg");
+}
+
+.advantages_text__title, .advantages_text__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #1F2041;
+  opacity: 0.75;
+}
+
+.advantages_text__title {
+  font-family: "MontserratBold", Arial, sans-serif;
+  margin-bottom: 2px;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,8 @@
+mixin advantages(array) 
+  each i in array
+    .advantages__wrap
+      div.advantages_img(class=i.class)
+      .advantages_text__wrap
+        .advantages_text__title=i.title
+        .advantages_text__text=i.text
+

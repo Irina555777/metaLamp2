@@ -1,4 +1,4 @@
-.uiFormElementsContainer {
+.uiFormElements_Container {
     display: flex;
     padding-left: 140px;
     padding-top: 140px;
@@ -20,6 +20,18 @@
 .uiFormElements_btn__wrap {
     display: flex;
     justify-content: space-between;
+}
+.uiFormElements_footer  {
+    display: flex;
+    padding-left: 140px;
+    padding-bottom: 131px;
+    .columnLeft  {
+        display: block;
+        margin-right: 167px;
+    }
+    .columnRight {
+        display: block;
+    }
 }
 .mb5 {
     width: 320px;

@@ -1,7 +1,7 @@
 extends ../../layout
 block content
   +logo
-  div.uiFormElementsContainer
+  div.uiFormElements_Container
     div.columnLeft
       +inputDropdownTitle('Text Field', 'Default', 'width320')
       div.mb5
@@ -63,3 +63,7 @@ block content
         +buttonText('CLICK ME', 'buttonText__colorDatrk')
       .mb30 
       +buttons('buttons__width320', 'buttons__defaultBg','', 'перейти к оплате', 'button_text__width')  
+  div.uiFormElements_footer   
+    .columnLeft 
+      +advantages([{class: 'advantages_img1', title: 'Комфорт', text: 'Шумопоглощающие стены'}, {class: 'advantages_img2', title: 'Удобство', text: 'Окно в каждой из спален'}])
+
