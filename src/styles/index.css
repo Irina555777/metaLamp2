@@ -1035,4 +1035,55 @@ input {
   margin-bottom: 2px;
 }
 
+.review__wrap {
+  display: flex;
+}
+
+.review_columnLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.review_img {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.review_img1 {
+  background-image: url("../block/libs/review/avatar1.jpg");
+}
+
+.reviev_title, .review_amountDays, .review_text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #1F2041;
+  opacity: 0.75;
+}
+
+.reviev_title {
+  font-weight: 900;
+}
+
+.review_amountDays {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.amountDays_count, .amountDays_text {
+  line-height: 18px;
+}
+
+.review_text {
+  max-width: 650px;
+  line-height: 20px;
+}
+
 /*# sourceMappingURL=index.css.map */

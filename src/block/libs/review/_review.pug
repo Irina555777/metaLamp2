@@ -1,0 +1,12 @@
+mixin review(reviewClass, reviewTitle, amountDays, reviewText ) 
+  .review__wrap
+    .review_columnLeft 
+      //.review_img.review_img1  
+      .review_img(class=reviewClass)
+      +likeButton('likeButton_border__colorPrimary','likeButton_img__primary', 12)
+    .review_columnRight 
+      .reviev_title=reviewTitle
+      .review_amountDays
+        .amountDays_count=amountDays
+        .amountDays_text &nbsp;дней назад
+      .review_text=reviewText 
