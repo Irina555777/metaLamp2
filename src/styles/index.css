@@ -948,9 +948,9 @@ input {
 }
 
 .Checkbox_label {
-  font-family: "MontserratBold", Arial, sans-serif;
+  font-weight: 900;
   position: absolute;
-  max-width: 205px;
+  max-width: 240px;
   top: 2px;
   font-size: 14px;
   color: #1F2041;
@@ -1031,7 +1031,7 @@ input {
 }
 
 .advantages_text__title {
-  font-family: "MontserratBold", Arial, sans-serif;
+  font-weight: 900;
   margin-bottom: 2px;
 }
 
