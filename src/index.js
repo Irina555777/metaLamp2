@@ -300,6 +300,31 @@ const toggleButtonsClick1 = function(){
 }
 toggleButtons[2].addEventListener('click', toggleButtonsClick1);
 toggleButtons[3].addEventListener('click', toggleButtonsClick1);
+//RANGE
+const rangeMinText = document.getElementById('rangeSlider_minValue');
+document.getElementById('rangeMin').addEventListener('change', function(){
+    rangeMinText.innerHTML = this.value
+});
+
+const rangeMaxText = document.getElementById('rangeSlider_maxValue');
+document.getElementById('rangeMax').addEventListener('change', function(){
+    rangeMaxText.innerHTML = +this.value + 100
+});
+
+//let val = document.querySelector('.wrapper input[type="range"]');
+let val = document.querySelector('.rangeSlider_min__wrap input[type="range"]');
+let range = val.value;
+val.addEventListener("input", function() { 
+  let range = val.value + '%';
+  val.style.setProperty("--litters-range", range);
+});
+
+let val1 = document.querySelector('.rangeSlider_max__wrap input[type="range"]');
+let range1 = val.value;
+val1.addEventListener("input", function() { 
+  let range1 = val1.value + '%';
+  val1.style.setProperty("--litters-range1", range1);
+});
 
 
 

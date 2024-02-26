@@ -1,0 +1,10 @@
+mixin rangeSlider
+  .rangeSlider_minValue(id='rangeSlider_minValue') min
+  .rangeSlider_maxValue(id='rangeSlider_maxValue') max
+  //.wrapper  
+  .rangeSlider__wrap
+    .rangeSlider_min__wrap
+      input(type="range" value="75" min='1' max='100' step='1' id='rangeMin').rangeSlider_min
+    .rangeSlider_max__wrap
+      input(type="range" value="1" min='1' max='100' step='1' id='rangeMax').rangeSlider_max  
+    
