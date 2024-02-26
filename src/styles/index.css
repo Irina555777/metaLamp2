@@ -481,6 +481,10 @@ button.buttons__defaultBorder:hover {
   width: 320px;
 }
 
+.width292 {
+  width: 292px;
+}
+
 .dropdownSum__Wrap {
   display: flex;
   justify-content: space-between;
@@ -1084,6 +1088,32 @@ input {
 .review_text {
   max-width: 650px;
   line-height: 20px;
+}
+
+.bulletList__wrap {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.bulletList_point {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  margin-top: 8px;
+  border-radius: 50%;
+  background-color: #1F2041;
+  opacity: 0.25;
+}
+
+.bulletList_text {
+  max-width: 230px;
+}
+.bulletList_text p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #1F2041;
+  opacity: 0.75;
 }
 
 /*# sourceMappingURL=index.css.map */

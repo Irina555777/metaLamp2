@@ -62,7 +62,11 @@ block content
         +buttonText('CLICK ME', 'buttonText__colorPrimary')
         +buttonText('CLICK ME', 'buttonText__colorDatrk')
       .mb30 
-      +buttons('buttons__width320', 'buttons__defaultBg','', 'перейти к оплате', 'button_text__width')  
+      +buttons('buttons__width320', 'buttons__defaultBg','', 'перейти к оплате', 'button_text__width') 
+      .mb16
+      +inputDropdownTitle('Bullet List', '', 'width292') 
+      .mb16
+      +bulletList([{text:'Нельзя с питомцами'},{text:'Без вечеринок и мероприятий'},{text:'Время прибытия — после 13:00, а выезд до 12:00'}])
   div.uiFormElements_footer   
     .columnLeft 
       +advantages([{class: 'advantages_img1', title: 'Комфорт', text: 'Шумопоглощающие стены'}, {class: 'advantages_img2', title: 'Удобство', text: 'Окно в каждой из спален'}])
