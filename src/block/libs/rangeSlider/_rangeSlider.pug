@@ -1,10 +1,15 @@
 mixin rangeSlider
-  .rangeSlider_minValue(id='rangeSlider_minValue') min
-  .rangeSlider_maxValue(id='rangeSlider_maxValue') max
-  //.wrapper  
-  .rangeSlider__wrap
+  .rangeSlider_text__wrap
+    .rangeSlider_title Range Slider
+    .rangeSlider_value__wrap
+      .rangeSlider_minValue(id='rangeSlider_minValue') 
+      .rangeSlider_minValue &#8381;
+      .rangeSlider_minValue -
+      .rangeSlider_maxValue(id='rangeSlider_maxValue') 
+      .rangeSlider_maxValue &#8381;
+  .rangeSlider_input__wrap
     .rangeSlider_min__wrap
       input(type="range" value="75" min='1' max='100' step='1' id='rangeMin').rangeSlider_min
     .rangeSlider_max__wrap
-      input(type="range" value="1" min='1' max='100' step='1' id='rangeMax').rangeSlider_max  
+      input(type="range" value="0" min='1' max='100' step='1' id='rangeMax').rangeSlider_max  
     

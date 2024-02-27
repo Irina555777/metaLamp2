@@ -302,16 +302,17 @@ toggleButtons[2].addEventListener('click', toggleButtonsClick1);
 toggleButtons[3].addEventListener('click', toggleButtonsClick1);
 //RANGE
 const rangeMinText = document.getElementById('rangeSlider_minValue');
+rangeMinText.innerHTML = document.getElementById('rangeMin').value;
 document.getElementById('rangeMin').addEventListener('change', function(){
     rangeMinText.innerHTML = this.value
 });
 
 const rangeMaxText = document.getElementById('rangeSlider_maxValue');
+rangeMaxText.innerHTML = document.getElementById('rangeMax').value +100;
 document.getElementById('rangeMax').addEventListener('change', function(){
     rangeMaxText.innerHTML = +this.value + 100
 });
 
-//let val = document.querySelector('.wrapper input[type="range"]');
 let val = document.querySelector('.rangeSlider_min__wrap input[type="range"]');
 let range = val.value;
 val.addEventListener("input", function() { 
