@@ -300,6 +300,7 @@ const toggleButtonsClick1 = function(){
 }
 toggleButtons[2].addEventListener('click', toggleButtonsClick1);
 toggleButtons[3].addEventListener('click', toggleButtonsClick1);
+
 //RANGE
 const rangeMinText = document.getElementById('rangeSlider_minValue');
 rangeMinText.innerHTML = document.getElementById('rangeMin').value;
@@ -332,8 +333,60 @@ val1.addEventListener("input", function() {
 
 
 
+//PAGINATION
 
+const pageAfter = document.getElementsByClassName('liBtn');
+const paginationLi = document.getElementsByClassName('pagination_li');
+let countPaginator = 0;
+let totalPages1 = 15;
+let countClick = 0;
+const list = document.getElementById("list");
+let countShow = document.getElementById('count');
+const countBtn = document.getElementById('countBtn');
+const countBtnMinus = document.getElementById('countBtnMinus');
+let count = 0;
 
-
-
+const liBtnClick = function(){
+    count++;
+    list.innerHTML = '';
+    if(count == 1){
+        list.innerHTML = `<li>${count}</li>
+                      <li class='active'>${count + 1}</li>  
+                      <li>${count + 2}</li>`
+    } 
+    if(count == 2){
+      
+        list.innerHTML = `<li>${count - 1}</li>
+        <li>${count}</li>  
+        <li class='active'>${count + 1}</li>`  
+    } 
+    if(count >= 3 && count < 12){
+        list.innerHTML = `<li>1</li>
+                     <li><span>...</span></li> 
+                     <li>${count}</li>  
+                      <li class='active'>${count + 1}</li>  
+                      <li>${count + 2}</li> 
+                      <li><span>...</span></li>
+                      <li>${totalPages1}</li>`
+                      countBtnMinus.classList.remove('displayNone');
+    } 
+    if(count == 12){
+        list.innerHTML = `<li class='active'>${count + 1}</li>
+        <li>${count + 2}</li>  
+        <li>${count + 3}</li>`
+    }
+    if(count == 13){
+        list.innerHTML = `<li>${count}</li>
+        <li class='active'>${count + 1}</li>  
+        <li>${count + 2}</li>`
+    }
+    if(count == 14){
+        list.innerHTML = `<li>${count - 1}</li>
+        <li>${count}</li>  
+        <li class='active'>${count + 1}</li>`
+        countBtn.classList.toggle('displayNone');
+    }
+}
+countBtn.addEventListener('click', liBtnClick)
+   
 
