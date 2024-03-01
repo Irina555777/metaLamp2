@@ -1,44 +1,57 @@
-.wrap {
-     display: flex;
+
+.pagination {
+    display: flex;
     align-items: center;
     justify-content: center;
-    background: #20B2AA;
-    width: 320px;
+    width: 290px;
     height: 50px;
     padding: 10px;
 }
-.pagination1 {
-  display: flex;
-}
-.pagination1 ui{
+.pagination ui{
     display: flex;
 }
-.pagination1 ui li{
+.pagination ui li{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
     list-style: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-right: 10px;
+    font-size: 12px;
+    color: #1F2041;
+    opacity: .5;
+
 }
-.liBtn {
+.pagination_li__active {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: $secondary-color;
-    background-image: url(../block/libs/radioButtons/radioBtn.png);
+    background: linear-gradient($primaryGradient, $primary-color);
+    color: white;
 }
-.active {
-    color: red;
-}
-#countBtn, #countBtnMinus {
-  width: 40px;
+#pagination_BtnMinus, #pagination_BtnPlus {
+    //display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
     height: 40px;
     border-radius: 50%;
-    /*background-size: 100%;*/
     background-repeat: no-repeat;
     background-position: center;
     background-color: $secondary-color;
-    background-image: url(../block/libs/radioButtons/radioBtn.png);
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    //background-image: url(../block/libs/buttons/btnArrow.svg)
+}
+#pagination_BtnMinus {
+    transform: rotate(180deg);
 }
 .displayNone {
   display: none;
+}
+.displayFlex {
+  display: flex;
 }

@@ -328,65 +328,100 @@ val1.addEventListener("input", function() {
   val1.style.setProperty("--litters-range1", range1);
 });
 
-
-
-
-
-
 //PAGINATION
-
-const pageAfter = document.getElementsByClassName('liBtn');
 const paginationLi = document.getElementsByClassName('pagination_li');
-let countPaginator = 0;
 let totalPages1 = 15;
-let countClick = 0;
 const list = document.getElementById("list");
-let countShow = document.getElementById('count');
-const countBtn = document.getElementById('countBtn');
-const countBtnMinus = document.getElementById('countBtnMinus');
+const countBtnPlus = document.getElementById('pagination_BtnPlus');
+const countBtnMinus = document.getElementById('pagination_BtnMinus');
 let count = 0;
 
-const liBtnClick = function(){
+const liBtnPlusClick = function(){
     count++;
     list.innerHTML = '';
     if(count == 1){
         list.innerHTML = `<li>${count}</li>
-                      <li class='active'>${count + 1}</li>  
+                      <li class='pagination_li__active'>${count + 1}</li>  
                       <li>${count + 2}</li>`
     } 
     if(count == 2){
       
         list.innerHTML = `<li>${count - 1}</li>
         <li>${count}</li>  
-        <li class='active'>${count + 1}</li>`  
+        <li class='pagination_li__active'>${count + 1}</li>`  
     } 
     if(count >= 3 && count < 12){
-        list.innerHTML = `<li>1</li>
-                     <li><span>...</span></li> 
-                     <li>${count}</li>  
-                      <li class='active'>${count + 1}</li>  
-                      <li>${count + 2}</li> 
+        list.innerHTML = ` 
+                      <li>${count}</li>  
+                      <li class='pagination_li__active'>${count + 1}</li> 
                       <li><span>...</span></li>
                       <li>${totalPages1}</li>`
                       countBtnMinus.classList.remove('displayNone');
+                      countBtnMinus.classList.add('displayFlex');
     } 
     if(count == 12){
-        list.innerHTML = `<li class='active'>${count + 1}</li>
+        list.innerHTML = `<li class='pagination_li__active'>${count + 1}</li>
         <li>${count + 2}</li>  
         <li>${count + 3}</li>`
     }
     if(count == 13){
         list.innerHTML = `<li>${count}</li>
-        <li class='active'>${count + 1}</li>  
+        <li class='pagination_li__active'>${count + 1}</li>  
         <li>${count + 2}</li>`
     }
     if(count == 14){
         list.innerHTML = `<li>${count - 1}</li>
         <li>${count}</li>  
-        <li class='active'>${count + 1}</li>`
-        countBtn.classList.toggle('displayNone');
+        <li class='pagination_li__active'>${count + 1}</li>`
+        countBtnPlus.classList.toggle('displayNone');
+        countBtnPlus.classList.toggle('displayFlex');
     }
+    console.log(count);
 }
-countBtn.addEventListener('click', liBtnClick)
+const liBtnMinusClick = function(){
+    count--;
+    if(count == 13){
+        list.innerHTML = `<li>${count}</li>
+        <li class='pagination_li__active'>${count + 1}</li>  
+        <li>${count + 2}</li>`
+    }
+    if(count == 12){
+        list.innerHTML = `<li class='pagination_li__active'>${count}</li>
+        <li>${count + 1}</li>  
+        <li>${count + 2}</li>`
+    }
+    if(count >= 3 && count < 12){
+        list.innerHTML = `  
+                      <li>${count}</li>  
+                      <li class='pagination_li__active'>${count + 1}</li> 
+                      <li><span>...</span></li> 
+                      <li>${totalPages1}</li>`
+                      countBtnPlus.classList.remove('displayNone');
+                      countBtnPlus.classList.add('displayFlex');
+    } 
+    if(count == 2){
+        list.innerHTML = `<li>${count - 1}</li>
+        <li>${count}</li>  
+        <li class='pagination_li__active'>${count + 1}</li>`  
+    }
+    if(count == 1){
+        list.innerHTML = `<li>${count}</li>
+        <li class='pagination_li__active'>${count + 1}</li>  
+        <li>${count + 2}</li>`  
+    }
+    if(count == 0){
+        list.innerHTML = `<li class='pagination_li__active'>${count + 1}</li>
+        <li>${count + 2}</li>  
+        <li>${count + 3}</li>`  
+        countBtnMinus.classList.add('displayNone');
+
+    }
+    if(count <= 0){
+        count = 0
+    }
+    console.log(count);
+}
+countBtnPlus.addEventListener('click', liBtnPlusClick);
+countBtnMinus.addEventListener('click', liBtnMinusClick)
    
 

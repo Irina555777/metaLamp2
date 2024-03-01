@@ -1,10 +1,10 @@
 mixin pagination 
-  .wrap
-    .pagination1
-      div(id='countBtnMinus').displayNone
+    .pagination
+      .displayNone(id='pagination_BtnMinus')
+        img(src="../../../block/libs/buttons/btnArrow.svg", alt="arrow")
       ui(id='list')
-        li(class='pagination_li active') 1
+        li(class='pagination_li pagination_li__active') 1
         li(class='pagination_li') 2
         li(class='pagination_li') 3
-      div(id='countBtn')
-      //div(id='count')
+      .displayFlex(id='pagination_BtnPlus')
+        img(src="../../../block/libs/buttons/btnArrow.svg", alt="arrow")

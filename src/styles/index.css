@@ -1204,56 +1204,65 @@ input.rangeSlider_max {
   border: 3px solid white;
 }
 
-.wrap {
+.pagination {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #20B2AA;
-  width: 320px;
+  width: 290px;
   height: 50px;
   padding: 10px;
 }
 
-.pagination1 {
+.pagination ui {
   display: flex;
 }
 
-.pagination1 ui {
+.pagination ui li {
   display: flex;
-}
-
-.pagination1 ui li {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   list-style: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-right: 10px;
+  font-size: 12px;
+  color: #1F2041;
+  opacity: 0.5;
 }
 
-.liBtn {
+.pagination_li__active {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #6FCF97;
-  background-image: url(../block/libs/radioButtons/radioBtn.png);
+  background: linear-gradient(#8BA4F9, #BC9CFF);
+  color: white;
 }
 
-.active {
-  color: red;
-}
-
-#countBtn, #countBtnMinus {
+#pagination_BtnMinus, #pagination_BtnPlus {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  /*background-size: 100%;*/
   background-repeat: no-repeat;
   background-position: center;
   background-color: #6FCF97;
-  background-image: url(../block/libs/radioButtons/radioBtn.png);
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+#pagination_BtnMinus {
+  transform: rotate(180deg);
 }
 
 .displayNone {
   display: none;
+}
+
+.displayFlex {
+  display: flex;
 }
 
 /*# sourceMappingURL=index.css.map */
