@@ -32,8 +32,13 @@
     "webpack": "^5.89.0"
   },
   "dependencies": {
+    "js-datepicker": "^5.18.2",
+    "parcel-bundler": "^1.12.5",
     "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.2",
+    "vanilla-calendar-pro": "^2.9.5",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   }

@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/modules/calc.js":
@@ -8,6 +7,7 @@
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   mult: () => (/* binding */ mult),
@@ -24,6 +24,7 @@ const sum = (a, b) => a + b;
   \***********************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -52,6 +53,7 @@ var ___CSS_LOADER_URL_IMPORT_6___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_URL_IMPORT_7___ = new URL(/* asset import */ __webpack_require__(/*! ../block/libs/advantages/advantagesImg1.svg */ "./src/block/libs/advantages/advantagesImg1.svg"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_8___ = new URL(/* asset import */ __webpack_require__(/*! ../block/libs/advantages/advantagesImg2.svg */ "./src/block/libs/advantages/advantagesImg2.svg"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_9___ = new URL(/* asset import */ __webpack_require__(/*! ../block/libs/review/avatar1.jpg */ "./src/block/libs/review/avatar1.jpg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_10___ = new URL(/* asset import */ __webpack_require__(/*! ../block/libs/dropdownCheckbox/checkboxArrowUp.png */ "./src/block/libs/dropdownCheckbox/checkboxArrowUp.png"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_fonts_Montserrat_css__WEBPACK_IMPORTED_MODULE_2__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_fonts_MontserratBold_css__WEBPACK_IMPORTED_MODULE_3__["default"]);
@@ -65,6 +67,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_6___ = _node_modules_css_loader_dist_runtime_g
 var ___CSS_LOADER_URL_REPLACEMENT_7___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_4___default()(___CSS_LOADER_URL_IMPORT_7___);
 var ___CSS_LOADER_URL_REPLACEMENT_8___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_4___default()(___CSS_LOADER_URL_IMPORT_8___);
 var ___CSS_LOADER_URL_REPLACEMENT_9___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_4___default()(___CSS_LOADER_URL_IMPORT_9___);
+var ___CSS_LOADER_URL_REPLACEMENT_10___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_4___default()(___CSS_LOADER_URL_IMPORT_10___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
@@ -246,18 +249,32 @@ button.buttons__defaultBorder:hover {
 
 .uiFormElements_Container {
   display: flex;
-  padding-left: 140px;
-  padding-top: 140px;
+  padding-left: 141px;
+  padding-top: 143px;
 }
 
 .uiFormElements_Container .columnLeft {
   display: block;
+  height: auto;
   margin-right: 126px;
+}
+
+.uiFormElements_Container .columnCentr {
+  height: auto;
 }
 
 .uiFormElements_Container .columnRight {
   display: block;
+  height: auto;
   margin-left: 72px;
+}
+
+.uiFormElements_calendar__wrap {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  height: 65px;
 }
 
 .uiFormElements_likeButton__wrap {
@@ -273,6 +290,7 @@ button.buttons__defaultBorder:hover {
 }
 
 .uiFormElements_footer {
+  border: 1px solid red;
   display: flex;
   padding-left: 140px;
   padding-bottom: 131px;
@@ -288,8 +306,7 @@ button.buttons__defaultBorder:hover {
 }
 
 .mb5 {
-  width: 320px;
-  height: 5px;
+  margin-bottom: 5px;
 }
 
 .mb10 {
@@ -301,8 +318,7 @@ button.buttons__defaultBorder:hover {
 }
 
 .mb20 {
-  width: 320px;
-  height: 20px;
+  margin-bottom: 20.5px;
 }
 
 .mb30 {
@@ -314,23 +330,39 @@ button.buttons__defaultBorder:hover {
 }
 
 .mb40 {
-  width: 320px;
-  height: 40px;
+  margin-bottom: 40px;
+}
+
+.mb58 {
+  margin-bottom: 58px;
+}
+
+.mb98 {
+  margin-bottom: 98px;
 }
 
 .mb100 {
-  width: 320px;
-  height: 100px;
+  margin-bottom: 100px;
 }
 
 .mb196 {
-  width: 320px;
-  height: 196px;
+  margin-bottom: 196px;
 }
 
 .mb230 {
-  width: 320px;
-  height: 230px;
+  margin-bottom: 230px;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+
+.mt110 {
+  margin-top: 135px;
+}
+
+.w150 {
+  width: 150px;
 }
 
 .w152 {
@@ -339,6 +371,10 @@ button.buttons__defaultBorder:hover {
 
 .w220 {
   width: 220px;
+}
+
+.w266 {
+  width: 266px;
 }
 
 /*.ui-color-wrap {
@@ -537,6 +573,14 @@ button.buttons__defaultBorder:hover {
   outline: none;
 }
 
+.w320 {
+  width: 320px;
+}
+
+.w266 {
+  width: 266px;
+}
+
 .inputDropdownTitleWrap {
   display: flex;
   justify-content: space-between;
@@ -549,8 +593,8 @@ button.buttons__defaultBorder:hover {
 .inputDropdownTitle p, .inputDropdownTitleDefault p {
   color: #1F2041;
   font-size: 12px;
-  line-height: 14px;
   text-transform: uppercase;
+  line-height: 15px;
 }
 
 .inputDropdownTitleDefault p {
@@ -591,6 +635,10 @@ button.buttons__defaultBorder:hover {
 }
 
 .dropdownSum_Text {
+  width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: #1F2041;
   opacity: 0.75;
   font-size: 14px;
@@ -603,12 +651,14 @@ button.buttons__defaultBorder:hover {
 }
 
 .dropdownSum_Context {
-  padding: 7px 7px 8px 15px;
+  box-sizing: border-box;
+  padding: 6px 7px 8px 15px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-top: none;
   border-radius: 4px;
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
 }
 
 .displayNone {
@@ -669,14 +719,14 @@ button.buttons__defaultBorder:hover {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  padding-bottom: 13px;
+  padding-bottom: 5px;
 }
 
 .dropdownSum_Btn__Wrap button {
   padding: 0;
   color: #BC9CFF;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 12px;
   background-color: white;
   border: none;
 }
@@ -723,6 +773,7 @@ label {
   top: 2px;
   font-size: 14px;
   color: #1F2041;
+  letter-spacing: 1.2px;
   opacity: 0.5;
 }
 
@@ -755,6 +806,7 @@ label {
 
 .dropdownCheckbox_input__custom:checked + label::before {
   border-color: #BC9CFF;
+  opacity: 1;
   background-image: url(${___CSS_LOADER_URL_REPLACEMENT_1___});
 }
 
@@ -1044,11 +1096,23 @@ input {
 .Checkbox_label {
   font-weight: 900;
   position: absolute;
-  max-width: 240px;
+  width: 266px;
   top: 2px;
   font-size: 14px;
   color: #1F2041;
   opacity: 0.75;
+  letter-spacing: 1.1px;
+}
+
+.Checkbox_label__opasity {
+  position: absolute;
+  min-width: 240px;
+  top: 2px;
+  font-size: 14px;
+  color: #1F2041;
+  line-height: 18px;
+  opacity: 0.5;
+  letter-spacing: 1.1px;
 }
 
 .Checkbox_input__custom {
@@ -1066,6 +1130,7 @@ input {
 .Checkbox_input__custom + label::before {
   content: "";
   display: inline-block;
+  box-sizing: border-box;
   width: 20px;
   height: 20px;
   flex-shrink: 0;
@@ -1080,12 +1145,13 @@ input {
 
 .Checkbox_input__custom:checked + label::before {
   border-color: #BC9CFF;
+  opacity: 1;
   background-image: url(${___CSS_LOADER_URL_REPLACEMENT_1___});
 }
 
 .Checkbox_text {
   max-width: 266px;
-  margin-bottom: 11px;
+  margin-bottom: 10px;
   padding-left: 30px;
   font-size: 12px;
   color: #1F2041;
@@ -1351,7 +1417,71 @@ input.rangeSlider_max {
   display: flex;
 }
 
-`, "",{"version":3,"sources":["webpack://./src/styles/index.css"],"names":[],"mappings":"AAAA,gBAAgB;AAGhB;;;;;;;;;;;;;EAaE,SAAA;EACA,UAAA;EACA,SAAA;EACA,eAAA;EACA,aAAA;EACA,wBAAA;AACF;;AAEA,gDAAA;AACA;;EAEE,cAAA;AACF;;AAEA;EACE,cAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;;EAEE,WAAA;EACA,aAAA;AACF;;AAEA;EACE,yBAAA;EACA,iBAAA;AACF;;AAEA;EACE,4CAAA;EACA,sBAAA;EACA,WAAA;AACF;;AAEA;EACE,sBAAA;AACF;;AAEA;EACE,YAAA;EACA,aAAA;EACA,sBAAA;EACA,yDAAA;AACF;;AAEA;EACE,uBAAA;AACF;;AAEA;EACE,YAAA;EACA,YAAA;EACA,qBAAA;EACA,iBAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,mBAAA;AACF;;AACA;EACE,eAAA;EACA,oBAAA;EACA,yBAAA;AAEF;;AACA;EACE,6CAAA;EACA,YAAA;EACA,YAAA;AAEF;;AACA;EACE,6CAAA;EACA,YAAA;EACA,YAAA;EACA,YAAA;AAEF;;AACA;EACE,6BAAA;EACA,6CAAA;EACA,uCAAA;EACA,mBAAA;EACA,cAAA;AAEF;;AACA;EACE,6BAAA;EACA,6CAAA;EACA,uCAAA;EACA,mBAAA;EACA,YAAA;EACA,cAAA;AAEF;;AACA;EACE,WAAA;AAEF;;AACA;EACE,YAAA;AAEF;;AACA;EACE,aAAA;AAEF;;AACA;EACE,YAAA;AAEF;;AACA;EACE,kBAAA;EACA,aAAA;EACA,2BAAA;EACA,iBAAA;EACA,cAAA;EACA,mBAAA;EACA,kBAAA;EACA,qBAAA;AAEF;;AAAA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;AAGF;;AADA;EACE,YAAA;EACA,mBAAA;AAIF;;AAFA;EACE,aAAA;AAKF;;AAFA;EACE,kBAAA;EACA,YAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;EACA,SAAA;AAKF;;AAFA;EACE,aAAA;EACA,mBAAA;EACA,kBAAA;AAKF;;AAHA;EACE,cAAA;EACA,mBAAA;AAMF;;AAJA;EACE,cAAA;EACA,iBAAA;AAOF;;AAJA;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,WAAA;AAOF;;AAJA;EACE,aAAA;EACA,8BAAA;AAOF;;AAJA;EACE,aAAA;EACA,mBAAA;EACA,qBAAA;AAOF;;AALA;EACE,cAAA;EACA,mBAAA;AAQF;;AANA;EACE,cAAA;AASF;;AANA;EACE,YAAA;EACA,WAAA;AASF;;AANA;EACE,mBAAA;AASF;;AANA;EACE,mBAAA;AASF;;AANA;EACE,YAAA;EACA,YAAA;AASF;;AANA;EACE,YAAA;AASF;;AANA;EACE,mBAAA;AASF;;AANA;EACE,YAAA;EACA,YAAA;AASF;;AANA;EACE,YAAA;EACA,aAAA;AASF;;AANA;EACE,YAAA;EACA,aAAA;AASF;;AANA;EACE,YAAA;EACA,aAAA;AASF;;AANA;EACE,YAAA;AASF;;AANA;EACE,YAAA;AASF;;AANA;;;EAAA;AAIA;EACE,aAAA;EACA,sBAAA;AASF;;AANA;EACE,mBAAA;AASF;;AANA;EACE,WAAA;EACA,YAAA;EACA,kBAAA;EACA,kBAAA;AASF;;AANA;EACE,yBAAA;AASF;;AANA;EACE,yBAAA;AASF;;AANA;EACE,yBAAA;AASF;;AANA;EACE,yBAAA;EACA,aAAA;AASF;;AANA;EACE,yBAAA;EACA,YAAA;AASF;;AANA;EACE,yBAAA;EACA,aAAA;AASF;;AANA;EACE,yBAAA;EACA,aAAA;AASF;;AANA;EACE,YAAA;AASF;;AANA;EACE,YAAA;EACA,eAAA;EACA,iBAAA;EACA,cAAA;EACA,gDAAA;AASF;;AANA;EACE,iBAAA;EACA,4CAAA;AASF;;AANA;EACE,aAAA;EACA,8BAAA;EACA,YAAA;AASF;;AANA;EACE,YAAA;EACA,mBAAA;AASF;;AANA;EACE,WAAA;EACA,kBAAA;AASF;;AANA;EACE,YAAA;AASF;;AANA,iBAAA;AACA;EACE,cAAA;EACA,aAAA;EACA,WAAA;EACA,iBAAA;AASF;;AANA;EACE,iBAAA;EACA,eAAA;EACA,yBAAA;AASF;;AANA;EACE,iBAAA;EACA,eAAA;EACA,yBAAA;AASF;;AANA;EACE,yBAAA;EACA,iBAAA;EACA,eAAA;AASF;;AANA;EACE,iBAAA;EACA,eAAA;AASF;;AANA,iBAAA;AACA;EACE,cAAA;AASF;;AANA;EACE,gDAAA;EACA,iBAAA;EACA,eAAA;AASF;;AANA;EACE,gDAAA;EACA,iBAAA;EACA,eAAA;AASF;;AANA;EACE,gDAAA;EACA,yBAAA;EACA,iBAAA;EACA,eAAA;AASF;;AANA;EACE,iBAAA;EACA,eAAA;EACA,aAAA;AASF;;AANA;EACE,kBAAA;EACA,YAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;EACA,SAAA;AASF;;AANA;EACE,sBAAA;EACA,YAAA;EACA,YAAA;EACA,kBAAA;EACA,wCAAA;EACA,kBAAA;EACA,aAAA;AASF;;AANA;EACE,eAAA;EACA,cAAA;EACA,aAAA;AASF;;AANA;EACE,cAAA;EACA,YAAA;AASF;;AANA;EACE,cAAA;EACA,YAAA;AASF;;AANA;EACE,uCAAA;EACA,aAAA;AASF;;AANA;EACE,uCAAA;EACA,uBAAA;EACA,aAAA;AASF;;AANA;EACE,aAAA;EACA,8BAAA;AASF;;AANA;EACE,WAAA;AASF;;AAPA;EACE,cAAA;EACA,eAAA;EACA,iBAAA;EACA,yBAAA;AAUF;;AAPA;EACE,YAAA;AAUF;;AAPA;EACE,YAAA;AAUF;;AAPA;EACE,YAAA;AAUF;;AAPA;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,sBAAA;EACA,YAAA;EACA,kBAAA;EACA,mBAAA;EACA,wCAAA;EACA,kBAAA;AAUF;;AAPA;EACE,YAAA;AAUF;;AAPA;EACE,YAAA;AAUF;;AAPA;EACE,8BAAA;EACA,+BAAA;AAUF;;AAPA;EACE,cAAA;EACA,aAAA;EACA,eAAA;EACA,iBAAA;AAUF;;AAPA;EACE,YAAA;EACA,uBAAA;AAUF;;AAPA;EACE,yBAAA;EACA,wCAAA;EACA,gBAAA;EACA,kBAAA;EACA,4BAAA;EACA,2BA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","sourcesContent":["@charset \"UTF-8\";\n@import '../fonts/Montserrat.css';\n@import '../fonts/MontserratBold.css';\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block;\n}\n\nbody {\n  line-height: 1;\n}\n\nol, ul {\n  list-style: none;\n}\n\nblockquote, q {\n  quotes: none;\n}\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: \"\";\n  content: none;\n}\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\nbody {\n  font-family: \"Montserrat\", Arial, sans-serif;\n  box-sizing: border-box;\n  width: 100%;\n}\n\ndiv {\n  box-sizing: border-box;\n}\n\n.image {\n  width: 300px;\n  height: 300px;\n  background-size: cover;\n  background-image: url(\"../img/image.png\");\n}\n\n.pugg {\n  background-color: green;\n}\n\n.but {\n  width: 100px;\n  height: 30px;\n  background-color: red;\n  margin-left: 50px;\n}\n\n.but-color {\n  color: white;\n}\n\n.buttons {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 44px;\n  border-radius: 20px;\n}\n.buttons p {\n  font-size: 12px;\n  line-height: 14.63px;\n  text-transform: uppercase;\n}\n\n.buttons__defaultBg {\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n  border: none;\n  color: white;\n}\n\nbutton.buttons__defaultBg:hover {\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n  border: none;\n  opacity: 0.5;\n  color: white;\n}\n\n.buttons__defaultBorder {\n  border: 2px solid transparent;\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n  box-shadow: inset 0px 0px 0px 20px #fff;\n  border-radius: 20px;\n  color: #BC9CFF;\n}\n\nbutton.buttons__defaultBorder:hover {\n  border: 2px solid transparent;\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n  box-shadow: inset 0px 0px 0px 20px #fff;\n  border-radius: 20px;\n  opacity: 0.5;\n  color: #BC9CFF;\n}\n\n.buttons__width99 {\n  width: 99px;\n}\n\n.buttons__width320 {\n  width: 320px;\n}\n\n.displayNone {\n  display: none;\n}\n\n.button_text__width {\n  width: 270px;\n}\n\n.uiColorsTypeContainer {\n  position: relative;\n  display: flex;\n  justify-content: flex-start;\n  max-width: 1440px;\n  margin: 0 auto;\n  padding-left: 10.6%;\n  padding-top: 145px;\n  margin-bottom: 1000px;\n}\n.uiColorsTypeContainer .columnLeft, .uiColorsTypeContainer .columnRight {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n.uiColorsTypeContainer .columnLeft {\n  width: 280px;\n  margin-right: 415px;\n}\n.uiColorsTypeContainer .columnRight {\n  display: flex;\n}\n\n.uiColorsType__logo {\n  position: absolute;\n  z-index: 500;\n  width: 48px;\n  height: 48px;\n  left: 30px;\n  top: 30px;\n}\n\n.uiFormElements_Container {\n  display: flex;\n  padding-left: 140px;\n  padding-top: 140px;\n}\n.uiFormElements_Container .columnLeft {\n  display: block;\n  margin-right: 126px;\n}\n.uiFormElements_Container .columnRight {\n  display: block;\n  margin-left: 72px;\n}\n\n.uiFormElements_likeButton__wrap {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  width: 90px;\n}\n\n.uiFormElements_btn__wrap {\n  display: flex;\n  justify-content: space-between;\n}\n\n.uiFormElements_footer {\n  display: flex;\n  padding-left: 140px;\n  padding-bottom: 131px;\n}\n.uiFormElements_footer .columnLeft {\n  display: block;\n  margin-right: 167px;\n}\n.uiFormElements_footer .columnRight {\n  display: block;\n}\n\n.mb5 {\n  width: 320px;\n  height: 5px;\n}\n\n.mb10 {\n  margin-bottom: 10px;\n}\n\n.mb16 {\n  margin-bottom: 16px;\n}\n\n.mb20 {\n  width: 320px;\n  height: 20px;\n}\n\n.mb30 {\n  height: 30px;\n}\n\n.mb36 {\n  margin-bottom: 36px;\n}\n\n.mb40 {\n  width: 320px;\n  height: 40px;\n}\n\n.mb100 {\n  width: 320px;\n  height: 100px;\n}\n\n.mb196 {\n  width: 320px;\n  height: 196px;\n}\n\n.mb230 {\n  width: 320px;\n  height: 230px;\n}\n\n.w152 {\n  width: 152px;\n}\n\n.w220 {\n  width: 220px;\n}\n\n/*.ui-color-wrap {\n    display: flex;\n    justify-content: space-between;\n}*/\n.ui-color-block-wrap {\n  display: flex;\n  justify-content: start;\n}\n\n.ui-color-block-mb {\n  margin-bottom: 20px;\n}\n\n.ui-color-square {\n  width: 70px;\n  height: 70px;\n  margin-right: 40px;\n  border-radius: 6px;\n}\n\n.Primary-Color {\n  background-color: #BC9CFF;\n}\n\n.Secondary-color {\n  background-color: #6FCF97;\n}\n\n.Dark-color {\n  background-color: #1F2041;\n}\n\n.Dark-color75 {\n  background-color: #1F2041;\n  opacity: 0.75;\n}\n\n.Dark-color50 {\n  background-color: #1F2041;\n  opacity: 0.5;\n}\n\n.Dark-color25 {\n  background-color: #1F2041;\n  opacity: 0.25;\n}\n\n.Dark-color5 {\n  background-color: #1F2041;\n  opacity: 0.05;\n}\n\n.ui-colot-text {\n  width: 170px;\n}\n\n.uiColorBlock-textName-style, .uiColorBlock-textValue-style {\n  width: 180px;\n  font-size: 19px;\n  line-height: 38px;\n  color: #1F2041;\n  font-family: \"MontserratBold\", Arial, sans-serif;\n}\n\n.uiColorBlock-textValue-style {\n  line-height: 20px;\n  font-family: \"Montserrat\", Arial, sans-serif;\n}\n\n.ui-text-block-wrap {\n  display: flex;\n  justify-content: space-between;\n  width: 430px;\n}\n\n.ui-text-block-mb {\n  height: auto;\n  margin-bottom: 50px;\n}\n\n.ui-text__tag_wrap {\n  width: 37px;\n  margin-right: 30px;\n}\n\n.ui-text__text_wrap {\n  width: 370px;\n}\n\n/*Style for tags*/\n.ui-text__tagh1_style, .ui-text__tagh2_style, .ui-text__tagh3_style, .ui-text__taghBody_style {\n  color: #1F2041;\n  opacity: 0.25;\n  width: 37px;\n  text-align: right;\n}\n\n.ui-text__tagh1_style {\n  line-height: 29px;\n  font-size: 24px;\n  text-transform: uppercase;\n}\n\n.ui-text__tagh2_style {\n  line-height: 23px;\n  font-size: 19px;\n  text-transform: uppercase;\n}\n\n.ui-text__tagh3_style {\n  text-transform: uppercase;\n  line-height: 14px;\n  font-size: 12px;\n}\n\n.ui-text__taghBody_style {\n  line-height: 24px;\n  font-size: 14px;\n}\n\n/*Style for text*/\n.ui-text__tagh1text_style, .ui-text__tagh2text_style, .ui-text__tagh3text_style, .ui-text__taghBodytext_style {\n  color: #1F2041;\n}\n\n.ui-text__tagh1text_style {\n  font-family: \"MontserratBold\", Arial, sans-serif;\n  line-height: 29px;\n  font-size: 24px;\n}\n\n.ui-text__tagh2text_style {\n  font-family: \"MontserratBold\", Arial, sans-serif;\n  line-height: 23px;\n  font-size: 19px;\n}\n\n.ui-text__tagh3text_style {\n  font-family: \"MontserratBold\", Arial, sans-serif;\n  text-transform: uppercase;\n  line-height: 18px;\n  font-size: 12px;\n}\n\n.ui-text__taghBodytext_style {\n  line-height: 23px;\n  font-size: 14px;\n  opacity: 0.75;\n}\n\n.logoStyles {\n  position: absolute;\n  z-index: 500;\n  width: 48px;\n  height: 48px;\n  left: 30px;\n  top: 30px;\n}\n\n.textField {\n  box-sizing: border-box;\n  width: 320px;\n  height: 44px;\n  padding-left: 15px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n  outline: none;\n}\n\n::placeholder {\n  font-size: 14px;\n  color: #1F2041;\n  opacity: 0.25;\n}\n\n.textField:hover::-webkit-input-placeholder {\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.textField:focus::-webkit-input-placeholder {\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.textField:hover {\n  border: 1px solid rgba(31, 32, 65, 0.5);\n  outline: none;\n}\n\n.textField:focus {\n  border: 1px solid rgba(31, 32, 65, 0.5);\n  background-color: white;\n  outline: none;\n}\n\n.inputDropdownTitleWrap {\n  display: flex;\n  justify-content: space-between;\n}\n\n.inputDropdownTitle, .inputDropdownTitleDefault {\n  width: auto;\n}\n.inputDropdownTitle p, .inputDropdownTitleDefault p {\n  color: #1F2041;\n  font-size: 12px;\n  line-height: 14px;\n  text-transform: uppercase;\n}\n\n.inputDropdownTitleDefault p {\n  opacity: 0.5;\n}\n\n.width320 {\n  width: 320px;\n}\n\n.width292 {\n  width: 292px;\n}\n\n.dropdownSum__Wrap {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  box-sizing: border-box;\n  height: 44px;\n  padding-left: 15px;\n  padding-right: 10px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n}\n\n.dropdownSum__Width320 {\n  width: 320px;\n}\n\n.dropdownSum__Width266 {\n  width: 266px;\n}\n\n.borderRadiusBottomNone {\n  border-bottom-left-radius: 0px;\n  border-bottom-right-radius: 0px;\n}\n\n.dropdownSum_Text {\n  color: #1F2041;\n  opacity: 0.75;\n  font-size: 14px;\n  line-height: 24px;\n}\n\n.dropdownSum_Btn {\n  border: none;\n  background-color: white;\n}\n\n.dropdownSum_Context {\n  padding: 7px 7px 8px 15px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-top: none;\n  border-radius: 4px;\n  border-top-right-radius: 0px;\n  border-top-left-radius: 0px;\n}\n\n.displayNone {\n  display: none;\n}\n\n.RedVVV {\n  background-color: red;\n}\n\n.dropdownSum_ContexWrap {\n  display: flex;\n  align-items: center;\n  height: 30px;\n  margin-bottom: 7px;\n}\n.dropdownSum_ContexWrap .title {\n  /*width: 206px;*/\n  color: #1F2041;\n  font-size: 12px;\n  text-transform: uppercase;\n}\n.dropdownSum_ContexWrap .title__width206 {\n  width: 206px;\n}\n.dropdownSum_ContexWrap .title__width152 {\n  width: 152px;\n}\n.dropdownSum_ContexWrap .BtnMinus, .dropdownSum_ContexWrap .BtnPlus {\n  text-align: center;\n  padding-top: 5px;\n  width: 30px;\n  height: 30px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 50%;\n}\n.dropdownSum_ContexWrap .Result {\n  margin-right: 8px;\n  font-size: 12px;\n  color: #1F2041;\n  text-transform: uppercase;\n}\n.dropdownSum_ContexWrap .BtnMinus {\n  margin-right: 8px;\n}\n\n.dropdownSum_ContextWrap__mb0 {\n  margin-bottom: 0px;\n}\n\n.dropdownSum_Btn__Wrap {\n  display: flex;\n  justify-content: space-between;\n  margin-top: 20px;\n  padding-bottom: 13px;\n}\n.dropdownSum_Btn__Wrap button {\n  padding: 0;\n  color: #BC9CFF;\n  text-transform: uppercase;\n  font-size: 15px;\n  background-color: white;\n  border: none;\n}\n\n.dropdownSum_BtnClear__opasity0 {\n  opacity: 0;\n}\n\n.dropdownCheckbox__Wrap {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  width: 266px;\n  height: 44px;\n}\n.dropdownCheckbox__Wrap .title {\n  color: #1F2041;\n  font-size: 12px;\n  text-transform: uppercase;\n}\n\n.dropdownCheckbox_btn {\n  height: 44px;\n  border: none;\n  background-color: white;\n}\n\n.dropdownCheckbox_input__wrap {\n  position: relative;\n  width: 266px;\n  height: 20px;\n  margin-bottom: 10px;\n  vertical-align: top;\n}\n\ninput {\n  margin-right: 10px;\n}\n\nlabel {\n  position: absolute;\n  max-width: 192px;\n  top: 2px;\n  font-size: 14px;\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.dropdownCheckbox_input__custom {\n  position: absolute;\n  z-index: -1;\n  opacity: 0;\n}\n\n.dropdownCheckbox_input__custom + label {\n  display: inline-flex;\n  align-items: center;\n  user-select: none;\n}\n\n.dropdownCheckbox_input__custom + label::before {\n  content: \"\";\n  display: inline-block;\n  width: 20px;\n  height: 20px;\n  flex-shrink: 0;\n  flex-grow: 0;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n  margin-right: 9.74px;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: 50% 50%;\n}\n\n.dropdownCheckbox_input__custom:checked + label::before {\n  border-color: #BC9CFF;\n  background-image: url(\"../block/libs/dropdownCheckbox/checkboxArrow.svg\");\n}\n\n.radioButtons__wrap {\n  position: relative;\n  display: flex;\n  height: 27px;\n}\n\n.radioClass1 {\n  width: 98px;\n}\n.radioClass1 label {\n  font-size: 14px;\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.custom-radio > input {\n  position: absolute;\n  z-index: -1;\n  opacity: 0;\n}\n\n.custom-radio > span {\n  display: inline-flex;\n  align-items: center;\n  user-select: none;\n}\n\n.custom-radio > span::before {\n  content: \"\";\n  margin-top: 5px;\n  display: inline-block;\n  width: 20px;\n  height: 20px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 50%;\n  margin-right: 9.74px;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: 50% 50%;\n}\n\n/* стили при наведении курсора на радио */\n.custom-radio > input:not(:disabled):not(:checked) + span:hover::before {\n  border-color: #b3d7ff;\n}\n\n/* стили для радиокнопки, находящейся в состоянии checked */\n.custom-radio > input:checked + span::before {\n  border-color: #BC9CFF;\n  background-color: white;\n  background-image: url(../block/libs/radioButtons/radioBtn.png);\n}\n\n.toggleButtons__wrap {\n  display: flex;\n  align-items: center;\n}\n\n.toggleButtons_container {\n  width: 40px;\n  height: 20px;\n  border-radius: 10px;\n  margin-right: 10px;\n}\n\n.toggleButtons_containerIncluded__padding {\n  padding-top: 3px;\n  padding-left: 24px;\n}\n\n.toggleButtons_container__colorPrimary {\n  border: 1px solid #BC9CFF;\n}\n\n.toggleButtons_container__colorDark {\n  border: 1px solid rgba(31, 32, 65, 0.25);\n}\n\n.toggleButtons_toggle {\n  width: 12px;\n  height: 12px;\n  border-radius: 50%;\n}\n\n.toggleButtons_toggle__colorPrimary {\n  /*background-color: $primary-color;*/\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n}\n\n.toggleButtons_text {\n  font-size: 14px;\n  color: #1F2041;\n  opacity: 0.75;\n}\n\n.toggleButtons_containerDisabled__padding {\n  padding-top: 3px;\n  padding-left: 3px;\n}\n\n.toggleButtons_toggle__colorDark {\n  background-color: #1F2041;\n  opacity: 0.25;\n}\n\n.toggleButtons__displayNoneOn {\n  display: none;\n}\n\n.toggleButtons__displayNoneOff {\n  display: none;\n}\n\n.likeButton_container {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-right: 4px;\n  padding-left: 4px;\n  width: 40px;\n  height: 20px;\n  border-radius: 10px;\n}\n\n.likeButton_border__colorGrey {\n  border: 1px solid rgba(31, 32, 65, 0.25);\n}\n\n.likeButton_border__colorPrimary {\n  border: 1px solid #BC9CFF;\n}\n\n.likeButton_img__primary {\n  width: 12px;\n  height: 12px;\n  background-image: url(\"../block/libs/likeButton/likePrimary.svg\");\n  background-size: 100%;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.likeButton_img__gray {\n  width: 12px;\n  height: 12px;\n  background-image: url(\"../block/libs/likeButton/likeGrey.svg\");\n  background-size: 100%;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.likeButton_sum {\n  font-size: 10px;\n  line-height: 12.19px;\n  color: #1F2041;\n  opacity: 0.25;\n}\n\n.rateButton__wrap {\n  display: flex;\n  justify-content: space-between;\n  width: 120px;\n  height: 24px;\n}\n\n.rateButton_star {\n  width: 24px;\n  height: 24px;\n  background-size: 100%;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.rateButton_star__blue {\n  background-image: url(\"../block/libs/rateButton/star.svg\");\n}\n\n.rateButton_star__wait {\n  background-image: url(\"../block/libs/rateButton/starBorder.svg\");\n}\n\n.buttonText__text {\n  font-size: 12px;\n  line-height: 14.63px;\n  text-transform: uppercase;\n}\n\n.buttonText__colorPrimary {\n  color: #BC9CFF;\n}\n\n.buttonText__colorDatrk {\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.buttonText__colorWhite {\n  color: white;\n}\n\n.but {\n  width: 100px;\n  height: 30px;\n  background-color: red;\n  margin-left: 50px;\n}\n\n.but-color {\n  color: white;\n}\n\n.buttons {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 44px;\n  border-radius: 20px;\n}\n.buttons p {\n  font-size: 12px;\n  line-height: 14.63px;\n  text-transform: uppercase;\n}\n\n.buttons__defaultBg {\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n  border: none;\n  color: white;\n}\n\nbutton.buttons__defaultBg:hover {\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n  border: none;\n  opacity: 0.5;\n  color: white;\n}\n\n.buttons__defaultBorder {\n  border: 2px solid transparent;\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n  box-shadow: inset 0px 0px 0px 20px #fff;\n  border-radius: 20px;\n  color: #BC9CFF;\n}\n\nbutton.buttons__defaultBorder:hover {\n  border: 2px solid transparent;\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n  box-shadow: inset 0px 0px 0px 20px #fff;\n  border-radius: 20px;\n  opacity: 0.5;\n  color: #BC9CFF;\n}\n\n.buttons__width99 {\n  width: 99px;\n}\n\n.buttons__width320 {\n  width: 320px;\n}\n\n.displayNone {\n  display: none;\n}\n\n.button_text__width {\n  width: 270px;\n}\n\n.Checkbox_input__wrap {\n  position: relative;\n  width: 266px;\n  height: 20px;\n  vertical-align: top;\n  margin-bottom: 5px;\n}\n\ninput {\n  margin-right: 10px;\n}\n\n.Checkbox_label {\n  font-weight: 900;\n  position: absolute;\n  max-width: 240px;\n  top: 2px;\n  font-size: 14px;\n  color: #1F2041;\n  opacity: 0.75;\n}\n\n.Checkbox_input__custom {\n  position: absolute;\n  z-index: -1;\n  opacity: 0;\n}\n\n.Checkbox_input__custom + label {\n  display: inline-flex;\n  align-items: center;\n  user-select: none;\n}\n\n.Checkbox_input__custom + label::before {\n  content: \"\";\n  display: inline-block;\n  width: 20px;\n  height: 20px;\n  flex-shrink: 0;\n  flex-grow: 0;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n  margin-right: 9.74px;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: 50% 50%;\n}\n\n.Checkbox_input__custom:checked + label::before {\n  border-color: #BC9CFF;\n  background-image: url(\"../block/libs/dropdownCheckbox/checkboxArrow.svg\");\n}\n\n.Checkbox_text {\n  max-width: 266px;\n  margin-bottom: 11px;\n  padding-left: 30px;\n  font-size: 12px;\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.advantages__wrap {\n  display: flex;\n  width: 280px;\n  height: 92px;\n  padding-top: 23px;\n  border-bottom: 1px solid rgba(31, 32, 65, 0.1);\n}\n\n.advantages_img {\n  width: 44px;\n  height: 44px;\n  margin-right: 10px;\n  background-size: 100%;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.advantages_img1 {\n  background-image: url(\"../block/libs/advantages/advantagesImg1.svg\");\n}\n\n.advantages_img2 {\n  background-image: url(\"../block/libs/advantages/advantagesImg2.svg\");\n}\n\n.advantages_text__title, .advantages_text__text {\n  font-size: 14px;\n  line-height: 24px;\n  color: #1F2041;\n  opacity: 0.75;\n}\n\n.advantages_text__title {\n  font-weight: 900;\n  margin-bottom: 2px;\n}\n\n.review__wrap {\n  display: flex;\n}\n\n.review_columnLeft {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-right: 10px;\n}\n\n.review_img {\n  width: 44px;\n  height: 44px;\n  margin-bottom: 12px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 50%;\n  background-size: 100%;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.review_img1 {\n  background-image: url(\"../block/libs/review/avatar1.jpg\");\n}\n\n.reviev_title, .review_amountDays, .review_text {\n  font-size: 14px;\n  line-height: 24px;\n  color: #1F2041;\n  opacity: 0.75;\n}\n\n.reviev_title {\n  font-weight: 900;\n}\n\n.review_amountDays {\n  display: flex;\n  margin-bottom: 12px;\n}\n\n.amountDays_count, .amountDays_text {\n  line-height: 18px;\n}\n\n.review_text {\n  max-width: 650px;\n  line-height: 20px;\n}\n\n.bulletList__wrap {\n  display: flex;\n  align-items: flex-start;\n  margin-bottom: 10px;\n}\n\n.bulletList_point {\n  width: 10px;\n  height: 10px;\n  margin-right: 10px;\n  margin-top: 8px;\n  border-radius: 50%;\n  background-color: #1F2041;\n  opacity: 0.25;\n}\n\n.bulletList_text {\n  max-width: 230px;\n}\n.bulletList_text p {\n  font-size: 14px;\n  line-height: 24px;\n  color: #1F2041;\n  opacity: 0.75;\n}\n\n.rangeSlider_text__wrap {\n  display: flex;\n  justify-content: space-between;\n  width: 266px;\n  margin-bottom: 20px;\n}\n\n.rangeSlider_title {\n  margin-right: 68px;\n  font-size: 12px;\n  color: #1F2041;\n  text-transform: uppercase;\n}\n\n.rangeSlider_value__wrap {\n  display: flex;\n}\n\n.rangeSlider_minValue, .rangeSlider_maxValue {\n  font-size: 12px;\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.rangeSlider_input__wrap {\n  display: flex;\n}\n\n.rangeSlider_min__wrap {\n  width: 133px;\n}\n\n.rangeSlider_max__wrap {\n  width: 133px;\n}\n\ninput.rangeSlider_min {\n  width: 100%;\n  --litters-range: 75%;\n  appearance: none;\n  outline: none;\n  height: 6px;\n  border-bottom-left-radius: 3px;\n  border-top-left-radius: 3px;\n  background: linear-gradient(to right, white var(--litters-range), #66D2EA var(--litters-range));\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-right: none;\n}\n\ninput.rangeSlider_max {\n  width: 100%;\n  --litters1-range: 75%;\n  appearance: none;\n  outline: none;\n  height: 6px;\n  border-bottom-right-radius: 3px;\n  border-top-right-radius: 3px;\n  /*background: linear-gradient( to right, #66D2EA let(--litters-range1), white let(--litters-range1));*/\n  background: linear-gradient(to right, #66D2EA var(--litters-range1), white var(--litters-range1));\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-left: none;\n}\n\n.rangeSlider_min__wrap input::-webkit-slider-thumb {\n  cursor: pointer;\n  appearance: none;\n  width: 18px;\n  height: 18px;\n  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);\n  border-radius: 50%;\n  border: 3px solid white;\n}\n\n.rangeSlider_max__wrap input::-webkit-slider-thumb {\n  cursor: pointer;\n  appearance: none;\n  width: 18px;\n  height: 18px;\n  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);\n  border-radius: 50%;\n  border: 3px solid white;\n}\n\n.pagination {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 290px;\n  height: 50px;\n  padding: 10px;\n}\n\n.pagination ui {\n  display: flex;\n}\n\n.pagination ui li {\n  display: flex;\n  text-align: center;\n  justify-content: center;\n  align-items: center;\n  width: 40px;\n  height: 40px;\n  list-style: none;\n  cursor: pointer;\n  transition: all 0.3s ease;\n  font-size: 12px;\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.pagination_li__active {\n  width: 40px;\n  height: 40px;\n  border-radius: 50%;\n  background: linear-gradient(#8BA4F9, #BC9CFF);\n  color: white;\n}\n\n#pagination_BtnMinus, #pagination_BtnPlus {\n  text-align: center;\n  justify-content: center;\n  align-items: center;\n  width: 40px;\n  height: 40px;\n  border-radius: 50%;\n  background-repeat: no-repeat;\n  background-position: center;\n  background-color: #6FCF97;\n  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);\n}\n\n#pagination_BtnMinus {\n  transform: rotate(180deg);\n}\n\n.displayNone {\n  display: none;\n}\n\n.displayFlex {\n  display: flex;\n}\n\n/*# sourceMappingURL=index.css.map */\n"],"sourceRoot":""}]);
+/*.calendar-wrapper {
+    width: 360px;
+    margin: 3em auto;
+    padding: 2em;
+    border: 1px solid #dcdcff;
+    border-radius: 5px;
+    background: #fff;
+  }
+  table {
+    clear: both;
+    width: 100%;
+    border: 1px solid #dcdcff;
+    border-radius: 3px;
+    border-collapse: collapse;
+    color: #444;
+  }
+  td {
+    height: 48px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #dcdcff;
+    border-top: 1px solid #dcdcff;
+    width: 14.28571429%;
+  }
+  thead td {
+    border: none;
+    color: #28283b;
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+  td.today {
+    font-weight: 700;
+    color: #28283b;
+    font-size: 1.5em;
+  }*/
+input {
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #1F2041;
+  opacity: 0.75;
+  /*width: 150px;*/
+  height: 44px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 0;
+  /*text-transform: uppercase;*/
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+
+::-webkit-calendar-picker-indicator {
+  width: 11px;
+  height: 11px;
+  margin-top: 2px;
+  color: transparent;
+  opacity: 1;
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_10___});
+  background-size: contain;
+}
+
+.arrow-smile {
+  color: green;
+}
+
+`, "",{"version":3,"sources":["webpack://./src/styles/index.css"],"names":[],"mappings":"AAAA,gBAAgB;AAGhB;;;;;;;;;;;;;EAaE,SAAA;EACA,UAAA;EACA,SAAA;EACA,eAAA;EACA,aAAA;EACA,wBAAA;AACF;;AAEA,gDAAA;AACA;;EAEE,cAAA;AACF;;AAEA;EACE,cAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;;EAEE,WAAA;EACA,aAAA;AACF;;AAEA;EACE,yBAAA;EACA,iBAAA;AACF;;AAEA;EACE,4CAAA;EACA,sBAAA;EACA,WAAA;AACF;;AAEA;EACE,sBAAA;AACF;;AAEA;EACE,YAAA;EACA,aAAA;EACA,sBAAA;EACA,yDAAA;AACF;;AAEA;EACE,uBAAA;AACF;;AAEA;EACE,YAAA;EACA,YAAA;EACA,qBAAA;EACA,iBAAA;AACF;;AAEA;EACE,YAAA;AACF;;AAEA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,mBAAA;AACF;;AACA;EACE,eAAA;EACA,oBAAA;EACA,yBAAA;AAEF;;AACA;EACE,6CAAA;EACA,YAAA;EACA,YAAA;AAEF;;AACA;EACE,6CAAA;EACA,YAAA;EACA,YAAA;EACA,YAAA;AAEF;;AACA;EACE,6BAAA;EACA,6CAAA;EACA,uCAAA;EACA,mBAAA;EACA,cAAA;AAEF;;AACA;EACE,6BAAA;EACA,6CAAA;EACA,uCAAA;EACA,mBAAA;EACA,YAAA;EACA,cAAA;AAEF;;AACA;EACE,WAAA;AAEF;;AACA;EACE,YAAA;AAEF;;AACA;EACE,aAAA;AAEF;;AACA;EACE,YAAA;AAEF;;AACA;EACE,kBAAA;EACA,aAAA;EACA,2BAAA;EACA,iBAAA;EACA,cAAA;EACA,mBAAA;EACA,kBAAA;EACA,qBAAA;AAEF;;AAAA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;AAGF;;AADA;EACE,YAAA;EACA,mBAAA;AAIF;;AAFA;EACE,aAAA;AAKF;;AAFA;EACE,kBAAA;EACA,YAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;EACA,SAAA;AAKF;;AAFA;EACE,aAAA;EACA,mBAAA;EACA,kBAAA;AAKF;;AAHA;EACE,cAAA;EACA,YAAA;EACA,mBAAA;AAMF;;AAJA;EACE,YAAA;AAOF;;AALA;EACE,cAAA;EACA,YAAA;EACA,iBAAA;AAQF;;AALA;EACE,sBAAA;EACA,aAAA;EACA,8BAAA;EACA,YAAA;EACA,YAAA;AAQF;;AALA;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,WAAA;AAQF;;AALA;EACE,aAAA;EACA,8BAAA;AAQF;;AALA;EACE,qBAAA;EACA,aAAA;EACA,mBAAA;EACA,qBAAA;AAQF;;AANA;EACE,cAAA;EACA,mBAAA;AASF;;AAPA;EACE,cAAA;AAUF;;AAPA;EACE,kBAAA;AAUF;;AAPA;EACE,mBAAA;AAUF;;AAPA;EACE,mBAAA;AAUF;;AAPA;EACE,qBAAA;AAUF;;AAPA;EACE,YAAA;AAUF;;AAPA;EACE,mBAAA;AAUF;;AAPA;EACE,mBAAA;AAUF;;AAPA;EACE,mBAAA;AAUF;;AAPA;EACE,mBAAA;AAUF;;AAPA;EACE,oBAAA;AAUF;;AAPA;EACE,oBAAA;AAUF;;AAPA;EACE,oBAAA;AAUF;;AAPA;EACE,iBAAA;AAUF;;AAPA;EACE,iBAAA;AAUF;;AAPA;EACE,YAAA;AAUF;;AAPA;EACE,YAAA;AAUF;;AAPA;EACE,YAAA;AAUF;;AAPA;EACE,YAAA;AAUF;;AAPA;;;EAAA;AAIA;EACE,aAAA;EACA,sBAAA;AAUF;;AAPA;EACE,mBAAA;AAUF;;AAPA;EACE,WAAA;EACA,YAAA;EACA,kBAAA;EACA,kBAAA;AAUF;;AAPA;EACE,yBAAA;AAUF;;AAPA;EACE,yBAAA;AAUF;;AAPA;EACE,yBAAA;AAUF;;AAPA;EACE,yBAAA;EACA,aAAA;AAUF;;AAPA;EACE,yBAAA;EACA,YAAA;AAUF;;AAPA;EACE,yBAAA;EACA,aAAA;AAUF;;AAPA;EACE,yBAAA;EACA,aAAA;AAUF;;AAPA;EACE,YAAA;AAUF;;AAPA;EACE,YAAA;EACA,eAAA;EACA,iBAAA;EACA,cAAA;EACA,gDAAA;AAUF;;AAPA;EACE,iBAAA;EACA,4CAAA;AAUF;;AAPA;EACE,aAAA;EACA,8BAAA;EACA,YAAA;AAUF;;AAPA;EACE,YAAA;EACA,mBAAA;AAUF;;AAPA;EACE,WAAA;EACA,kBAAA;AAUF;;AAPA;EACE,YAAA;AAUF;;AAPA,iBAAA;AACA;EACE,cAAA;EACA,aAAA;EACA,WAAA;EACA,iBAAA;AAUF;;AAPA;EACE,iBAAA;EACA,eAAA;EACA,yBAAA;AAUF;;AAPA;EACE,iBAAA;EACA,eAAA;EACA,yBAAA;AAUF;;AAPA;EACE,yBAAA;EACA,iBAAA;EACA,eAAA;AAUF;;AAPA;EACE,iBAAA;EACA,eAAA;AAUF;;AAPA,iBAAA;AACA;EACE,cAAA;AAUF;;AAPA;EACE,gDAAA;EACA,iBAAA;EACA,eAAA;AAUF;;AAPA;EACE,gDAAA;EACA,iBAAA;EACA,eAAA;AAUF;;AAPA;EACE,gDAAA;EACA,yBAAA;EACA,iBAAA;EACA,eAAA;AAUF;;AAPA;EACE,iBAAA;EACA,eAAA;EACA,aAAA;AAUF;;AAPA;EACE,kBAAA;EACA,YAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;EACA,SAAA;AAUF;;AAPA;EACE,sBAAA;EACA,YAAA;EACA,YAAA;EACA,kBAAA;EACA,wCAAA;EACA,kBAAA;EACA,aAAA;AAUF;;AAPA;EACE,eAAA;EACA,cAAA;EACA,aAAA;AAUF;;AAPA;EACE,cAAA;EACA,YAAA;AAUF;;AAPA;EACE,cAAA;EACA,YAAA;AAUF;;AAPA;EACE,uCAAA;EACA,aAAA;AAUF;;AAPA;EACE,uCAAA;EACA,uBAAA;EACA,aAAA;AAUF;;AAPA;EACE,YAAA;AAUF;;AAPA;EACE,YAAA;AAUF;;AAPA;EACE,aAAA;EACA,8BAAA;AAUF;;AAPA;EACE,WAAA;AAUF;;AARA;EACE,cAAA;EACA,eAAA;EACA,yBAAA;EACA,iBAAA;AAWF;;AARA;EACE,YAAA;AAWF;;AARA;EACE,YAAA;AAWF;;AARA;EACE,YAAA;AAWF;;AARA;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,sBAAA;EACA,YAAA;EACA,kBAAA;EACA,mBAAA;EACA,wCAAA;EACA,kBAAA;AAWF;;AARA;EACE,YAAA;AAWF;;AARA;EACE,YAAA;AAWF;;AARA;EACE,8BAAA;EACA,+BAAA;AAWF;;AARA;EACE,YAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;EACA,cAAA;EACA,aAAA;EACA,eAAA;EACA,iBAAA;AAWF;;AARA;EACE,YAAA;EACA,uBAAA;AAWF;;AARA;EACE,sBAAA;EACA,yBAAA;EACA,wCAAA;EACA,gBAAA;EACA,kBAAA;EACA,4BAAA;EACA,2BAAA;EACA,8CAAA;AAWF;;AARA;EACE,aAAA;AAWF;;AARA;EACE,qBAAA;AAWF;;AARA;EACE,aAAA;EACA,mBAAA;EACA,YAAA;EACA,kBAAA;AAWF;;AATA;EACE,gBAAA;EACA,cAAA;EACA,eAAA;EACA,yBAAA;AAYF;;AAVA;EACE,YAAA;AAaF;;AAXA;EACE,YAAA;AAcF;;AAZA;EACE,kBAAA;EACA,gBAAA;EACA,WAAA;EACA,YAAA;EACA,wCAAA;EACA,kBAAA;AAeF;;AAbA;EACE,iBAAA;EACA,eAAA;EACA,cAAA;EACA,yBAAA;AAgBF;;AAdA;EACE,iBAAA;AAiBF;;AAdA;EACE,kBAAA;AAiBF;;AAdA;EACE,aAAA;EACA,8BAAA;EACA,gBAAA;EACA,mBAAA;AAiBF;;AAfA;EACE,UAAA;EACA,cAAA;EACA,yBAAA;EACA,eAAA;EACA,uBAAA;EACA,YAAA;AAkBF;;AAfA;EACE,UAAA;AAkBF;;AAfA;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,YAAA;EACA,YAAA;AAkBF;;AAhBA;EACE,cAAA;EACA,eAAA;EACA,yBAAA;AAmBF;;AAhBA;EACE,YAAA;EACA,YAAA;EACA,uBAAA;AAmBF;;AAhBA;EACE,kBAAA;EACA,YAAA;EACA,YAAA;EACA,mBAAA;EACA,mBAAA;AAmBF;;AAhBA;EACE,kBAAA;AAmBF;;AAhBA;EACE,kBAAA;EACA,gBAAA;EACA,QAAA;EACA,eAAA;EACA,cAAA;EACA,qBAAA;EACA,YAAA;AAmBF;;AAhBA;EACE,kBAAA;EACA,WAAA;EACA,UAAA;AAmBF;;AAhBA;EACE,oBAAA;EACA,mBAAA;EACA,iBAAA;AAmBF;;AAhBA;EACE,WAAA;EACA,qBAAA;EACA,WAAA;EACA,YAAA;EACA,cAAA;EACA,YAAA;EACA,wCAAA;EACA,kBAAA;EACA,oBAAA;EACA,4BAAA;EACA,kCAAA;EACA,wBAAA;AAmBF;;AAhBA;EACE,qBAAA;EACA,UAAA;EACA,yDAAA;AAmBF;;AAhBA;EACE,kBAAA;EACA,aAAA;EACA,YAAA;AAmBF;;AAhBA;EACE,WAAA;AAmBF;;AAjBA;EACE,eAAA;EACA,cAAA;EACA,YAAA;AAoBF;;AAjBA;EACE,kBAAA;EACA,WAAA;EACA,UAAA;AAoBF;;AAjBA;EACE,oBAAA;EACA,mBAAA;EACA,iBAAA;AAoBF;;AAjBA;EACE,WAAA;EACA,eAAA;EACA,qBAAA;EACA,WAAA;EACA,YAAA;EACA,wCAAA;EACA,kBAAA;EACA,oBAAA;EACA,4BAAA;EACA,kCAAA;EACA,wBAAA;AAoBF;;AAjBA,yCAAA;AACA;EACE,qBAAA;AAoBF;;AAjBA,2DAAA;AACA;EACE,qBAAA;EACA,uBAAA;EACA,yDAAA;AAoBF;;AAjBA;EACE,aAAA;EACA,mBAAA;AAoBF;;AAjBA;EACE,WAAA;EACA,YAAA;EACA,mBAAA;EACA,kBAAA;AAoBF;;AAjBA;EACE,gBAAA;EACA,kBAAA;AAoBF;;AAjBA;EACE,yBAAA;AAoBF;;AAjBA;EACE,wCAAA;AAoBF;;AAjBA;EACE,WAAA;EACA,YAAA;EACA,kBAAA;AAoBF;;AAjBA;EACE,oCAAA;EACA,6CAAA;AAoBF;;AAjBA;EACE,eAAA;EACA,cAAA;EACA,aAAA;AAoBF;;AAjBA;EACE,gBAAA;EACA,iBAAA;AAoBF;;AAjBA;EACE,yBAAA;EACA,aAAA;AAoBF;;AAjBA;EACE,aAAA;AAoBF;;AAjBA;EACE,aAAA;AAoBF;;AAjBA;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,kBAAA;EACA,iBAAA;EACA,WAAA;EACA,YAAA;EACA,mBAAA;AAoBF;;AAjBA;EACE,wCAAA;AAoBF;;AAjBA;EACE,yBAAA;AAoBF;;AAjBA;EACE,WAAA;EACA,YAAA;EACA,yDAAA;EACA,qBAAA;EACA,4BAAA;EACA,2BAAA;AAoBF;;AAjBA;EACE,WAAA;EACA,YAAA;EACA,yDAAA;EACA,qBAAA;EACA,4BAAA;EACA,2BAAA;AAoBF;;AAjBA;EACE,eAAA;EACA,oBAAA;EACA,cAAA;EACA,aAAA;AAoBF;;AAjBA;EACE,aAAA;EACA,8BAAA;EACA,YAAA;EACA,YAAA;AAoBF;;AAjBA;EACE,WAAA;EACA,YAAA;EACA,qBAAA;EACA,4BAAA;EACA,2BAAA;AAoBF;;AAjBA;EACE,yDAAA;AAoBF;;AAjBA;EACE,yDAAA;AAoBF;;AAjBA;EACE,eAAA;EACA,oBAAA;EACA,yBAAA;AAoBF;;AAjBA;EACE,cAAA;AAoBF;;AAjBA;EACE,cAAA;EACA,YAAA;AAoBF;;AAjBA;EACE,YAAA;AAoBF;;AAjBA;EACE,YAAA;EACA,YAAA;EACA,qBAAA;EACA,iBAAA;AAoBF;;AAjBA;EACE,YAAA;AAoBF;;AAjBA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,mBAAA;AAoBF;;AAlBA;EACE,eAAA;EACA,oBAAA;EACA,yBAAA;AAqBF;;AAlBA;EACE,6CAAA;EACA,YAAA;EACA,YAAA;AAqBF;;AAlBA;EACE,6CAAA;EACA,YAAA;EACA,YAAA;EACA,YAAA;AAqBF;;AAlBA;EACE,6BAAA;EACA,6CAAA;EACA,uCAAA;EACA,mBAAA;EACA,cAAA;AAqBF;;AAlBA;EACE,6BAAA;EACA,6CAAA;EACA,uCAAA;EACA,mBAAA;EACA,YAAA;EACA,cAAA;AAqBF;;AAlBA;EACE,WAAA;AAqBF;;AAlBA;EACE,YAAA;AAqBF;;AAlBA;EACE,aAAA;AAqBF;;AAlBA;EACE,YAAA;AAqBF;;AAlBA;EACE,kBAAA;EACA,YAAA;EACA,YAAA;EACA,mBAAA;EACA,kBAAA;AAqBF;;AAlBA;EACE,kBAAA;AAqBF;;AAlBA;EACE,gBAAA;EACA,kBAAA;EACA,YAAA;EACA,QAAA;EACA,eAAA;EACA,cAAA;EACA,aAAA;EACA,qBAAA;AAqBF;;AAlBA;EACE,kBAAA;EACA,gBAAA;EACA,QAAA;EACA,eAAA;EACA,cAAA;EACA,iBAAA;EACA,YAAA;EACA,qBAAA;AAqBF;;AAlBA;EACE,kBAAA;EACA,WAAA;EACA,UAAA;AAqBF;;AAlBA;EACE,oBAAA;EACA,mBAAA;EACA,iBAAA;AAqBF;;AAlBA;EACE,WAAA;EACA,qBAAA;EACA,sBAAA;EACA,WAAA;EACA,YAAA;EACA,cAAA;EACA,YAAA;EACA,wCAAA;EACA,kBAAA;EACA,oBAAA;EACA,4BAAA;EACA,kCAAA;EACA,wBAAA;AAqBF;;AAlBA;EACE,qBAAA;EACA,UAAA;EACA,yDAAA;AAqBF;;AAlBA;EACE,gBAAA;EACA,mBAAA;EACA,kBAAA;EACA,eAAA;EACA,cAAA;EACA,YAAA;AAqBF;;AAlBA;EACE,aAAA;EACA,YAAA;EACA,YAAA;EACA,iBAAA;EACA,8CAAA;AAqBF;;AAlBA;EACE,WAAA;EACA,YAAA;EACA,kBAAA;EACA,qBAAA;EACA,4BAAA;EACA,2BAAA;AAqBF;;AAlBA;EACE,yDAAA;AAqBF;;AAlBA;EACE,yDAAA;AAqBF;;AAlBA;EACE,eAAA;EACA,iBAAA;EACA,cAAA;EACA,aAAA;AAqBF;;AAlBA;EACE,gBAAA;EACA,kBAAA;AAqBF;;AAlBA;EACE,aAAA;AAqBF;;AAlBA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;AAqBF;;AAlBA;EACE,WAAA;EACA,YAAA;EACA,mBAAA;EACA,wCAAA;EACA,kBAAA;EACA,qBAAA;EACA,4BAAA;EACA,2BAAA;AAqBF;;AAlBA;EACE,yDAAA;AAqBF;;AAlBA;EACE,eAAA;EACA,iBAAA;EACA,cAAA;EACA,aAAA;AAqBF;;AAlBA;EACE,gBAAA;AAqBF;;AAlBA;EACE,aAAA;EACA,mBAAA;AAqBF;;AAlBA;EACE,iBAAA;AAqBF;;AAlBA;EACE,gBAAA;EACA,iBAAA;AAqBF;;AAlBA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AAqBF;;AAlBA;EACE,WAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,kBAAA;EACA,yBAAA;EACA,aAAA;AAqBF;;AAlBA;EACE,gBAAA;AAqBF;;AAnBA;EACE,eAAA;EACA,iBAAA;EACA,cAAA;EACA,aAAA;AAsBF;;AAnBA;EACE,aAAA;EACA,8BAAA;EACA,YAAA;EACA,mBAAA;AAsBF;;AAnBA;EACE,kBAAA;EACA,eAAA;EACA,cAAA;EACA,yBAAA;AAsBF;;AAnBA;EACE,aAAA;AAsBF;;AAnBA;EACE,eAAA;EACA,cAAA;EACA,YAAA;AAsBF;;AAnBA;EACE,aAAA;AAsBF;;AAnBA;EACE,YAAA;AAsBF;;AAnBA;EACE,YAAA;AAsBF;;AAnBA;EACE,WAAA;EACA,oBAAA;EACA,gBAAA;EACA,aAAA;EACA,WAAA;EACA,8BAAA;EACA,2BAAA;EACA,+FAAA;EACA,wCAAA;EACA,kBAAA;AAsBF;;AAnBA;EACE,WAAA;EACA,qBAAA;EACA,gBAAA;EACA,aAAA;EACA,WAAA;EACA,+BAAA;EACA,4BAAA;EACA,sGAAA;EACA,iGAAA;EACA,wCAAA;EACA,iBAAA;AAsBF;;AAnBA;EACE,eAAA;EACA,gBAAA;EACA,WAAA;EACA,YAAA;EACA,6DAAA;EACA,kBAAA;EACA,uBAAA;AAsBF;;AAnBA;EACE,eAAA;EACA,gBAAA;EACA,WAAA;EACA,YAAA;EACA,6DAAA;EACA,kBAAA;EACA,uBAAA;AAsBF;;AAnBA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,YAAA;EACA,YAAA;EACA,aAAA;AAsBF;;AAnBA;EACE,aAAA;AAsBF;;AAnBA;EACE,aAAA;EACA,kBAAA;EACA,uBAAA;EACA,mBAAA;EACA,WAAA;EACA,YAAA;EACA,gBAAA;EACA,eAAA;EACA,yBAAA;EACA,eAAA;EACA,cAAA;EACA,YAAA;AAsBF;;AAnBA;EACE,WAAA;EACA,YAAA;EACA,kBAAA;EACA,6CAAA;EACA,YAAA;AAsBF;;AAnBA;EACE,kBAAA;EACA,uBAAA;EACA,mBAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;EACA,4BAAA;EACA,2BAAA;EACA,yBAAA;EACA,6DAAA;AAsBF;;AAnBA;EACE,yBAAA;AAsBF;;AAnBA;EACE,aAAA;AAsBF;;AAnBA;EACE,aAAA;AAsBF;;AAnBA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAAA;AAmCA;EACE,sBAAA;EACA,eAAA;EACA,cAAA;EACA,aAAA;EACA,gBAAA;EACA,YAAA;EACA,kBAAA;EACA,mBAAA;EACA,eAAA;EACA,6BAAA;EACA,wCAAA;EACA,kBAAA;AAsBF;;AAnBA;EACE,WAAA;EACA,YAAA;EACA,eAAA;EACA,kBAAA;EACA,UAAA;EACA,0DAAA;EACA,wBAAA;AAsBF;;AAnBA;EACE,YAAA;AAsBF","sourcesContent":["@charset \"UTF-8\";\n@import '../fonts/Montserrat.css';\n@import '../fonts/MontserratBold.css';\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block;\n}\n\nbody {\n  line-height: 1;\n}\n\nol, ul {\n  list-style: none;\n}\n\nblockquote, q {\n  quotes: none;\n}\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: \"\";\n  content: none;\n}\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\nbody {\n  font-family: \"Montserrat\", Arial, sans-serif;\n  box-sizing: border-box;\n  width: 100%;\n}\n\ndiv {\n  box-sizing: border-box;\n}\n\n.image {\n  width: 300px;\n  height: 300px;\n  background-size: cover;\n  background-image: url(\"../img/image.png\");\n}\n\n.pugg {\n  background-color: green;\n}\n\n.but {\n  width: 100px;\n  height: 30px;\n  background-color: red;\n  margin-left: 50px;\n}\n\n.but-color {\n  color: white;\n}\n\n.buttons {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 44px;\n  border-radius: 20px;\n}\n.buttons p {\n  font-size: 12px;\n  line-height: 14.63px;\n  text-transform: uppercase;\n}\n\n.buttons__defaultBg {\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n  border: none;\n  color: white;\n}\n\nbutton.buttons__defaultBg:hover {\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n  border: none;\n  opacity: 0.5;\n  color: white;\n}\n\n.buttons__defaultBorder {\n  border: 2px solid transparent;\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n  box-shadow: inset 0px 0px 0px 20px #fff;\n  border-radius: 20px;\n  color: #BC9CFF;\n}\n\nbutton.buttons__defaultBorder:hover {\n  border: 2px solid transparent;\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n  box-shadow: inset 0px 0px 0px 20px #fff;\n  border-radius: 20px;\n  opacity: 0.5;\n  color: #BC9CFF;\n}\n\n.buttons__width99 {\n  width: 99px;\n}\n\n.buttons__width320 {\n  width: 320px;\n}\n\n.displayNone {\n  display: none;\n}\n\n.button_text__width {\n  width: 270px;\n}\n\n.uiColorsTypeContainer {\n  position: relative;\n  display: flex;\n  justify-content: flex-start;\n  max-width: 1440px;\n  margin: 0 auto;\n  padding-left: 10.6%;\n  padding-top: 145px;\n  margin-bottom: 1000px;\n}\n.uiColorsTypeContainer .columnLeft, .uiColorsTypeContainer .columnRight {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n.uiColorsTypeContainer .columnLeft {\n  width: 280px;\n  margin-right: 415px;\n}\n.uiColorsTypeContainer .columnRight {\n  display: flex;\n}\n\n.uiColorsType__logo {\n  position: absolute;\n  z-index: 500;\n  width: 48px;\n  height: 48px;\n  left: 30px;\n  top: 30px;\n}\n\n.uiFormElements_Container {\n  display: flex;\n  padding-left: 141px;\n  padding-top: 143px;\n}\n.uiFormElements_Container .columnLeft {\n  display: block;\n  height: auto;\n  margin-right: 126px;\n}\n.uiFormElements_Container .columnCentr {\n  height: auto;\n}\n.uiFormElements_Container .columnRight {\n  display: block;\n  height: auto;\n  margin-left: 72px;\n}\n\n.uiFormElements_calendar__wrap {\n  box-sizing: border-box;\n  display: flex;\n  justify-content: space-between;\n  width: 320px;\n  height: 65px;\n}\n\n.uiFormElements_likeButton__wrap {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  width: 90px;\n}\n\n.uiFormElements_btn__wrap {\n  display: flex;\n  justify-content: space-between;\n}\n\n.uiFormElements_footer {\n  border: 1px solid red;\n  display: flex;\n  padding-left: 140px;\n  padding-bottom: 131px;\n}\n.uiFormElements_footer .columnLeft {\n  display: block;\n  margin-right: 167px;\n}\n.uiFormElements_footer .columnRight {\n  display: block;\n}\n\n.mb5 {\n  margin-bottom: 5px;\n}\n\n.mb10 {\n  margin-bottom: 10px;\n}\n\n.mb16 {\n  margin-bottom: 16px;\n}\n\n.mb20 {\n  margin-bottom: 20.5px;\n}\n\n.mb30 {\n  height: 30px;\n}\n\n.mb36 {\n  margin-bottom: 36px;\n}\n\n.mb40 {\n  margin-bottom: 40px;\n}\n\n.mb58 {\n  margin-bottom: 58px;\n}\n\n.mb98 {\n  margin-bottom: 98px;\n}\n\n.mb100 {\n  margin-bottom: 100px;\n}\n\n.mb196 {\n  margin-bottom: 196px;\n}\n\n.mb230 {\n  margin-bottom: 230px;\n}\n\n.mt100 {\n  margin-top: 100px;\n}\n\n.mt110 {\n  margin-top: 135px;\n}\n\n.w150 {\n  width: 150px;\n}\n\n.w152 {\n  width: 152px;\n}\n\n.w220 {\n  width: 220px;\n}\n\n.w266 {\n  width: 266px;\n}\n\n/*.ui-color-wrap {\n    display: flex;\n    justify-content: space-between;\n}*/\n.ui-color-block-wrap {\n  display: flex;\n  justify-content: start;\n}\n\n.ui-color-block-mb {\n  margin-bottom: 20px;\n}\n\n.ui-color-square {\n  width: 70px;\n  height: 70px;\n  margin-right: 40px;\n  border-radius: 6px;\n}\n\n.Primary-Color {\n  background-color: #BC9CFF;\n}\n\n.Secondary-color {\n  background-color: #6FCF97;\n}\n\n.Dark-color {\n  background-color: #1F2041;\n}\n\n.Dark-color75 {\n  background-color: #1F2041;\n  opacity: 0.75;\n}\n\n.Dark-color50 {\n  background-color: #1F2041;\n  opacity: 0.5;\n}\n\n.Dark-color25 {\n  background-color: #1F2041;\n  opacity: 0.25;\n}\n\n.Dark-color5 {\n  background-color: #1F2041;\n  opacity: 0.05;\n}\n\n.ui-colot-text {\n  width: 170px;\n}\n\n.uiColorBlock-textName-style, .uiColorBlock-textValue-style {\n  width: 180px;\n  font-size: 19px;\n  line-height: 38px;\n  color: #1F2041;\n  font-family: \"MontserratBold\", Arial, sans-serif;\n}\n\n.uiColorBlock-textValue-style {\n  line-height: 20px;\n  font-family: \"Montserrat\", Arial, sans-serif;\n}\n\n.ui-text-block-wrap {\n  display: flex;\n  justify-content: space-between;\n  width: 430px;\n}\n\n.ui-text-block-mb {\n  height: auto;\n  margin-bottom: 50px;\n}\n\n.ui-text__tag_wrap {\n  width: 37px;\n  margin-right: 30px;\n}\n\n.ui-text__text_wrap {\n  width: 370px;\n}\n\n/*Style for tags*/\n.ui-text__tagh1_style, .ui-text__tagh2_style, .ui-text__tagh3_style, .ui-text__taghBody_style {\n  color: #1F2041;\n  opacity: 0.25;\n  width: 37px;\n  text-align: right;\n}\n\n.ui-text__tagh1_style {\n  line-height: 29px;\n  font-size: 24px;\n  text-transform: uppercase;\n}\n\n.ui-text__tagh2_style {\n  line-height: 23px;\n  font-size: 19px;\n  text-transform: uppercase;\n}\n\n.ui-text__tagh3_style {\n  text-transform: uppercase;\n  line-height: 14px;\n  font-size: 12px;\n}\n\n.ui-text__taghBody_style {\n  line-height: 24px;\n  font-size: 14px;\n}\n\n/*Style for text*/\n.ui-text__tagh1text_style, .ui-text__tagh2text_style, .ui-text__tagh3text_style, .ui-text__taghBodytext_style {\n  color: #1F2041;\n}\n\n.ui-text__tagh1text_style {\n  font-family: \"MontserratBold\", Arial, sans-serif;\n  line-height: 29px;\n  font-size: 24px;\n}\n\n.ui-text__tagh2text_style {\n  font-family: \"MontserratBold\", Arial, sans-serif;\n  line-height: 23px;\n  font-size: 19px;\n}\n\n.ui-text__tagh3text_style {\n  font-family: \"MontserratBold\", Arial, sans-serif;\n  text-transform: uppercase;\n  line-height: 18px;\n  font-size: 12px;\n}\n\n.ui-text__taghBodytext_style {\n  line-height: 23px;\n  font-size: 14px;\n  opacity: 0.75;\n}\n\n.logoStyles {\n  position: absolute;\n  z-index: 500;\n  width: 48px;\n  height: 48px;\n  left: 30px;\n  top: 30px;\n}\n\n.textField {\n  box-sizing: border-box;\n  width: 320px;\n  height: 44px;\n  padding-left: 15px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n  outline: none;\n}\n\n::placeholder {\n  font-size: 14px;\n  color: #1F2041;\n  opacity: 0.25;\n}\n\n.textField:hover::-webkit-input-placeholder {\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.textField:focus::-webkit-input-placeholder {\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.textField:hover {\n  border: 1px solid rgba(31, 32, 65, 0.5);\n  outline: none;\n}\n\n.textField:focus {\n  border: 1px solid rgba(31, 32, 65, 0.5);\n  background-color: white;\n  outline: none;\n}\n\n.w320 {\n  width: 320px;\n}\n\n.w266 {\n  width: 266px;\n}\n\n.inputDropdownTitleWrap {\n  display: flex;\n  justify-content: space-between;\n}\n\n.inputDropdownTitle, .inputDropdownTitleDefault {\n  width: auto;\n}\n.inputDropdownTitle p, .inputDropdownTitleDefault p {\n  color: #1F2041;\n  font-size: 12px;\n  text-transform: uppercase;\n  line-height: 15px;\n}\n\n.inputDropdownTitleDefault p {\n  opacity: 0.5;\n}\n\n.width320 {\n  width: 320px;\n}\n\n.width292 {\n  width: 292px;\n}\n\n.dropdownSum__Wrap {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  box-sizing: border-box;\n  height: 44px;\n  padding-left: 15px;\n  padding-right: 10px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n}\n\n.dropdownSum__Width320 {\n  width: 320px;\n}\n\n.dropdownSum__Width266 {\n  width: 266px;\n}\n\n.borderRadiusBottomNone {\n  border-bottom-left-radius: 0px;\n  border-bottom-right-radius: 0px;\n}\n\n.dropdownSum_Text {\n  width: 160px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  color: #1F2041;\n  opacity: 0.75;\n  font-size: 14px;\n  line-height: 24px;\n}\n\n.dropdownSum_Btn {\n  border: none;\n  background-color: white;\n}\n\n.dropdownSum_Context {\n  box-sizing: border-box;\n  padding: 6px 7px 8px 15px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-top: none;\n  border-radius: 4px;\n  border-top-right-radius: 0px;\n  border-top-left-radius: 0px;\n  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);\n}\n\n.displayNone {\n  display: none;\n}\n\n.RedVVV {\n  background-color: red;\n}\n\n.dropdownSum_ContexWrap {\n  display: flex;\n  align-items: center;\n  height: 30px;\n  margin-bottom: 7px;\n}\n.dropdownSum_ContexWrap .title {\n  /*width: 206px;*/\n  color: #1F2041;\n  font-size: 12px;\n  text-transform: uppercase;\n}\n.dropdownSum_ContexWrap .title__width206 {\n  width: 206px;\n}\n.dropdownSum_ContexWrap .title__width152 {\n  width: 152px;\n}\n.dropdownSum_ContexWrap .BtnMinus, .dropdownSum_ContexWrap .BtnPlus {\n  text-align: center;\n  padding-top: 5px;\n  width: 30px;\n  height: 30px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 50%;\n}\n.dropdownSum_ContexWrap .Result {\n  margin-right: 8px;\n  font-size: 12px;\n  color: #1F2041;\n  text-transform: uppercase;\n}\n.dropdownSum_ContexWrap .BtnMinus {\n  margin-right: 8px;\n}\n\n.dropdownSum_ContextWrap__mb0 {\n  margin-bottom: 0px;\n}\n\n.dropdownSum_Btn__Wrap {\n  display: flex;\n  justify-content: space-between;\n  margin-top: 20px;\n  padding-bottom: 5px;\n}\n.dropdownSum_Btn__Wrap button {\n  padding: 0;\n  color: #BC9CFF;\n  text-transform: uppercase;\n  font-size: 12px;\n  background-color: white;\n  border: none;\n}\n\n.dropdownSum_BtnClear__opasity0 {\n  opacity: 0;\n}\n\n.dropdownCheckbox__Wrap {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  width: 266px;\n  height: 44px;\n}\n.dropdownCheckbox__Wrap .title {\n  color: #1F2041;\n  font-size: 12px;\n  text-transform: uppercase;\n}\n\n.dropdownCheckbox_btn {\n  height: 44px;\n  border: none;\n  background-color: white;\n}\n\n.dropdownCheckbox_input__wrap {\n  position: relative;\n  width: 266px;\n  height: 20px;\n  margin-bottom: 10px;\n  vertical-align: top;\n}\n\ninput {\n  margin-right: 10px;\n}\n\nlabel {\n  position: absolute;\n  max-width: 192px;\n  top: 2px;\n  font-size: 14px;\n  color: #1F2041;\n  letter-spacing: 1.2px;\n  opacity: 0.5;\n}\n\n.dropdownCheckbox_input__custom {\n  position: absolute;\n  z-index: -1;\n  opacity: 0;\n}\n\n.dropdownCheckbox_input__custom + label {\n  display: inline-flex;\n  align-items: center;\n  user-select: none;\n}\n\n.dropdownCheckbox_input__custom + label::before {\n  content: \"\";\n  display: inline-block;\n  width: 20px;\n  height: 20px;\n  flex-shrink: 0;\n  flex-grow: 0;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n  margin-right: 9.74px;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: 50% 50%;\n}\n\n.dropdownCheckbox_input__custom:checked + label::before {\n  border-color: #BC9CFF;\n  opacity: 1;\n  background-image: url(\"../block/libs/dropdownCheckbox/checkboxArrow.svg\");\n}\n\n.radioButtons__wrap {\n  position: relative;\n  display: flex;\n  height: 27px;\n}\n\n.radioClass1 {\n  width: 98px;\n}\n.radioClass1 label {\n  font-size: 14px;\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.custom-radio > input {\n  position: absolute;\n  z-index: -1;\n  opacity: 0;\n}\n\n.custom-radio > span {\n  display: inline-flex;\n  align-items: center;\n  user-select: none;\n}\n\n.custom-radio > span::before {\n  content: \"\";\n  margin-top: 5px;\n  display: inline-block;\n  width: 20px;\n  height: 20px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 50%;\n  margin-right: 9.74px;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: 50% 50%;\n}\n\n/* стили при наведении курсора на радио */\n.custom-radio > input:not(:disabled):not(:checked) + span:hover::before {\n  border-color: #b3d7ff;\n}\n\n/* стили для радиокнопки, находящейся в состоянии checked */\n.custom-radio > input:checked + span::before {\n  border-color: #BC9CFF;\n  background-color: white;\n  background-image: url(../block/libs/radioButtons/radioBtn.png);\n}\n\n.toggleButtons__wrap {\n  display: flex;\n  align-items: center;\n}\n\n.toggleButtons_container {\n  width: 40px;\n  height: 20px;\n  border-radius: 10px;\n  margin-right: 10px;\n}\n\n.toggleButtons_containerIncluded__padding {\n  padding-top: 3px;\n  padding-left: 24px;\n}\n\n.toggleButtons_container__colorPrimary {\n  border: 1px solid #BC9CFF;\n}\n\n.toggleButtons_container__colorDark {\n  border: 1px solid rgba(31, 32, 65, 0.25);\n}\n\n.toggleButtons_toggle {\n  width: 12px;\n  height: 12px;\n  border-radius: 50%;\n}\n\n.toggleButtons_toggle__colorPrimary {\n  /*background-color: $primary-color;*/\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n}\n\n.toggleButtons_text {\n  font-size: 14px;\n  color: #1F2041;\n  opacity: 0.75;\n}\n\n.toggleButtons_containerDisabled__padding {\n  padding-top: 3px;\n  padding-left: 3px;\n}\n\n.toggleButtons_toggle__colorDark {\n  background-color: #1F2041;\n  opacity: 0.25;\n}\n\n.toggleButtons__displayNoneOn {\n  display: none;\n}\n\n.toggleButtons__displayNoneOff {\n  display: none;\n}\n\n.likeButton_container {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-right: 4px;\n  padding-left: 4px;\n  width: 40px;\n  height: 20px;\n  border-radius: 10px;\n}\n\n.likeButton_border__colorGrey {\n  border: 1px solid rgba(31, 32, 65, 0.25);\n}\n\n.likeButton_border__colorPrimary {\n  border: 1px solid #BC9CFF;\n}\n\n.likeButton_img__primary {\n  width: 12px;\n  height: 12px;\n  background-image: url(\"../block/libs/likeButton/likePrimary.svg\");\n  background-size: 100%;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.likeButton_img__gray {\n  width: 12px;\n  height: 12px;\n  background-image: url(\"../block/libs/likeButton/likeGrey.svg\");\n  background-size: 100%;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.likeButton_sum {\n  font-size: 10px;\n  line-height: 12.19px;\n  color: #1F2041;\n  opacity: 0.25;\n}\n\n.rateButton__wrap {\n  display: flex;\n  justify-content: space-between;\n  width: 120px;\n  height: 24px;\n}\n\n.rateButton_star {\n  width: 24px;\n  height: 24px;\n  background-size: 100%;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.rateButton_star__blue {\n  background-image: url(\"../block/libs/rateButton/star.svg\");\n}\n\n.rateButton_star__wait {\n  background-image: url(\"../block/libs/rateButton/starBorder.svg\");\n}\n\n.buttonText__text {\n  font-size: 12px;\n  line-height: 14.63px;\n  text-transform: uppercase;\n}\n\n.buttonText__colorPrimary {\n  color: #BC9CFF;\n}\n\n.buttonText__colorDatrk {\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.buttonText__colorWhite {\n  color: white;\n}\n\n.but {\n  width: 100px;\n  height: 30px;\n  background-color: red;\n  margin-left: 50px;\n}\n\n.but-color {\n  color: white;\n}\n\n.buttons {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 44px;\n  border-radius: 20px;\n}\n.buttons p {\n  font-size: 12px;\n  line-height: 14.63px;\n  text-transform: uppercase;\n}\n\n.buttons__defaultBg {\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n  border: none;\n  color: white;\n}\n\nbutton.buttons__defaultBg:hover {\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n  border: none;\n  opacity: 0.5;\n  color: white;\n}\n\n.buttons__defaultBorder {\n  border: 2px solid transparent;\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n  box-shadow: inset 0px 0px 0px 20px #fff;\n  border-radius: 20px;\n  color: #BC9CFF;\n}\n\nbutton.buttons__defaultBorder:hover {\n  border: 2px solid transparent;\n  background: linear-gradient(#BC9CFF, #8BA4F9);\n  box-shadow: inset 0px 0px 0px 20px #fff;\n  border-radius: 20px;\n  opacity: 0.5;\n  color: #BC9CFF;\n}\n\n.buttons__width99 {\n  width: 99px;\n}\n\n.buttons__width320 {\n  width: 320px;\n}\n\n.displayNone {\n  display: none;\n}\n\n.button_text__width {\n  width: 270px;\n}\n\n.Checkbox_input__wrap {\n  position: relative;\n  width: 266px;\n  height: 20px;\n  vertical-align: top;\n  margin-bottom: 5px;\n}\n\ninput {\n  margin-right: 10px;\n}\n\n.Checkbox_label {\n  font-weight: 900;\n  position: absolute;\n  width: 266px;\n  top: 2px;\n  font-size: 14px;\n  color: #1F2041;\n  opacity: 0.75;\n  letter-spacing: 1.1px;\n}\n\n.Checkbox_label__opasity {\n  position: absolute;\n  min-width: 240px;\n  top: 2px;\n  font-size: 14px;\n  color: #1F2041;\n  line-height: 18px;\n  opacity: 0.5;\n  letter-spacing: 1.1px;\n}\n\n.Checkbox_input__custom {\n  position: absolute;\n  z-index: -1;\n  opacity: 0;\n}\n\n.Checkbox_input__custom + label {\n  display: inline-flex;\n  align-items: center;\n  user-select: none;\n}\n\n.Checkbox_input__custom + label::before {\n  content: \"\";\n  display: inline-block;\n  box-sizing: border-box;\n  width: 20px;\n  height: 20px;\n  flex-shrink: 0;\n  flex-grow: 0;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n  margin-right: 9.74px;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: 50% 50%;\n}\n\n.Checkbox_input__custom:checked + label::before {\n  border-color: #BC9CFF;\n  opacity: 1;\n  background-image: url(\"../block/libs/dropdownCheckbox/checkboxArrow.svg\");\n}\n\n.Checkbox_text {\n  max-width: 266px;\n  margin-bottom: 10px;\n  padding-left: 30px;\n  font-size: 12px;\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.advantages__wrap {\n  display: flex;\n  width: 280px;\n  height: 92px;\n  padding-top: 23px;\n  border-bottom: 1px solid rgba(31, 32, 65, 0.1);\n}\n\n.advantages_img {\n  width: 44px;\n  height: 44px;\n  margin-right: 10px;\n  background-size: 100%;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.advantages_img1 {\n  background-image: url(\"../block/libs/advantages/advantagesImg1.svg\");\n}\n\n.advantages_img2 {\n  background-image: url(\"../block/libs/advantages/advantagesImg2.svg\");\n}\n\n.advantages_text__title, .advantages_text__text {\n  font-size: 14px;\n  line-height: 24px;\n  color: #1F2041;\n  opacity: 0.75;\n}\n\n.advantages_text__title {\n  font-weight: 900;\n  margin-bottom: 2px;\n}\n\n.review__wrap {\n  display: flex;\n}\n\n.review_columnLeft {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-right: 10px;\n}\n\n.review_img {\n  width: 44px;\n  height: 44px;\n  margin-bottom: 12px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 50%;\n  background-size: 100%;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.review_img1 {\n  background-image: url(\"../block/libs/review/avatar1.jpg\");\n}\n\n.reviev_title, .review_amountDays, .review_text {\n  font-size: 14px;\n  line-height: 24px;\n  color: #1F2041;\n  opacity: 0.75;\n}\n\n.reviev_title {\n  font-weight: 900;\n}\n\n.review_amountDays {\n  display: flex;\n  margin-bottom: 12px;\n}\n\n.amountDays_count, .amountDays_text {\n  line-height: 18px;\n}\n\n.review_text {\n  max-width: 650px;\n  line-height: 20px;\n}\n\n.bulletList__wrap {\n  display: flex;\n  align-items: flex-start;\n  margin-bottom: 10px;\n}\n\n.bulletList_point {\n  width: 10px;\n  height: 10px;\n  margin-right: 10px;\n  margin-top: 8px;\n  border-radius: 50%;\n  background-color: #1F2041;\n  opacity: 0.25;\n}\n\n.bulletList_text {\n  max-width: 230px;\n}\n.bulletList_text p {\n  font-size: 14px;\n  line-height: 24px;\n  color: #1F2041;\n  opacity: 0.75;\n}\n\n.rangeSlider_text__wrap {\n  display: flex;\n  justify-content: space-between;\n  width: 266px;\n  margin-bottom: 20px;\n}\n\n.rangeSlider_title {\n  margin-right: 68px;\n  font-size: 12px;\n  color: #1F2041;\n  text-transform: uppercase;\n}\n\n.rangeSlider_value__wrap {\n  display: flex;\n}\n\n.rangeSlider_minValue, .rangeSlider_maxValue {\n  font-size: 12px;\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.rangeSlider_input__wrap {\n  display: flex;\n}\n\n.rangeSlider_min__wrap {\n  width: 133px;\n}\n\n.rangeSlider_max__wrap {\n  width: 133px;\n}\n\ninput.rangeSlider_min {\n  width: 100%;\n  --litters-range: 75%;\n  appearance: none;\n  outline: none;\n  height: 6px;\n  border-bottom-left-radius: 3px;\n  border-top-left-radius: 3px;\n  background: linear-gradient(to right, white var(--litters-range), #66D2EA var(--litters-range));\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-right: none;\n}\n\ninput.rangeSlider_max {\n  width: 100%;\n  --litters1-range: 75%;\n  appearance: none;\n  outline: none;\n  height: 6px;\n  border-bottom-right-radius: 3px;\n  border-top-right-radius: 3px;\n  /*background: linear-gradient( to right, #66D2EA let(--litters-range1), white let(--litters-range1));*/\n  background: linear-gradient(to right, #66D2EA var(--litters-range1), white var(--litters-range1));\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-left: none;\n}\n\n.rangeSlider_min__wrap input::-webkit-slider-thumb {\n  cursor: pointer;\n  appearance: none;\n  width: 18px;\n  height: 18px;\n  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);\n  border-radius: 50%;\n  border: 3px solid white;\n}\n\n.rangeSlider_max__wrap input::-webkit-slider-thumb {\n  cursor: pointer;\n  appearance: none;\n  width: 18px;\n  height: 18px;\n  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);\n  border-radius: 50%;\n  border: 3px solid white;\n}\n\n.pagination {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 290px;\n  height: 50px;\n  padding: 10px;\n}\n\n.pagination ui {\n  display: flex;\n}\n\n.pagination ui li {\n  display: flex;\n  text-align: center;\n  justify-content: center;\n  align-items: center;\n  width: 40px;\n  height: 40px;\n  list-style: none;\n  cursor: pointer;\n  transition: all 0.3s ease;\n  font-size: 12px;\n  color: #1F2041;\n  opacity: 0.5;\n}\n\n.pagination_li__active {\n  width: 40px;\n  height: 40px;\n  border-radius: 50%;\n  background: linear-gradient(#8BA4F9, #BC9CFF);\n  color: white;\n}\n\n#pagination_BtnMinus, #pagination_BtnPlus {\n  text-align: center;\n  justify-content: center;\n  align-items: center;\n  width: 40px;\n  height: 40px;\n  border-radius: 50%;\n  background-repeat: no-repeat;\n  background-position: center;\n  background-color: #6FCF97;\n  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);\n}\n\n#pagination_BtnMinus {\n  transform: rotate(180deg);\n}\n\n.displayNone {\n  display: none;\n}\n\n.displayFlex {\n  display: flex;\n}\n\n/*.calendar-wrapper {\n    width: 360px;\n    margin: 3em auto;\n    padding: 2em;\n    border: 1px solid #dcdcff;\n    border-radius: 5px;\n    background: #fff;\n  }\n  table {\n    clear: both;\n    width: 100%;\n    border: 1px solid #dcdcff;\n    border-radius: 3px;\n    border-collapse: collapse;\n    color: #444;\n  }\n  td {\n    height: 48px;\n    text-align: center;\n    vertical-align: middle;\n    border-right: 1px solid #dcdcff;\n    border-top: 1px solid #dcdcff;\n    width: 14.28571429%;\n  }\n  thead td {\n    border: none;\n    color: #28283b;\n    text-transform: uppercase;\n    font-size: 1.5em;\n  }\n  td.today {\n    font-weight: 700;\n    color: #28283b;\n    font-size: 1.5em;\n  }*/\ninput {\n  box-sizing: border-box;\n  font-size: 14px;\n  color: #1F2041;\n  opacity: 0.75;\n  /*width: 150px;*/\n  height: 44px;\n  padding-left: 15px;\n  padding-right: 15px;\n  margin-right: 0;\n  /*text-transform: uppercase;*/\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n}\n\n::-webkit-calendar-picker-indicator {\n  width: 11px;\n  height: 11px;\n  margin-top: 2px;\n  color: transparent;\n  opacity: 1;\n  background-image: url(../block/libs/dropdownCheckbox/checkboxArrowUp.png);\n  background-size: contain;\n}\n\n.arrow-smile {\n  color: green;\n}\n\n/*# sourceMappingURL=index.css.map */\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1364,6 +1494,7 @@ input.rangeSlider_max {
   \************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1403,6 +1534,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Generated by Fontie <http://fontie.
   \****************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1443,6 +1575,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Generated by Fontie <http://fontie.
   \*****************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /*
@@ -1537,6 +1670,7 @@ module.exports = function (cssWithMappingToString) {
   \********************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 module.exports = function (url, options) {
@@ -1572,6 +1706,7 @@ module.exports = function (url, options) {
   \************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 module.exports = function (item) {
@@ -1597,6 +1732,7 @@ module.exports = function (item) {
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1651,6 +1787,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var stylesInDOM = [];
@@ -1744,6 +1881,7 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var memo = {};
@@ -1787,6 +1925,7 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -1806,6 +1945,7 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -1825,6 +1965,7 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -1895,6 +2036,7 @@ module.exports = domAPI;
   \*********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -1912,12 +2054,67 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
+/***/ "./src/calendar.ts":
+/*!*************************!*\
+  !*** ./src/calendar.ts ***!
+  \*************************/
+/***/ (() => {
+
+/*import VanillaCalendar, { Options } from '../node_modules/vanilla-calendar-pro';
+import '../node_modules/vanilla-calendar-pro/build/vanilla-calendar.min.css';
+import '../node_modules/vanilla-calendar-pro/build/themes/light.min.css';
+import '../node_modules/vanilla-calendar-pro/build/themes/dark.min.css';
+
+
+  const options: Options = {
+    CSSClasses: {
+        weekDay: 'arrow-smile',
+      },
+    
+    input: true,
+    type: 'multiple',
+    settings: {
+        
+        lang: 'ru',
+
+      range: {
+        disablePast: true,
+      },
+      selection: {
+        day: 'multiple-ranged',
+      },
+      visibility: {
+        daysOutside: false,
+      },
+    },
+    actions: {
+      changeToInput(e: any, calendar: any, self: any) {
+        if (!self.HTMLInputElement) return;
+        if (self.selectedDates[1]) {
+          self.selectedDates.sort((a: any, b: any) => +new Date(a) - +new Date(b));
+          self.HTMLInputElement.value = `${self.selectedDates[0]} — ${self.selectedDates[self.selectedDates.length - 1]}`;
+        } else if (self.selectedDates[0]) {
+          self.HTMLInputElement.value = self.selectedDates[0];
+        } else {
+          self.HTMLInputElement.value = '';
+        }
+      },
+    },
+  };
+  
+  const calendarInput = new VanillaCalendar('#calendar-input', options);
+  calendarInput.init();*/
+
+
+/***/ }),
+
 /***/ "./src/block/libs/advantages/advantagesImg1.svg":
 /*!******************************************************!*\
   !*** ./src/block/libs/advantages/advantagesImg1.svg ***!
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/advantagesImg1.svg";
 
 /***/ }),
@@ -1928,6 +2125,7 @@ module.exports = __webpack_require__.p + "assets/advantagesImg1.svg";
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/advantagesImg2.svg";
 
 /***/ }),
@@ -1938,7 +2136,19 @@ module.exports = __webpack_require__.p + "assets/advantagesImg2.svg";
   \***********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/checkboxArrow.svg";
+
+/***/ }),
+
+/***/ "./src/block/libs/dropdownCheckbox/checkboxArrowUp.png":
+/*!*************************************************************!*\
+  !*** ./src/block/libs/dropdownCheckbox/checkboxArrowUp.png ***!
+  \*************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/checkboxArrowUp.png";
 
 /***/ }),
 
@@ -1948,6 +2158,7 @@ module.exports = __webpack_require__.p + "assets/checkboxArrow.svg";
   \************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/likeGrey.svg";
 
 /***/ }),
@@ -1958,6 +2169,7 @@ module.exports = __webpack_require__.p + "assets/likeGrey.svg";
   \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/likePrimary.svg";
 
 /***/ }),
@@ -1968,6 +2180,7 @@ module.exports = __webpack_require__.p + "assets/likePrimary.svg";
   \**************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/radioBtn.png";
 
 /***/ }),
@@ -1978,6 +2191,7 @@ module.exports = __webpack_require__.p + "assets/radioBtn.png";
   \********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/star.svg";
 
 /***/ }),
@@ -1988,6 +2202,7 @@ module.exports = __webpack_require__.p + "assets/star.svg";
   \**************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/starBorder.svg";
 
 /***/ }),
@@ -1998,6 +2213,7 @@ module.exports = __webpack_require__.p + "assets/starBorder.svg";
   \*******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/avatar1.jpg";
 
 /***/ }),
@@ -2008,6 +2224,7 @@ module.exports = __webpack_require__.p + "assets/avatar1.jpg";
   \****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/MontserratBold.woff2";
 
 /***/ }),
@@ -2018,6 +2235,7 @@ module.exports = __webpack_require__.p + "assets/MontserratBold.woff2";
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/MontserratRegular.ttf";
 
 /***/ }),
@@ -2028,6 +2246,7 @@ module.exports = __webpack_require__.p + "assets/MontserratRegular.ttf";
   \***************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "assets/image.png";
 
 /***/ })
@@ -2170,14 +2389,18 @@ module.exports = __webpack_require__.p + "assets/image.png";
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/index.css */ "./src/styles/index.css");
-/* harmony import */ var _modules_calc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/calc */ "./src/modules/calc.js");
+/* harmony import */ var _calendar_ts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./calendar.ts */ "./src/calendar.ts");
+/* harmony import */ var _calendar_ts__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_calendar_ts__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_calc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/calc */ "./src/modules/calc.js");
+
 
 
 
@@ -2591,8 +2814,140 @@ const liBtnMinusClick = function () {
 };
 countBtnPlus.addEventListener('click', liBtnPlusClick);
 countBtnMinus.addEventListener('click', liBtnMinusClick);
+
+//CALENDAR
+
+/*var Cal = function(divId) {
+    //Сохраняем идентификатор div
+    this.divId = divId;
+    // Дни недели с понедельника
+    this.DaysOfWeek = [
+      'Пн',
+      'Вт',
+      'Ср',
+      'Чтв',
+      'Птн',
+      'Суб',
+      'Вск'
+    ];
+    // Месяцы начиная с января
+    this.Months =['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+    //Устанавливаем текущий месяц, год
+    var d = new Date();
+    this.currMonth = d.getMonth();
+    this.currYear = d.getFullYear();
+    this.currDay = d.getDate();
+  };
+  // Переход к следующему месяцу
+  Cal.prototype.nextMonth = function() {
+    if ( this.currMonth == 11 ) {
+      this.currMonth = 0;
+      this.currYear = this.currYear + 1;
+    }
+    else {
+      this.currMonth = this.currMonth + 1;
+    }
+    this.showcurr();
+  };
+  // Переход к предыдущему месяцу
+  Cal.prototype.previousMonth = function() {
+    if ( this.currMonth == 0 ) {
+      this.currMonth = 11;
+      this.currYear = this.currYear - 1;
+    }
+    else {
+      this.currMonth = this.currMonth - 1;
+    }
+    this.showcurr();
+  };
+  // Показать текущий месяц
+  Cal.prototype.showcurr = function() {
+    this.showMonth(this.currYear, this.currMonth);
+  };
+  // Показать месяц (год, месяц)
+  Cal.prototype.showMonth = function(y, m) {
+    var d = new Date()
+    // Первый день недели в выбранном месяце 
+    , firstDayOfMonth = new Date(y, m, 7).getDay()
+    // Последний день выбранного месяца
+    , lastDateOfMonth =  new Date(y, m+1, 0).getDate()
+    // Последний день предыдущего месяца
+    , lastDayOfLastMonth = m == 0 ? new Date(y-1, 11, 0).getDate() : new Date(y, m, 0).getDate();
+    var html = '<table>';
+    // Запись выбранного месяца и года
+    html += '<thead><tr>';
+    html += '<td colspan="7">' + this.Months[m] + ' ' + y + '</td>';
+    html += '</tr></thead>';
+    // заголовок дней недели
+    html += '<tr class="days">';
+    for(var i=0; i < this.DaysOfWeek.length;i++) {
+      html += '<td>' + this.DaysOfWeek[i] + '</td>';
+    }
+    html += '</tr>';
+    // Записываем дни
+    var i=1;
+    do {
+      var dow = new Date(y, m, i).getDay();
+      // Начать новую строку в понедельник
+      if ( dow == 1 ) {
+        html += '<tr>';
+      }
+      // Если первый день недели не понедельник показать последние дни предыдущего месяца
+      else if ( i == 1 ) {
+        html += '<tr>';
+        var k = lastDayOfLastMonth - firstDayOfMonth+1;
+        for(var j=0; j < firstDayOfMonth; j++) {
+          html += '<td class="not-current">' + k + '</td>';
+          k++;
+        }
+      }
+      // Записываем текущий день в цикл
+      var chk = new Date();
+      var chkY = chk.getFullYear();
+      var chkM = chk.getMonth();
+      if (chkY == this.currYear && chkM == this.currMonth && i == this.currDay) {
+        html += '<td class="today">' + i + '</td>';
+      } else {
+        html += '<td class="normal">' + i + '</td>';
+      }
+      // закрыть строку в воскресенье
+      if ( dow == 0 ) {
+        html += '</tr>';
+      }
+      // Если последний день месяца не воскресенье, показать первые дни следующего месяца
+      else if ( i == lastDateOfMonth ) {
+        var k=1;
+        for(dow; dow < 7; dow++) {
+          html += '<td class="not-current">' + k + '</td>';
+          k++;
+        }
+      }
+      i++;
+    }while(i <= lastDateOfMonth);
+    // Конец таблицы
+    html += '</table>';
+    // Записываем HTML в div
+    document.getElementById(this.divId).innerHTML = html;
+  };
+  // При загрузке окна
+  window.onload = function() {
+    // Начать календарь
+    var c = new Cal("divCal");			
+    c.showcurr();
+    // Привязываем кнопки «Следующий» и «Предыдущий»
+    getId('btnNext').onclick = function() {
+      c.nextMonth();
+    };
+    getId('btnPrev').onclick = function() {
+      c.previousMonth();
+    };
+  }
+  // Получить элемент по id
+  function getId(id) {
+    return document.getElementById(id);
+  }*/
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=index.7c932ea9212523f42b67.js.map
+//# sourceMappingURL=index.b717a42d86c8bbec3b30.js.map

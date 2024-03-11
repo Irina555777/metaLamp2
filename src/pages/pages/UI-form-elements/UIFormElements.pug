@@ -5,25 +5,45 @@ block content
     div.columnLeft
       +inputDropdownTitle('Text Field', 'Default', 'width320')
       div.mb5
-      +TextField('email', 'email', 'Email')
+      +TextField('w320', 'email', 'email', 'Email')
       div.mb20 
       +inputDropdownTitle('Text Field', 'Hover / Focus', 'width320')
       .mb5  
-      +TextField('text', 'text', 'This is pretty awesome')
+      +TextField('w320', 'text', 'text', 'This is pretty awesome')
       .mb20
+      +inputDropdownTitle('Dropdown', 'Hover / Focus', 'width320')
+      .mb5
       +dropdownSum('dropdownSum__Width320','title__width206','','Сколько гостей', 'взрослые','дети', 'младенцы', 'dropdownSum_Btn__Wrap','', '','', '', '','', '', '', '', '', '')
       div.mb20  
       +inputDropdownTitle('masked text field', '', 'width320')
       .mb5
-      +TextField('text', 'date', 'ДД.ММ.ГГГГ')
-      .mb20  
-      +TextField('email', 'email', 'email')
-      +inputDropdownTitle('Dropdown', '', 'width320')
+      +TextField('w320', 'text', 'date', 'ДД.ММ.ГГГГ')
+      .mb40
+      .uiFormElements_calendar__wrap
+        w150
+          +inputDropdownTitle('date Dropdown', '', 'w150')
+          .mb5
+          +calendar('w150')  
+        w150
+          +inputDropdownTitle('date Dropdown', '', 'w150')
+          .mb5
+          +calendar('w150') 
+      .mb40 
+      +inputDropdownTitle('filter date dropdown', '', 'w266')
+      .mb5
+      +calendar('w266') 
+      .mb40
+      +inputDropdownTitle('subscription text field', '', 'w266')
+      .mb5
+      +TextField('w266', 'email', 'email', 'email')
+      .mb100
+      +inputDropdownTitle('Dropdown', 'Default', 'w266')
       div.mb5 
       +dropdownSum('dropdownSum__Width266','title__width152','','0 спальней, 0 кроватей, 0 ванных комнат','спальни', 'кровати', 'ванные комнаты', 'displayNone', '', '','', '', '','', '', '', '', '', '')
+      .mb20
+      +inputDropdownTitle('Dropdown', 'expanded', 'w266')
+      div.mb5
       +dropdownSum('dropdownSum__Width266','title__width152','roomsSumId','0 спальней, 0 кроватей, 0 ванных комнат','спальни', 'кровати', 'ванные комнаты', 'displayNone', 'BtnMinusBedrooms', 'BtnPlusBedrooms','ResultBedrooms', 'BtnMinusBeds', 'BtnPlusBeds','ResultBeds', 'BtnMinusBathroom', 'BtnPlusBathroom', 'ResultBathroom', '', '')
-      div.mb20
-      .mb40
       .mb40
       +dropdownCheckbox('expandable checkbox list',[{idd: 'list1', lab: 'Завтрак', title: '', class:''}, {idd: 'list2', lab: 'Письменный стол', title: '', class: ''},{idd: 'list3', lab: 'Стул для кормления', title: '', class:''}, {idd: 'list4', lab: 'Кроватка', title: '', class: ''},{idd: 'list5', lab: 'Телевизор', title: '', class: ''},{idd: 'list6', lab: 'Шампунь', title: '', class: ''}])
       .mb20
@@ -31,9 +51,10 @@ block content
     div.columnCentr  
       +inputDropdownTitle('Checkbox Buttons', '', 'width320')
       .mb16
-      +Checkbox([{idd: 'checkboxBtn1', lab: 'Можно курить', title: '', class:''}, {idd: 'checkboxBtn2', lab: 'Можно с питомцами', title: '', class: ''},{idd: 'checkboxBtn3', lab: 'Можно пригласить гостей (до 10 человек)', title: '', class: ''}])
-      div.mb5  
+      +Checkbox([{idd: 'checkboxBtn1', lab: 'Можно курить', title: '', class:'Checkbox_label__opasity'}, {idd: 'checkboxBtn2', lab: 'Можно с питомцами', title: '', class: 'Checkbox_label__opasity'},{idd: 'checkboxBtn3', lab: 'Можно пригласить гостей (до 10 человек)', title: '', class: 'Checkbox_label__opasity'}])
+      .mb58 
       +inputDropdownTitle('Radio Buttons', '')
+      .mb16
       +radioButtons('radioBattonName1','radioBattonValueMun', 'radioBattonIdMun', 'radioBattonValueWoman', 'radioBattonIdWoman')
       .mb36
       +inputDropdownTitle('Toggle', '')
@@ -42,6 +63,8 @@ block content
       .mb10
       +toggleButtons('Получать спецпредложения', 'toggleButtons__displayNoneOn', '')
       .mb40
+      +inputDropdownTitle('like button', '')
+      .mb16
       .uiFormElements_likeButton__wrap
         +likeButton('likeButton_border__colorGrey','likeButton_img__gray', 6) 
         +likeButton('likeButton_border__colorPrimary','likeButton_img__primary', 12)
@@ -50,13 +73,16 @@ block content
       .mb16
       +rateButton
       .mb196
+      +inputDropdownTitle('dropdown', '')
+      .mb5
       +dropdownSum('dropdownSum__Width320','title__width206','guestsSumId','Сколько гостей', 'взрослые','дети', 'младенцы', 'dropdownSum_Btn__Wrap','BtnMinusAdults', 'BtnPlusAdults','ResultAdults', 'BtnMinusChildren', 'BtnPlusChildren','ResultChildren', 'BtnMinusBabies', 'BtnPlusBabies', 'ResultBabies', 'dropdownSum_BtnClear', 'dropdownSum_BtnApplay')
-      .mb100
+      .mb98
       +inputDropdownTitle('rich Checkbox Buttons', '', 'width320')
       .mb16
       +Checkbox([{idd: '1', lab: 'Широкий коридор', title: 'Ширина коридоров в номере не менее 91 см.', class:'Checkbox_label'}, {idd: '2', lab: 'Помощник для инвалидов', title: 'На 1 этаже вас встретит специалист  и проводит до номера.', class: 'Checkbox_label'}])
     div.columnRight 
       +rangeSlider
+      .mb40
       +inputDropdownTitle('buttons')
       .mb16
       .uiFormElements_btn__wrap.w220
@@ -73,17 +99,21 @@ block content
       .mb30 
       +buttons('buttons__width320', 'buttons__defaultBg','', 'перейти к оплате', 'button_text__width') 
       .mb40
-      +TextField('pagination', '', '')
+      +inputDropdownTitle('pagination', '')
       .mb16
       +pagination
       .mb230
+      +inputDropdownTitle('dropdown', '')
+      .mb5
       +dropdownSum('dropdownSum__Width320','title__width206','guestsSumId1','Сколько гостей', 'взрослые','дети', 'младенцы', 'dropdownSum_Btn__Wrap','BtnMinusAdults1', 'BtnPlusAdults1','ResultAdults1', 'BtnMinusChildren1', 'BtnPlusChildren1','ResultChildren1', 'BtnMinusBabies1', 'BtnPlusBabies1', 'ResultBabies1', 'dropdownSum_BtnClear1', 'dropdownSum_BtnApplay1')
+      .mb98
       +inputDropdownTitle('Bullet List', '', 'width292') 
-      .mb16
       +bulletList([{text:'Нельзя с питомцами'},{text:'Без вечеринок и мероприятий'},{text:'Время прибытия — после 13:00, а выезд до 12:00'}])
   div.uiFormElements_footer   
     .columnLeft 
+      .mt100
       +advantages([{class: 'advantages_img1', title: 'Комфорт', text: 'Шумопоглощающие стены'}, {class: 'advantages_img2', title: 'Удобство', text: 'Окно в каждой из спален'}])
     .columnRight 
+      .mt110
       +review('review_img1', 'Мурад Сарафанов', '5', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
 

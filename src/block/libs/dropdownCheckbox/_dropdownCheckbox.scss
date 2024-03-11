@@ -32,6 +32,7 @@ label {
     top: 2px;
     font-size: 14px;
     color: $dark;
+    letter-spacing: 1.2px;
     opacity: .5;
 }
 .dropdownCheckbox_input__custom {
@@ -60,5 +61,6 @@ label {
   }
   .dropdownCheckbox_input__custom:checked+label::before {
     border-color: $primary-color;
+    opacity: 1;
     background-image: url("../block/libs/dropdownCheckbox/checkboxArrow.svg");
   }
