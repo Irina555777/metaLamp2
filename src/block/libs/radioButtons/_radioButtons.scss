@@ -1,10 +1,11 @@
 .radioButtons__wrap {
     position: relative;
     display: flex;
-    height: 27px;
+    height: 20px;
 }
 .radioClass1 {
     width: 98px;
+    margin-right: 20px;
     label {
         font-size: 14px;
         color: $dark;
@@ -16,14 +17,21 @@
     z-index: -1;
     opacity: 0;
   }
+  .radioButtons_input {
+    height: 20px;
+  }
   .custom-radio>span {
     display: inline-flex;
     align-items: center;
     user-select: none;
+    height: 20px;
+  }
+  label.custom-radio {
+    height: 20px;
   }
   .custom-radio>span::before {
     content: '';
-    margin-top: 5px;
+    /*margin-top: 3px;*/
     display: inline-block;
     width: 20px;
     height: 20px;

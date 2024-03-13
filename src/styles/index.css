@@ -214,7 +214,6 @@ button.buttons__defaultBorder:hover {
 }
 
 .uiFormElements_footer {
-  border: 1px solid red;
   display: flex;
   padding-left: 140px;
   padding-bottom: 131px;
@@ -233,6 +232,10 @@ button.buttons__defaultBorder:hover {
 
 .mb10 {
   margin-bottom: 10px;
+}
+
+.mb14 {
+  margin-bottom: 14px;
 }
 
 .mb16 {
@@ -255,6 +258,10 @@ button.buttons__defaultBorder:hover {
   margin-bottom: 40px;
 }
 
+.mb45 {
+  margin-bottom: 45px;
+}
+
 .mb58 {
   margin-bottom: 58px;
 }
@@ -275,12 +282,16 @@ button.buttons__defaultBorder:hover {
   margin-bottom: 230px;
 }
 
-.mt100 {
-  margin-top: 100px;
+.mb240 {
+  margin-bottom: 240px;
 }
 
-.mt110 {
-  margin-top: 135px;
+.mt100 {
+  margin-top: 98px;
+}
+
+.mt130 {
+  margin-top: 108px;
 }
 
 .w150 {
@@ -472,6 +483,7 @@ button.buttons__defaultBorder:hover {
   font-size: 14px;
   color: #1F2041;
   opacity: 0.25;
+  letter-spacing: 0.6px;
 }
 
 .textField:hover::-webkit-input-placeholder {
@@ -516,6 +528,7 @@ button.buttons__defaultBorder:hover {
   font-size: 12px;
   text-transform: uppercase;
   line-height: 15px;
+  letter-spacing: 0.4px;
 }
 
 .inputDropdownTitleDefault p {
@@ -564,6 +577,7 @@ button.buttons__defaultBorder:hover {
   opacity: 0.75;
   font-size: 14px;
   line-height: 24px;
+  letter-spacing: 0.8px;
 }
 
 .dropdownSum_Btn {
@@ -597,10 +611,10 @@ button.buttons__defaultBorder:hover {
   margin-bottom: 7px;
 }
 .dropdownSum_ContexWrap .title {
-  /*width: 206px;*/
   color: #1F2041;
   font-size: 12px;
   text-transform: uppercase;
+  letter-spacing: 0.8px;
 }
 .dropdownSum_ContexWrap .title__width206 {
   width: 206px;
@@ -617,13 +631,16 @@ button.buttons__defaultBorder:hover {
   border-radius: 50%;
 }
 .dropdownSum_ContexWrap .Result {
-  margin-right: 8px;
+  margin-right: 10px;
   font-size: 12px;
   color: #1F2041;
   text-transform: uppercase;
 }
 .dropdownSum_ContexWrap .BtnMinus {
-  margin-right: 8px;
+  margin-right: 10px;
+}
+.dropdownSum_ContexWrap .BtnPlus {
+  margin-right: 0;
 }
 
 .dropdownSum_ContextWrap__mb0 {
@@ -643,10 +660,15 @@ button.buttons__defaultBorder:hover {
   font-size: 12px;
   background-color: white;
   border: none;
+  letter-spacing: 0.8px;
 }
 
 .dropdownSum_BtnClear__opasity0 {
   opacity: 0;
+}
+
+.Checkbox_text__none {
+  display: none;
 }
 
 .dropdownCheckbox__Wrap {
@@ -682,7 +704,7 @@ input {
 
 label {
   position: absolute;
-  max-width: 192px;
+  /*max-width: 192px;*/
   top: 2px;
   font-size: 14px;
   color: #1F2041;
@@ -726,11 +748,12 @@ label {
 .radioButtons__wrap {
   position: relative;
   display: flex;
-  height: 27px;
+  height: 20px;
 }
 
 .radioClass1 {
   width: 98px;
+  margin-right: 20px;
 }
 .radioClass1 label {
   font-size: 14px;
@@ -744,15 +767,24 @@ label {
   opacity: 0;
 }
 
+.radioButtons_input {
+  height: 20px;
+}
+
 .custom-radio > span {
   display: inline-flex;
   align-items: center;
   user-select: none;
+  height: 20px;
+}
+
+label.custom-radio {
+  height: 20px;
 }
 
 .custom-radio > span::before {
   content: "";
-  margin-top: 5px;
+  /*margin-top: 3px;*/
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -816,6 +848,7 @@ label {
   font-size: 14px;
   color: #1F2041;
   opacity: 0.75;
+  letter-spacing: 1.2px;
 }
 
 .toggleButtons_containerDisabled__padding {
@@ -997,7 +1030,7 @@ button.buttons__defaultBorder:hover {
   width: 266px;
   height: 20px;
   vertical-align: top;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 input {
@@ -1017,7 +1050,8 @@ input {
 
 .Checkbox_label__opasity {
   position: absolute;
-  min-width: 240px;
+  /*min-width: 240px;*/
+  min-width: 270px;
   top: 2px;
   font-size: 14px;
   color: #1F2041;
@@ -1072,15 +1106,15 @@ input {
 .advantages__wrap {
   display: flex;
   width: 280px;
-  height: 92px;
-  padding-top: 23px;
+  height: 64px;
+  margin-bottom: 25px;
   border-bottom: 1px solid rgba(31, 32, 65, 0.1);
 }
 
 .advantages_img {
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
+  width: 42px;
+  height: 42px;
+  margin-right: 14px;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1096,14 +1130,15 @@ input {
 
 .advantages_text__title, .advantages_text__text {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 14px;
   color: #1F2041;
   opacity: 0.75;
+  letter-spacing: 1px;
 }
 
 .advantages_text__title {
   font-weight: 900;
-  margin-bottom: 2px;
+  margin-bottom: 9px;
 }
 
 .review__wrap {
@@ -1134,13 +1169,15 @@ input {
 
 .reviev_title, .review_amountDays, .review_text {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 14px;
   color: #1F2041;
   opacity: 0.75;
+  letter-spacing: 0.8px;
 }
 
 .reviev_title {
   font-weight: 900;
+  margin-bottom: 7px;
 }
 
 .review_amountDays {
@@ -1154,7 +1191,7 @@ input {
 
 .review_text {
   max-width: 650px;
-  line-height: 20px;
+  line-height: 24px;
 }
 
 .bulletList__wrap {
@@ -1181,6 +1218,7 @@ input {
   line-height: 24px;
   color: #1F2041;
   opacity: 0.75;
+  letter-spacing: 1.1px;
 }
 
 .rangeSlider_text__wrap {
@@ -1269,10 +1307,10 @@ input.rangeSlider_max {
 .pagination {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /*justify-content: center;*/
   width: 290px;
-  height: 50px;
-  padding: 10px;
+  height: 40px;
+  margin-bottom: 12px;
 }
 
 .pagination ui {
@@ -1325,6 +1363,14 @@ input.rangeSlider_max {
 
 .displayFlex {
   display: flex;
+}
+
+.pagination_text {
+  padding-left: 6px;
+  font-size: 14px;
+  color: #1F2041;
+  opacity: 0.75;
+  letter-spacing: 0.7px;
 }
 
 /*.calendar-wrapper {

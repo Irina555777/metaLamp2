@@ -51,18 +51,19 @@ block content
     div.columnCentr  
       +inputDropdownTitle('Checkbox Buttons', '', 'width320')
       .mb16
-      +Checkbox([{idd: 'checkboxBtn1', lab: 'Можно курить', title: '', class:'Checkbox_label__opasity'}, {idd: 'checkboxBtn2', lab: 'Можно с питомцами', title: '', class: 'Checkbox_label__opasity'},{idd: 'checkboxBtn3', lab: 'Можно пригласить гостей (до 10 человек)', title: '', class: 'Checkbox_label__opasity'}])
+      +Checkbox([{idd: 'checkboxBtn1', lab: 'Можно курить', title: '', class:'Checkbox_label__opasity', Checkbox_text__none: 'Checkbox_text__none'}, {idd: 'checkboxBtn2', lab: 'Можно с питомцами', title: '', class: 'Checkbox_label__opasity',Checkbox_text__none: 'Checkbox_text__none'},{idd: 'checkboxBtn3', lab: 'Можно пригласить гостей (до 10 человек)', title: '', class: 'Checkbox_label__opasity', Checkbox_text__none: 'Checkbox_text__none'}])
       .mb58 
       +inputDropdownTitle('Radio Buttons', '')
       .mb16
       +radioButtons('radioBattonName1','radioBattonValueMun', 'radioBattonIdMun', 'radioBattonValueWoman', 'radioBattonIdWoman')
-      .mb36
+      .mb40
       +inputDropdownTitle('Toggle', '')
       .mb16
       +toggleButtons('Получать спецпредложения', '', 'toggleButtons__displayNoneOff')
-      .mb10
+      .mb14
       +toggleButtons('Получать спецпредложения', 'toggleButtons__displayNoneOn', '')
       .mb40
+      .mb45
       +inputDropdownTitle('like button', '')
       .mb16
       .uiFormElements_likeButton__wrap
@@ -79,7 +80,7 @@ block content
       .mb98
       +inputDropdownTitle('rich Checkbox Buttons', '', 'width320')
       .mb16
-      +Checkbox([{idd: '1', lab: 'Широкий коридор', title: 'Ширина коридоров в номере не менее 91 см.', class:'Checkbox_label'}, {idd: '2', lab: 'Помощник для инвалидов', title: 'На 1 этаже вас встретит специалист  и проводит до номера.', class: 'Checkbox_label'}])
+      +Checkbox([{idd: '1', lab: 'Широкий коридор', title: 'Ширина коридоров в номере не менее 91 см.', class:'Checkbox_label',Checkbox_text__none: ''}, {idd: '2', lab: 'Помощник для инвалидов', title: 'На 1 этаже вас встретит специалист  и проводит до номера.', class: 'Checkbox_label',Checkbox_text__none: ''}])
     div.columnRight 
       +rangeSlider
       .mb40
@@ -101,19 +102,20 @@ block content
       .mb40
       +inputDropdownTitle('pagination', '')
       .mb16
-      +pagination
-      .mb230
+      +pagination('1 – 12 из 100+ вариантов аренды')
+      .mb240
       +inputDropdownTitle('dropdown', '')
       .mb5
       +dropdownSum('dropdownSum__Width320','title__width206','guestsSumId1','Сколько гостей', 'взрослые','дети', 'младенцы', 'dropdownSum_Btn__Wrap','BtnMinusAdults1', 'BtnPlusAdults1','ResultAdults1', 'BtnMinusChildren1', 'BtnPlusChildren1','ResultChildren1', 'BtnMinusBabies1', 'BtnPlusBabies1', 'ResultBabies1', 'dropdownSum_BtnClear1', 'dropdownSum_BtnApplay1')
       .mb98
       +inputDropdownTitle('Bullet List', '', 'width292') 
+      .mb14
       +bulletList([{text:'Нельзя с питомцами'},{text:'Без вечеринок и мероприятий'},{text:'Время прибытия — после 13:00, а выезд до 12:00'}])
   div.uiFormElements_footer   
     .columnLeft 
       .mt100
       +advantages([{class: 'advantages_img1', title: 'Комфорт', text: 'Шумопоглощающие стены'}, {class: 'advantages_img2', title: 'Удобство', text: 'Окно в каждой из спален'}])
     .columnRight 
-      .mt110
+      .mt130
       +review('review_img1', 'Мурад Сарафанов', '5', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
 

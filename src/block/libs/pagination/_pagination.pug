@@ -1,4 +1,5 @@
-mixin pagination 
+mixin pagination(pagination_text) 
+  .pagination_wrap
     .pagination
       .displayNone(id='pagination_BtnMinus')
         img(src="../../../block/libs/buttons/btnArrow.svg", alt="arrow")
@@ -6,5 +7,9 @@ mixin pagination
         li(class='pagination_li pagination_li__active') 1
         li(class='pagination_li') 2
         li(class='pagination_li') 3
+        li(class='pagination_li') ...
+        li(class='pagination_li') 15
       .displayFlex(id='pagination_BtnPlus')
         img(src="../../../block/libs/buttons/btnArrow.svg", alt="arrow")
+    .pagination_text 
+      p=pagination_text     

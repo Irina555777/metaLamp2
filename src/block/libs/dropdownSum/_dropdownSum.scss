@@ -29,6 +29,7 @@
     opacity: .75;
     font-size: 14px;
     line-height: 24px;
+    letter-spacing: .8px;
 }
 .dropdownSum_Btn {
     border: none;
@@ -56,10 +57,10 @@
     height: 30px;
     margin-bottom: 7px;
     .title {
-      /*width: 206px;*/  
       color: $dark;
       font-size: 12px;
       text-transform: uppercase;
+      letter-spacing: .8px;
     }
     .title__width206 {
        width: 206px;     
@@ -76,13 +77,16 @@
         border-radius: 50%;
     }
     .Result {
-        margin-right: 8px;
+        margin-right: 10px;
         font-size: 12px;
         color: $dark;
         text-transform: uppercase;
     }
     .BtnMinus {
-        margin-right: 8px;
+        margin-right: 10px;
+    }
+    .BtnPlus {
+        margin-right: 0;
     }
 }
 .dropdownSum_ContextWrap__mb0 {
@@ -100,8 +104,12 @@
         font-size: 12px;
         background-color: white;
         border: none;
+        letter-spacing: .8px;
     }
 }
 .dropdownSum_BtnClear__opasity0 {
     opacity: 0;
+}
+.Checkbox_text__none {
+    display: none;
 }

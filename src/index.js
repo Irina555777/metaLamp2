@@ -343,13 +343,19 @@ const liBtnPlusClick = function(){
     if(count == 1){
         list.innerHTML = `<li>${count}</li>
                       <li class='pagination_li__active'>${count + 1}</li>  
-                      <li>${count + 2}</li>`
+                      <li>${count + 2}</li>
+                      <li><span>...</span></li>
+                      <li>${totalPages1}</li>`
+                      countBtnMinus.classList.remove('displayNone');
+                      countBtnMinus.classList.add('displayFlex');
     } 
     if(count == 2){
       
         list.innerHTML = `<li>${count - 1}</li>
         <li>${count}</li>  
-        <li class='pagination_li__active'>${count + 1}</li>`  
+        <li class='pagination_li__active'>${count + 1}</li>
+        <li><span>...</span></li>
+        <li>${totalPages1}</li>`  
     } 
     if(count >= 3 && count < 12){
         list.innerHTML = ` 
@@ -357,8 +363,6 @@ const liBtnPlusClick = function(){
                       <li class='pagination_li__active'>${count + 1}</li> 
                       <li><span>...</span></li>
                       <li>${totalPages1}</li>`
-                      countBtnMinus.classList.remove('displayNone');
-                      countBtnMinus.classList.add('displayFlex');
     } 
     if(count == 12){
         list.innerHTML = `<li class='pagination_li__active'>${count + 1}</li>
@@ -377,7 +381,6 @@ const liBtnPlusClick = function(){
         countBtnPlus.classList.toggle('displayNone');
         countBtnPlus.classList.toggle('displayFlex');
     }
-    console.log(count);
 }
 const liBtnMinusClick = function(){
     count--;
@@ -397,30 +400,37 @@ const liBtnMinusClick = function(){
                       <li class='pagination_li__active'>${count + 1}</li> 
                       <li><span>...</span></li> 
                       <li>${totalPages1}</li>`
-                      countBtnPlus.classList.remove('displayNone');
-                      countBtnPlus.classList.add('displayFlex');
+                      countBtnPlus.classList.toggle('displayNone');
+                      countBtnPlus.classList.toggle('displayFlex');
     } 
     if(count == 2){
         list.innerHTML = `<li>${count - 1}</li>
         <li>${count}</li>  
-        <li class='pagination_li__active'>${count + 1}</li>`  
+        <li class='pagination_li__active'>${count + 1}</li>
+        <li><span>...</span></li> 
+        <li>${totalPages1}</li>` 
     }
     if(count == 1){
         list.innerHTML = `<li>${count}</li>
         <li class='pagination_li__active'>${count + 1}</li>  
-        <li>${count + 2}</li>`  
+        <li>${count + 2}</li>
+        <li><span>...</span></li> 
+        <li>${totalPages1}</li>` 
+        countBtnMinus.classList.toggle('displayNone');
+        //countBtnMinus.classList.toggle('displayFlex');
     }
     if(count == 0){
         list.innerHTML = `<li class='pagination_li__active'>${count + 1}</li>
         <li>${count + 2}</li>  
-        <li>${count + 3}</li>`  
+        <li>${count + 3}</li>
+        <li><span>...</span></li> 
+        <li>${totalPages1}</li>`  
+        countBtnMinus.classList.remove('displayFlex'); 
         countBtnMinus.classList.add('displayNone');
-
     }
     if(count <= 0){
         count = 0
     }
-    console.log(count);
 }
 countBtnPlus.addEventListener('click', liBtnPlusClick);
 countBtnMinus.addEventListener('click', liBtnMinusClick)

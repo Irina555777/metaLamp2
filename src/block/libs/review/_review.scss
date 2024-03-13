@@ -22,12 +22,14 @@
 } 
 .reviev_title, .review_amountDays, .review_text {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 14px;
     color: $dark;
     opacity: .75;
+    letter-spacing: .8px;
 }
 .reviev_title {
     font-weight: 900;
+    margin-bottom: 7px;
 }
 .review_amountDays {
     display: flex;
@@ -38,5 +40,5 @@
 }
 .review_text {
     max-width: 650px;
-    line-height: 20px;
+    line-height: 24px;
 } 

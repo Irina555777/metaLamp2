@@ -2,14 +2,14 @@
 .advantages__wrap {
     display: flex;
     width: 280px;
-    height: 92px;
-    padding-top: 23px;
+    height: 64px;
+    margin-bottom: 25px;
     border-bottom: 1px solid rgba(31, 32, 65, .1);
 }
 .advantages_img {
-    width: 44px;
-    height: 44px;
-    margin-right: 10px;
+    width: 42px;
+    height: 42px;
+    margin-right: 14px;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,12 +22,13 @@
 }
 .advantages_text__title, .advantages_text__text {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 14px;
     color: $dark;
     opacity: .75;
+    letter-spacing: 1px;
 }
 .advantages_text__title {
     font-weight: 900;
-    margin-bottom: 2px;
+    margin-bottom: 9px;
 }
 

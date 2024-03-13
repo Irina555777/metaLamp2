@@ -2,10 +2,10 @@
 .pagination {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
     width: 290px;
-    height: 50px;
-    padding: 10px;
+    height: 40px;
+    margin-bottom: 12px;
 }
 .pagination ui{
     display: flex;
@@ -54,4 +54,14 @@
 }
 .displayFlex {
   display: flex;
+}
+.pagination_text {
+    padding-left: 6px;
+    font-size: 14px;
+    color: $dark;
+    opacity: .75;
+    letter-spacing: .7px;
+}
+.colorWait {
+    background: white;
 }
