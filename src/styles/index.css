@@ -68,8 +68,13 @@ div {
   background-image: url("../img/image.png");
 }
 
-.pugg {
-  background-color: green;
+.page__main {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.page_main__wrap {
+  padding: 50px;
 }
 
 .but {
@@ -1283,6 +1288,8 @@ input.rangeSlider_min {
   border-top-left-radius: 3px;
   background: linear-gradient(to right, white var(--litters-range), #66D2EA var(--litters-range));
   border: 1px solid rgba(31, 32, 65, 0.25);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   border-right: none;
 }
 
@@ -1297,6 +1304,8 @@ input.rangeSlider_max {
   /*background: linear-gradient( to right, #66D2EA let(--litters-range1), white let(--litters-range1));*/
   background: linear-gradient(to right, #66D2EA var(--litters-range1), white var(--litters-range1));
   border: 1px solid rgba(31, 32, 65, 0.25);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
   border-left: none;
 }
 
@@ -1453,8 +1462,101 @@ input {
   background-size: contain;
 }
 
-.arrow-smile {
-  color: green;
+.uiHeadersFooters_container {
+  background: rgb(244, 244, 246);
+  padding-top: 140px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.footer_main {
+  display: flex;
+  width: 100%;
+  padding-top: 100px;
+  padding: 100px 9.7%;
+  background: white;
+}
+
+.footer_text {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1F2041;
+  letter-spacing: 1px;
+  opacity: 0.75;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+.footer_link {
+  color: #1F2041;
+  font-size: 14px;
+  opacity: 0.5;
+  line-height: 17px;
+  text-decoration: none;
+}
+
+.footer_title {
+  font-size: 12px;
+  color: #1F2041;
+  text-transform: uppercase;
+  line-height: 14px;
+  opacity: 1;
+  margin-bottom: 21px;
+}
+
+.width260 {
+  width: 260px;
+}
+
+.mr40 {
+  margin-right: 40px;
+}
+
+.width143 {
+  width: 143px;
+}
+
+.mr57 {
+  margin-right: 57px;
+}
+
+.width108 {
+  width: 108px;
+}
+
+.mr92 {
+  margin-right: 92px;
+}
+
+.logoGroup_wrqp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 105.69px;
+  height: 40px;
+}
+
+.logoGroup_img {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../block/libs/logoGroup/LogoGroup.png");
+}
+
+.logoGroup_text {
+  width: 53px;
+  height: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../block/libs/logoGroup/TOXIN.png");
 }
 
 /*# sourceMappingURL=index.css.map */

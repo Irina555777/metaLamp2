@@ -37,6 +37,8 @@ input.rangeSlider_min {
     border-top-left-radius: 3px;
     background: linear-gradient( to right, white var(--litters-range), #66D2EA var(--litters-range));
     border: 1px solid rgba(31, 32, 65, .25);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     border-right: none;
   }
   input.rangeSlider_max {
@@ -50,6 +52,8 @@ input.rangeSlider_min {
     /*background: linear-gradient( to right, #66D2EA let(--litters-range1), white let(--litters-range1));*/
     background: linear-gradient( to right, #66D2EA var(--litters-range1), white var(--litters-range1));
     border: 1px solid rgba(31, 32, 65, .25);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     border-left: none;
   }
   

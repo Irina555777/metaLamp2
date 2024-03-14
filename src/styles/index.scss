@@ -17,8 +17,14 @@ div {
     background-size: cover;
     background-image: url('../img/image.png');
 }
-.pugg {
-    background-color: green;
+
+//styles for index.pug
+.page__main {
+    margin-right: 20px;
+    text-decoration: none;
+}
+.page_main__wrap {
+    padding: 50px;
 }
 
 
@@ -45,10 +51,9 @@ div {
 @import '../block/libs/rangeSlider/rangeSlider';
 @import '../block/libs/pagination/pagination';
 @import '../block/libs/calendar/calendar';
-//@import './vanilla-calendar.min.css';
-.arrow-smile {
-    color: green;
-}
+@import '../pages/pages/UI-headers-footers/UiHeadersFooters.scss';
+@import '../block/libs/footer/footer';
+@import '../block//libs/logoGroup/logoGroup';
 
 
 
