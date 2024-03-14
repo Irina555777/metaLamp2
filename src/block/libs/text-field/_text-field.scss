@@ -1,3 +1,6 @@
+.textField_wrap {
+    position: relative;
+}
 .textField {
     box-sizing: border-box;
     width: 320px;
@@ -6,6 +9,16 @@
     border: 1px solid rgba(31, 32, 65, .25);
     border-radius: 4px;
     outline:none;
+}
+.textField_arrow {
+    position: absolute;
+    width: 24px;
+    height: 24px;background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../block/libs/text-field/text-field-arrow.svg');
+    top: 10px;
+    left: 233px;
 }
 ::placeholder {
     font-size: 14px;
