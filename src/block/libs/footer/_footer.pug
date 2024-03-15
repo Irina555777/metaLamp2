@@ -1,33 +1,60 @@
 mixin footer 
-  .footer_main
-    .width260.mr40.mb20 
-      +logoGroup
+  div
+    .footer_main
+      .footer_logo 
+        +logoGroup
+        .footer_text.mt20
+          p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+      .footer_nav 
+        ul  
+          li 
+            h2.footer_title навигация
+          li 
+            a(class='footer_link' href='google.com') О нас
+          li 
+            a(class='footer_link' href='google.com') Новости
+          li 
+            a(class='footer_link' href='google.com') Служба поддержки
+          li 
+            a(class='footer_link' href='google.com') Услуги
+      .footer_about
+        ul  
+          li 
+            h2.footer_title о нас
+          li 
+            a(class='footer_link' href='google.com') О сервисе
+          li 
+            a(class='footer_link' href='google.com') Наша команда
+          li 
+            a(class='footer_link' href='google.com') Вакансии
+          li 
+            a(class='footer_link' href='google.com') Инвесторы
+      .footer_cupport
+        ul  
+          li 
+            h2.footer_title Служба поддержки
+          li 
+            a(class='footer_link' href='google.com') Соглашения
+          li 
+            a(class='footer_link' href='google.com') Сообщества
+          li 
+            a(class='footer_link' href='google.com') Связь с нами  
+      .footer_subscription
+        ul  
+          li 
+            h2.footer_title Подписка
+          li 
+            p.footer_text Получайте специальные предложения и новости сервиса
+          li 
+            +TextField('w266', 'textField_arrow', 'email', 'email', 'Email')
+    .footer_footer  
       .footer_text
-        p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-    .width143.mr57 
-      ul  
-        li 
-          h2.footer_title навигация
-        li 
-          a(class='footer_link' href='google.com') О нас
-        li 
-          a(class='footer_link' href='google.com') Новости
-        li 
-          a(class='footer_link' href='google.com') Служба поддержки
-        li 
-          a(class='footer_link' href='google.com') Услуги
-    .width108.mr92
-      ul  
-        li 
-          h2.footer_title о нас
-        li 
-          a(class='footer_link' href='google.com') О сервисе
-        li 
-          a(class='footer_link' href='google.com') Наша команда
-        li 
-          a(class='footer_link' href='google.com') Вакансии
-        li 
-          a(class='footer_link' href='google.com') Инвесторы
-    .footer_cupport
-    .footer_subscription
+        p Copyright &#169; 2018 Toxin отель. Все права защищены.
+      .footerFooter_links
+        a(href="#vk" onclick="window.open('https://vk.com/share.php?url='+ window.location.href +'')") 
+          img(src='../../../block/libs/footer/tvitter.svg', alt='tvitter')
+        a(href="#twitter" onclick="window.open('https://www.facebook.com/home.php'+ window.location.href +'')")
+          img(src='../../../block/libs/footer/facebook.svg', alt='facebook')
+        a(href="#twitter" onclick="window.open('https://www.instagram.com/accounts/login/?next=%2Fselcukcan1%2Ffeed%2F&source=profile_feed_tab&locale=ru'+ window.location.href +'')")
+          img(src='../../../block/libs/footer/instagram.svg', alt='instagram')
   
