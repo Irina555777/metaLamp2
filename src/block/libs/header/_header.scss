@@ -19,6 +19,18 @@
     width: auto;
     margin-left: 20px;
 }
+.header_link, .header_link__active, :active {
+    font-size: 14px;
+    color: $dark;
+    opacity: .75;
+    text-decoration: none;
+}
+a:active {
+    font-weight: 700;
+}
+.header_link__active {
+    font-weight: 700;
+}
 .ml20 {
     margin-left: 20px;
 }

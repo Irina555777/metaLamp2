@@ -3,6 +3,14 @@ mixin header
     .header_logo 
       +logoGroup
     .header_nav
+      a(class='header_link__active' href='google.com') О нас
+      .ml20
+      +select('select__width74','agreements', 'Услуги', 'value2', 'value3', 'value4')
+      .ml20
+      a(class='header_link' href='google.com') Вакансии
+      .ml20
+      a(class='header_link' href='google.com') Новости
+      .ml20
       +select('select__width116','agreements', 'Соглашения', 'value2', 'value3', 'value4')
       .header_btnWrap
         +buttons('buttons__width87', 'buttons__height34', 'buttons__defaultBorder', 'displayNone', 'войти', '')

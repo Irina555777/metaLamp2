@@ -1651,6 +1651,21 @@ input {
   margin-left: 20px;
 }
 
+.header_link, .header_link__active, :active {
+  font-size: 14px;
+  color: #1F2041;
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+a:active {
+  font-weight: 700;
+}
+
+.header_link__active {
+  font-weight: 700;
+}
+
 .ml20 {
   margin-left: 20px;
 }
@@ -1659,12 +1674,18 @@ input {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+  height: 14px;
+  font-size: 14px;
   color: #1F2041;
   opacity: 0.75;
   border: none;
   background-image: url("../block/libs/select/selectArrow.svg");
   background-repeat: no-repeat, repeat;
   background-position: right 6px top 50%, 0 0;
+}
+
+.select__width74 {
+  width: 74px;
 }
 
 .select__width116 {

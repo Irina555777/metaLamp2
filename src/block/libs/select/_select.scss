@@ -2,12 +2,17 @@
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
+    height: 14px;
+    font-size: 14px;
     color: $dark;
     opacity: .75;
     border: none;
     background-image: url('../block/libs/select/selectArrow.svg');
     background-repeat: no-repeat, repeat;
     background-position: right 6px top 50%, 0 0;
+}
+.select__width74 {
+    width: 74px;
 }
 .select__width116 {
     width: 116px;
