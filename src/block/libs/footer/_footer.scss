@@ -15,6 +15,22 @@
     }
     margin-bottom: 1px;
 }
+.footer_wrap__mobile {
+    width: 768px;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+    background: white;
+    box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+}
+.footer_main__mobile {
+    width: 106px;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: none;
+}
+
 .footer_logo {
     width: 18%;
     margin-bottom: 20px;
@@ -25,6 +41,9 @@
     color: $dark;
     letter-spacing: 1px;
     opacity: .75;
+}
+.footer_text__mb25 {
+    margin-bottom: 25px;
 }
 .mt20 {
     margin-top: 20px;
@@ -66,9 +85,16 @@
     padding-left: 9.7%;
     padding-right: 9.7%;
 } 
+.footer_footer--mobile {
+    display: inline-block;
+}
 .footerFooter_links a {
     margin-left: 20px;
 }
+.displayNone {
+    display: none;
+}
+
 
 
 

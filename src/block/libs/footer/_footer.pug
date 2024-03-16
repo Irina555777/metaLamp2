@@ -1,11 +1,11 @@
-mixin footer 
-  div
-    .footer_main
+mixin footer(displayNone, footer__wrap, footer_main, footer_footer__wrap, footer_text__mb) 
+  div(class=footer__wrap)
+    div(class=footer_main)
       .footer_logo 
         +logoGroup
-        .footer_text.mt20
+        .footer_text.mt20(class=displayNone)
           p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-      .footer_nav 
+      .footer_nav(class=displayNone) 
         ul  
           li 
             h2.footer_title навигация
@@ -17,7 +17,7 @@ mixin footer
             a(class='footer_link' href='google.com') Служба поддержки
           li 
             a(class='footer_link' href='google.com') Услуги
-      .footer_about
+      .footer_about(class=displayNone)
         ul  
           li 
             h2.footer_title о нас
@@ -29,7 +29,7 @@ mixin footer
             a(class='footer_link' href='google.com') Вакансии
           li 
             a(class='footer_link' href='google.com') Инвесторы
-      .footer_cupport
+      .footer_cupport(class=displayNone)
         ul  
           li 
             h2.footer_title Служба поддержки
@@ -39,7 +39,7 @@ mixin footer
             a(class='footer_link' href='google.com') Сообщества
           li 
             a(class='footer_link' href='google.com') Связь с нами  
-      .footer_subscription
+      .footer_subscription(class=displayNone)
         ul  
           li 
             h2.footer_title Подписка
@@ -47,8 +47,8 @@ mixin footer
             p.footer_text Получайте специальные предложения и новости сервиса
           li 
             +TextField('w266', 'textField_arrow', 'email', 'email', 'Email')
-    .footer_footer  
-      .footer_text
+    .div(class=footer_footer__wrap) 
+      .footer_text(class=footer_text__mb)
         p Copyright &#169; 2018 Toxin отель. Все права защищены.
       .footerFooter_links
         a(href="#vk" onclick="window.open('https://vk.com/share.php?url='+ window.location.href +'')") 
