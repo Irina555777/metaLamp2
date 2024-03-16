@@ -11,13 +11,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 44px;
     border-radius: 20px;
     p {
         font-size: 12px;
         line-height: 14.63px;
         text-transform: uppercase;
     }
+}
+.buttons__height34 {
+    height: 34px;
+}
+.buttons__height44 {
+    height: 44px;
 }
 .buttons__defaultBg {
     background: linear-gradient($primary-color, $primaryGradient);
@@ -45,8 +50,14 @@ button.buttons__defaultBorder:hover {
     opacity: .5;
     color: $primary-color;
 }
+.buttons__width87 {
+    width: 87px;
+}
 .buttons__width99 {
     width: 99px;
+}
+.buttons__width196 {
+    width: 196px;
 }
 .buttons__width320 {
     width: 320px;

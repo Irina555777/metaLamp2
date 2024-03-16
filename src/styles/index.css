@@ -83,13 +83,20 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 44px;
   border-radius: 20px;
 }
 .buttons p {
   font-size: 12px;
   line-height: 14.63px;
   text-transform: uppercase;
+}
+
+.buttons__height34 {
+  height: 34px;
+}
+
+.buttons__height44 {
+  height: 44px;
 }
 
 .buttons__defaultBg {
@@ -122,8 +129,16 @@ button.buttons__defaultBorder:hover {
   color: #BC9CFF;
 }
 
+.buttons__width87 {
+  width: 87px;
+}
+
 .buttons__width99 {
   width: 99px;
+}
+
+.buttons__width196 {
+  width: 196px;
 }
 
 .buttons__width320 {
@@ -982,13 +997,20 @@ label.custom-radio {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 44px;
   border-radius: 20px;
 }
 .buttons p {
   font-size: 12px;
   line-height: 14.63px;
   text-transform: uppercase;
+}
+
+.buttons__height34 {
+  height: 34px;
+}
+
+.buttons__height44 {
+  height: 44px;
 }
 
 .buttons__defaultBg {
@@ -1021,8 +1043,16 @@ button.buttons__defaultBorder:hover {
   color: #BC9CFF;
 }
 
+.buttons__width87 {
+  width: 87px;
+}
+
 .buttons__width99 {
   width: 99px;
+}
+
+.buttons__width196 {
+  width: 196px;
 }
 
 .buttons__width320 {
@@ -1467,7 +1497,6 @@ input {
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
-  padding-top: 100px;
   padding: 100px 9.7%;
   background: white;
   box-shadow: 0px 1px 0px 0px rgba(31, 32, 65, 0.1);
@@ -1596,6 +1625,27 @@ input {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../block/libs/logoGroup/TOXIN.png");
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 70px;
+  padding-left: 9.7%;
+  padding-right: 9.7%;
+  background: white;
+}
+
+.header_btnWrap {
+  display: flex;
+  justify-content: end;
+}
+
+.ml20 {
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */

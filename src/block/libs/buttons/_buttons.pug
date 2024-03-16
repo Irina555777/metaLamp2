@@ -1,5 +1,5 @@
-mixin buttons(buttons__width, buttons__defaultBg, displayNone, button_text, button_text__width) 
-  button.buttons(class=buttons__width class=buttons__defaultBg)   
+mixin buttons(buttons__width, buttons__height, buttons__defaultBg, displayNone, button_text, button_text__width) 
+  button.buttons(class=buttons__width  class=buttons__height class=buttons__defaultBg)   
     //+buttonText('CLICK ME', '')
     p(class=button_text__width)=button_text
     img(class= displayNone,src="../../../block/libs/buttons/btnArrow.svg", alt="arrow")
