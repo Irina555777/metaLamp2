@@ -9,9 +9,15 @@
     padding-right: 9.7%;
     background: white;
 }
+.header_nav {
+    display: flex;
+    align-items: center;
+}
 .header_btnWrap {
     display: flex;
     justify-content: end;
+    width: auto;
+    margin-left: 20px;
 }
 .ml20 {
     margin-left: 20px;

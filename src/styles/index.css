@@ -1639,13 +1639,48 @@ input {
   background: white;
 }
 
+.header_nav {
+  display: flex;
+  align-items: center;
+}
+
 .header_btnWrap {
   display: flex;
   justify-content: end;
+  width: auto;
+  margin-left: 20px;
 }
 
 .ml20 {
   margin-left: 20px;
 }
+
+.select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  color: #1F2041;
+  opacity: 0.75;
+  border: none;
+  background-image: url("../block/libs/select/selectArrow.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right 6px top 50%, 0 0;
+}
+
+.select__width116 {
+  width: 116px;
+}
+
+.select::-ms-expand {
+  display: none;
+}
+
+/*.select option { 
+    color: red;
+} 
+*[dir="rtl"] .select, :root:lang(ar) .select, :root:lang(iw) .select { 
+    background-position: left .7em top 50%, 0 0; 
+    padding: .6em .8em .5em 1.4em; 
+    }*/
 
 /*# sourceMappingURL=index.css.map */
