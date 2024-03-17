@@ -1,4 +1,4 @@
-mixin header 
+mixin header(displayNoneBtn, displayNoneUserName, header_userName, ml20) 
   .header__wrap
     .header_logo 
       +logoGroup
@@ -12,7 +12,10 @@ mixin header
       a(class='header_link' href='google.com') Новости
       .ml20
       +select('select__width116','agreements', 'Соглашения', 'value2', 'value3', 'value4')
-      .header_btnWrap
+      .header_btnWrap(class=displayNoneBtn)
         +buttons('buttons__width87', 'buttons__height34', 'buttons__defaultBorder', 'displayNone', 'войти', '')
         .ml20
         +buttons('buttons__width196', 'buttons__height34', 'buttons__defaultBg','displayNone', 'зарегистрироваться', 'button_text__width') 
+      div(class=ml20) 
+      .heder_user(class=displayNoneUserName) 
+        p=header_userName  

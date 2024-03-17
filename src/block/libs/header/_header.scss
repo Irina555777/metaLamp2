@@ -8,10 +8,13 @@
     padding-left: 9.7%;
     padding-right: 9.7%;
     background: white;
+    box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+
 }
 .header_nav {
     display: flex;
     align-items: center;
+    justify-content: end;
 }
 .header_btnWrap {
     display: flex;
@@ -33,4 +36,18 @@ a:active {
 }
 .ml20 {
     margin-left: 20px;
+}
+.heder_user {
+    height: 30px;
+    padding-left: 20px;
+    border-left: 1px solid rgba(31, 32, 65, .1);
+    color: $dark;
+    opacity: .5;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.HeaderDisplayNone {
+    display: none;
 }
