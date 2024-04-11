@@ -1,0 +1,28 @@
+.search_container {
+    width: 380px;
+    height: 374px;
+    padding: 40px 30px 30px 30px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+}
+.search_title {
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+        color: $dark;
+        letter-spacing: 1px;
+    }
+}
+.mb21 {
+    margin-bottom: 21px;
+}
+.search_wrap {
+    display: flex;
+}
+.mr20 {
+    margin-right: 20px;
+}
+.mb30 {
+    margin-bottom: 30px;
+}

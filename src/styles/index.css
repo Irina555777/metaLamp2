@@ -570,6 +570,10 @@ button.buttons__defaultBorder:hover {
   width: 292px;
 }
 
+.dropdownSum__mainWrap {
+  position: relative;
+}
+
 .dropdownSum__Wrap {
   display: flex;
   justify-content: space-between;
@@ -613,6 +617,8 @@ button.buttons__defaultBorder:hover {
 }
 
 .dropdownSum_Context {
+  position: absolute;
+  z-index: 100;
   box-sizing: border-box;
   padding: 6px 7px 8px 15px;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -621,17 +627,15 @@ button.buttons__defaultBorder:hover {
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
   box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+  background: white;
 }
 
 .displayNone {
   display: none;
 }
 
-.RedVVV {
-  background-color: red;
-}
-
 .dropdownSum_ContexWrap {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   height: 30px;
@@ -670,24 +674,27 @@ button.buttons__defaultBorder:hover {
   margin-right: 0;
 }
 
-.dropdownSum_ContextWrap__mb0 {
-  margin-bottom: 0px;
+.dropdownSum_ContextWrap__mb13 {
+  margin-bottom: 13px;
 }
 
 .dropdownSum_Btn__Wrap {
   display: flex;
+  align-items: center;
+  height: 15px;
   justify-content: space-between;
-  margin-top: 20px;
-  padding-bottom: 5px;
-}
-.dropdownSum_Btn__Wrap button {
-  padding: 0;
   color: #BC9CFF;
   text-transform: uppercase;
   font-size: 12px;
   background-color: white;
   border: none;
   letter-spacing: 0.8px;
+  /*div {
+      width: 100px;
+      height: 15px;
+      padding-top: 20px;
+
+  }*/
 }
 
 .dropdownSum_BtnClear__opasity0 {
@@ -1721,5 +1728,51 @@ a:active {
     background-position: left .7em top 50%, 0 0; 
     padding: .6em .8em .5em 1.4em; 
     }*/
+.uiCardsContainer {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 9.72%;
+  padding-right: 9.72%;
+  padding-top: 150px;
+  padding-bottom: 140px;
+  box-sizing: border-box;
+  background: rgb(244, 244, 246);
+}
+
+.search_container {
+  width: 380px;
+  height: 374px;
+  padding: 40px 30px 30px 30px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+.search_title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1F2041;
+  letter-spacing: 1px;
+}
+
+.mb21 {
+  margin-bottom: 21px;
+}
+
+.search_wrap {
+  display: flex;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
 
 /*# sourceMappingURL=index.css.map */

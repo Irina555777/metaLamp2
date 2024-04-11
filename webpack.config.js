@@ -5,8 +5,8 @@ const mode = process.env.NODE_ENV || 'development';
 const devMode = mode === 'development';
 const target = devMode ? 'web' : 'browserslist';
 const devtool = devMode ? 'source-map' : undefined;
-
-
+const multipage = require('./multipage.config');
+const result = {};
 module.exports = {
     mode,
     target,
@@ -14,42 +14,50 @@ module.exports = {
     devServer: {
         open:true
     },
-    entry: path.resolve(__dirname, 'src', 'index.js'),
+    //entry: path.resolve(__dirname, 'src', 'index.js'),
+    //entry: ['./src/main.js', './src/uiCards.js'],
+    entry: {
+      ...multipage.entry
+  },
     output: {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
-        filename: 'index.[contenthash].js',
+        //filename: 'index.[contenthash].js',
+        filename: '[name].js',
         assetModuleFilename: 'assets/[name][ext]'
     },
-    plugins: [
-  //new HtmlWebpackPlugin({
-   // template: path.resolve(__dirname, 'src/pages/UI-colors-type', 'UIColorsType.html')
+    optimization: {
+      splitChunks: {
+        chunks: 'all',
+      },
+    },
   
-//}),
+    plugins: [ 
 new HtmlWebpackPlugin({
-  template: path.resolve(__dirname, 'src/pages', 'index.html')
-
+  template: path.resolve(__dirname, 'src/pages', 'index.html'),
+  chunks: ['main']
 }),
 
 new HtmlWebpackPlugin({
   template: path.resolve(__dirname, 'src/pages/pages/UI-form-elements', 'UIFormElements.html'),
-  filename: 'UiFormElements.html'
+  filename: 'UiFormElements.html',
+  chunks: ['uiFormElements'],
 }),
 new HtmlWebpackPlugin({
   template: path.resolve(__dirname, 'src/pages/pages/UI-cards', 'UiCards.html'),
-  filename: 'UiCards.html'
+  filename: 'UiCards.html',
+  chunks: ['uiCards'],
 }),
 new HtmlWebpackPlugin({
   template: path.resolve(__dirname, 'src/pages/pages/UI-headers-footers', 'UiheadersFooters.html'),
-  filename: 'UiheadersFooters.html'
+  filename: 'UiheadersFooters.html',
+  chunks: ['uiHeadersFooters'],
 }),
 new HtmlWebpackPlugin({
   template: path.resolve(__dirname, 'src/pages/pages/UI-colors-type', 'UIColorsType.html'),
-  filename: 'UiColorsType.html'
+  filename: 'UiColorsType.html',
+  chunks: ['uiColorsType'],
 }),
-
-
-
     new MiniCssExtractPlugin({
         filename: '[name].[contenthash].css',
     })

@@ -1,29 +1,29 @@
 
-mixin dropdownSum(dropdownSumWidth,titleWidth,dropdownSum_Text, mainTitle, title1,title2, title3, dropdownSum_Btn__class, dropdownMinusId1, dropdownPlus1,result1,dropdownMinusId2,dropdownPlus2,result2, dropdownMinusId3,dropdownPlus3,result3,dropdownSumBtnClear,dropdownSumBtnApplay) 
-  .dropdownSum__Wrap(class=dropdownSumWidth)#dropdownSumWrapId
-    .dropdownSum_Text(id=dropdownSum_Text)= mainTitle
-    button#dropdownSum_Btn.dropdownSum_Btn
-      img(src="../../../block/libs/dropdownSum/dropdownSumBtn.png", alt="Btn")  
-  div.dropdownSum_Context.displayNone(class=dropdownSumWidth,id=dropdownContextId)
-    .dropdownSum_ContexWrap 
-      .title(class=titleWidth)=title1
-      .BtnMinus(id=dropdownMinusId1) -
-      //.Result#ResultAdults 0
-      .Result(id=result1) 0
-      .BtnPlus(id=dropdownPlus1) +
-    .dropdownSum_ContexWrap 
-      .title(class=titleWidth)=title2
-      .BtnMinus(id=dropdownMinusId2) -
-      //.Result#ResultChildren 0
-      .Result(id=result2) 0
-      .BtnPlus(id=dropdownPlus2) +
-    .dropdownSum_ContexWrap.dropdownSum_ContextWrap__mb0
-      .title(class=titleWidth)=title3
-      .BtnMinus(id=dropdownMinusId3) -
-      //.Result#ResultBabies 0
-      .Result(id=result3) 0
-      .BtnPlus(id=dropdownPlus3) +    
-    .div(class=dropdownSum_Btn__class)
-      button.dropdownSum_BtnClear__opasity0(id=dropdownSumBtnClear) очистить
-      button(id=dropdownSumBtnApplay) применить
+mixin dropdownSum(dropdownSumWidth,titleWidth,dropdownSum_Btn, dropdownSum_context,dropdownSum_Wrap, dropdownSum_Text, mainTitle, title1,title2, title3, dropdownSum_Btn__class, dropdownMinusId1, dropdownPlus1,result1,dropdownMinusId2,dropdownPlus2,result2, dropdownMinusId3,dropdownPlus3,result3, dropdownSum_BtnClear, dropdownSumBtnApplay) 
+  .dropdownSum__mainWrap
+    .dropdownSum__Wrap(class=dropdownSumWidth id=dropdownSum_Wrap)
+      .dropdownSum_Text(id=dropdownSum_Text)= mainTitle
+      button.dropdownSum_Btn(id=dropdownSum_Btn)
+        img(src="../../../block/libs/dropdownSum/dropdownSumBtn.png", alt="Btn")    
+    div.dropdownSum_Context.displayNone(class=dropdownSumWidth,id=dropdownSum_context) 
+      .dropdownSum_ContexWrap 
+        .title(class=titleWidth)=title1
+        .BtnMinus(id=dropdownMinusId1) -
+        .Result(id=result1) 0
+        .BtnPlus(id=dropdownPlus1) +
+      .dropdownSum_ContexWrap 
+        .title(class=titleWidth)=title2
+        .BtnMinus(id=dropdownMinusId2) -
+        .Result(id=result2) 0
+        .BtnPlus(id=dropdownPlus2) +
+      .dropdownSum_ContexWrap
+        .title(class=titleWidth)=title3
+        .BtnMinus(id=dropdownMinusId3) -
+        .Result(id=result3) 0
+        .BtnPlus(id=dropdownPlus3) +        
+      div(class=dropdownSum_Btn__class)  
+        .dropdownSum_BtnClear__opasity0(id=dropdownSum_BtnClear) очистить
+        div(id=dropdownSumBtnApplay) применить     
+        
+       
       

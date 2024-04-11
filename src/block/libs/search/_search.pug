@@ -1,0 +1,21 @@
+mixin search 
+  .search_container
+    .search_title
+      h2 Найдём номера под ваши пожелания
+    .mb21  
+    .search_wrap
+      div.mr20
+        +inputDropdownTitle('прибытие', '', 'w150')
+        .mb5
+        +calendar('w150')
+      div  
+        +inputDropdownTitle('выезд', '', 'w150')
+        .mb5
+        +calendar('w150')
+        .mb21 
+    +inputDropdownTitle('гости', '', 'width320')
+    .mb5
+    //+dropdownSum('dropdownSum__Width320','title__width206','','Сколько гостей', 'взрослые','дети', 'младенцы', 'dropdownSum_Btn__Wrap','BtnMinusAdults2', 'BtnPlusAdults2','ResultAdults2', 'BtnMinusChildren2', 'ResultChildren2','BtnPlusChildren2', 'BtnMinusBabies2', 'BtnPlusBabies2', 'ResultBabies2', 'dropdownSum_BtnClear2', 'dropdownSumBtnApplay2') 
+    +dropdownSum('dropdownSum__Width320','title__width206','dropdownSum_Btn4', 'dropdownSum_context4','dropdownSum_Wrap4', 'guestsSumId5','Сколько гостей', 'взрослые','дети', 'младенцы', 'dropdownSum_Btn__Wrap','BtnMinusAdults2', 'BtnPlusAdults2','ResultAdults2', '', '','', '', '', '', '', '') 
+    .mb30 
+    +buttons('buttons__width320', 'buttons__height44', 'buttons__defaultBg','', 'перейти к оплате', 'button_text__width') 
