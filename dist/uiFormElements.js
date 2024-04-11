@@ -157,27 +157,6 @@ const BtnPlushBabiesClick1 = function () {
 BtnMinusBabies1.addEventListener('click', BtnMinushBabiesClick1);
 BtnPlusBabies1.addEventListener('click', BtnPlushBabiesClick1);
 
-/*let countBabies2 = 0;
-const BtnMinusBabies2 = document.getElementById('BtnMinusBabies2');
-const ResultBabies2 = document.getElementById('ResultBabies2');
-const BtnPlusBabies2 = document.getElementById('BtnPlusBabies2');
-const BtnMinushBabiesClick2 = function(){
-    countBabies2--;
-    if (countBabies2 < 0){
-        countBabies2 = 0
-    }
-    ResultBabies2.innerHTML = countBabies2;
-}
-const BtnPlushBabiesClick2 = function(){
-    countBabies2++;
-    if (countBabies2 < 0){
-        countBabies2 = 0
-    }
-    ResultBabies2.innerHTML = countBabies2;
-}
-BtnMinusBabies2.addEventListener('click', BtnMinushBabiesClick2);
-BtnPlusBabies2.addEventListener('click', BtnPlushBabiesClick2);*/
-
 //Button #dropdownSum_BtnApplay
 const dropdownSum_BtnApplay = document.getElementById('dropdownSumBtnApplay');
 const guestsSumId = document.getElementById('guestsSumId');
@@ -216,7 +195,6 @@ const dropdownSum_BtnClearClick = function () {
   ResultChildren.innerHTML = countChildren;
   ResultBabies.innerHTML = countBabies;
   guestsSumId.innerHTML = 'сколько гостей';
-  console.log('clear');
 };
 dropdownSum_BtnClear.addEventListener('click', dropdownSum_BtnClearClick);
 const dropdownSum_BtnClear1 = document.getElementById('dropdownSum_BtnClear1');
