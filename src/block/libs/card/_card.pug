@@ -1,0 +1,24 @@
+mixin card(card_number, card_suite, card_price, card_reviewsSum)
+  .card_container
+    .card_carousel
+    .card_text__container
+      .card_number__container
+        .card_number №
+        .card_number=card_number
+        .card_suite=card_suite
+      .card_price__container  
+        .card_price=card_price
+        .card_price &#8381;
+        .card_price в сутки
+    .card_reviews__container  
+      +rateButton
+      .card_reviews
+        .card_reviews-sum=card_reviewsSum
+        .card_reviews-sum.ml5 Отзывов
+      
+
+        
+
+      
+
+        

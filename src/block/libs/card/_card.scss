@@ -1,0 +1,64 @@
+.card_container {
+    width: 270px;
+    height: 257.5px;
+    background: white;
+}
+.card_carousel {
+    height: 151.38px;
+    background: red;
+}
+.card_text__container {
+    display: flex;
+    justify-content: space-between;
+    width: 234px;
+    height: 54px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(31, 32, 65, .1);
+}
+.card_number__container, .card_price__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100px;
+} 
+.card_number__container {
+    justify-content: flex-start;
+}
+.card_number {
+    margin-right: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+}
+.card_suite {
+    font-size: 12px;
+    line-height: 14px;
+    color: $primary-color;
+}
+.card_price, .card_reviews-sum {
+    font-size: 14px;
+    line-height: 18px;
+    color: $dark;
+    opacity: .5;
+}
+.card_reviews__container {
+    display: flex;
+    justify-content: space-between;
+    width: 234px;
+    height: 32px;
+    margin-left: 20px;
+    margin-top: 8px;
+} 
+.card_reviews {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 84px;
+}
+.ml5 {
+    margin-left: 5px;
+}
+
+
