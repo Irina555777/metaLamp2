@@ -1,14 +1,15 @@
-mixin card(card_number, card_suite, card_price, card_reviewsSum)
+mixin card(card_carousel, carousel_btn__container, imgSrc1, card_number, card_suite, card_price, card_reviewsSum)
   .card_container
-    .card_carousel
+    .card_carousel(id=card_carousel)
       //img(src='image.png')
-      .carousel_btn__container(id='carousel_btn__container') 
+      .carousel_btn__container(id=carousel_btn__container) 
         .carousel_btn.carousel_btn__active(data-itemid='1') 
-        .carousel_btn(data-itemid='2') 
-        .carousel_btn(data-itemid='3') 
-        .carousel_btn(data-itemid='4') 
-      .carousel_item.displayBlock
-        img(src='../../../block/libs/card/carousel1.png', alt='img')  
+        .carousel_btn(data-itemid='2')
+        .carousel_btn(data-itemid='3')
+        .carousel_btn(data-itemid='4')
+      .carousel_item
+        //img(src='../../../block/libs/card/carousel1.png', alt='img')  
+        img(src=imgSrc1, alt='img')
       .carousel_item.displayNone
         img(src='../../../block/libs/card/carousel2.png', alt='img')  
       .carousel_item.displayNone
