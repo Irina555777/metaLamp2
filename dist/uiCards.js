@@ -1,6 +1,62 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/block/libs/card/card.js":
+/*!*************************************!*\
+  !*** ./src/block/libs/card/card.js ***!
+  \*************************************/
+/***/ (() => {
+
+//Carousel
+const carouselBtn = document.getElementsByClassName('carousel_btn');
+const carouselItem = document.getElementsByClassName('carousel_item');
+document.getElementById('carousel_btn__container').addEventListener('click', e => {
+  let i = 0;
+  let carouselItemlength = carouselItem.length;
+  let iii = e.target.dataset.itemid;
+  if (iii == 1) {
+    for (i = 0; i < carouselItemlength; i++) {
+      carouselItem[i].classList.add('displayNone');
+      carouselItem[i].classList.remove('displayBlock');
+      carouselBtn[i].classList.remove('carousel_btn__active');
+    }
+    carouselItem[0].classList.remove('displayNone');
+    carouselItem[0].classList.add('displayBlock');
+    carouselBtn[0].classList.add('carousel_btn__active');
+  }
+  if (iii == 2) {
+    for (i = 0; i < carouselItemlength; i++) {
+      carouselItem[i].classList.add('displayNone');
+      carouselItem[i].classList.remove('displayBlock');
+      carouselBtn[i].classList.remove('carousel_btn__active');
+    }
+    carouselItem[1].classList.remove('displayNone');
+    carouselItem[1].classList.add('displayBlock');
+    carouselBtn[1].classList.add('carousel_btn__active');
+  }
+  if (iii == 3) {
+    for (i = 0; i < carouselItemlength; i++) {
+      carouselItem[i].classList.add('displayNone');
+      carouselItem[i].classList.remove('displayBlock');
+      carouselBtn[i].classList.remove('carousel_btn__active');
+    }
+    carouselItem[2].classList.remove('displayNone');
+    carouselItem[2].classList.add('displayBlock');
+    carouselBtn[2].classList.add('carousel_btn__active');
+  }
+  if (iii == 4) {
+    for (i = 0; i < carouselItemlength; i++) {
+      carouselItem[i].classList.add('displayNone');
+      carouselItem[i].classList.remove('displayBlock');
+      carouselBtn[i].classList.remove('carousel_btn__active');
+    }
+    carouselItem[3].classList.remove('displayNone');
+    carouselItem[3].classList.add('displayBlock');
+    carouselBtn[3].classList.add('carousel_btn__active');
+  }
+});
+
+/***/ }),
 
 /***/ "./src/uiCards.js":
 /*!************************!*\
@@ -8,8 +64,12 @@
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/index.css */ "./src/styles/index.css");
+/* harmony import */ var _block_libs_card_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./block/libs/card/card */ "./src/block/libs/card/card.js");
+/* harmony import */ var _block_libs_card_card__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_block_libs_card_card__WEBPACK_IMPORTED_MODULE_1__);
+
 
 
 //Show dropdown
@@ -99,6 +159,54 @@ const dropdownSum_BtnClearClick2 = function () {
   guestsSumId2.innerHTML = 'сколько гостей';
 };
 dropdownSum_BtnClear2.addEventListener('click', dropdownSum_BtnClearClick2);
+//Carousel
+/*const carouselBtn = document.getElementsByClassName('carousel_btn');
+const carouselItem = document.getElementsByClassName('carousel_item');
+document.getElementById('carousel_btn__container').addEventListener('click', (e)=>{
+    let i = 0;
+    let carouselItemlength = carouselItem.length;
+    let iii = e.target.dataset.itemid;
+    if (iii == 1){
+        for (i = 0; i < carouselItemlength; i++){
+            carouselItem[i].classList.add('displayNone');
+            carouselItem[i].classList.remove('displayBlock');
+            carouselBtn[i].classList.remove('carousel_btn__active');
+        }
+        carouselItem[0].classList.remove('displayNone');
+        carouselItem[0].classList.add('displayBlock');
+        carouselBtn[0].classList.add('carousel_btn__active');
+    }
+    if (iii == 2){
+        for (i = 0; i < carouselItemlength; i++){
+            carouselItem[i].classList.add('displayNone');
+            carouselItem[i].classList.remove('displayBlock');
+            carouselBtn[i].classList.remove('carousel_btn__active');
+        }
+        carouselItem[1].classList.remove('displayNone');
+        carouselItem[1].classList.add('displayBlock');
+        carouselBtn[1].classList.add('carousel_btn__active');
+    }
+    if (iii == 3){
+        for (i = 0; i < carouselItemlength; i++){
+            carouselItem[i].classList.add('displayNone');
+            carouselItem[i].classList.remove('displayBlock');
+            carouselBtn[i].classList.remove('carousel_btn__active');
+        }
+        carouselItem[2].classList.remove('displayNone');
+        carouselItem[2].classList.add('displayBlock');
+        carouselBtn[2].classList.add('carousel_btn__active');
+    }
+    if (iii == 4){
+        for (i = 0; i < carouselItemlength; i++){
+            carouselItem[i].classList.add('displayNone');
+            carouselItem[i].classList.remove('displayBlock');
+            carouselBtn[i].classList.remove('carousel_btn__active');
+        }
+        carouselItem[3].classList.remove('displayNone');
+        carouselItem[3].classList.add('displayBlock');
+        carouselBtn[3].classList.add('carousel_btn__active');
+    }
+  })*/
 
 /***/ })
 

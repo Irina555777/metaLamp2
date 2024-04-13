@@ -1,4 +1,5 @@
 import './styles/index.css';
+import './block/libs/card/card';
 
 //Show dropdown
 const dropdownSumBtn4 = document.getElementById('dropdownSum_Btn4');
@@ -87,3 +88,9 @@ const dropdownSum_BtnClearClick2= function(){
     guestsSumId2.innerHTML = 'сколько гостей';
 }
 dropdownSum_BtnClear2.addEventListener('click', dropdownSum_BtnClearClick2);
+
+
+
+
+
+
