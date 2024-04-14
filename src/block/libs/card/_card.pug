@@ -1,4 +1,4 @@
-mixin card(card_carousel, carousel_btn__container, imgSrc1, card_number, card_suite, card_price, card_reviewsSum)
+mixin card(card_carousel, carousel_btn__container, imgSrc1, imgSrc2, imgSrc3,imgSrc4, card_number, card_suite, card_price, card_reviewsSum)
   .card_container
     .card_carousel(id=card_carousel)
       //img(src='image.png')
@@ -11,11 +11,14 @@ mixin card(card_carousel, carousel_btn__container, imgSrc1, card_number, card_su
         //img(src='../../../block/libs/card/carousel1.png', alt='img')  
         img(src=imgSrc1, alt='img')
       .carousel_item.displayNone
-        img(src='../../../block/libs/card/carousel2.png', alt='img')  
+        //img(src='../../../block/libs/card/carousel2.png', alt='img')  
+        img(src=imgSrc2, alt='img')
       .carousel_item.displayNone
-        img(src='../../../block/libs/card/carousel3.png', alt='img')  
+        //img(src='../../../block/libs/card/carousel3.png', alt='img') 
+        img(src=imgSrc3, alt='img') 
       .carousel_item.displayNone
-        img(src='../../../block/libs/card/carousel4.png', alt='img')   
+        //img(src='../../../block/libs/card/carousel4.png', alt='img')  
+        img(src=imgSrc4, alt='img') 
     .card_text__container
       .card_number__container
         .card_number №

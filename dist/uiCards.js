@@ -159,6 +159,16 @@ carouselFunction('carousel_btn__container1', 'card_carousel1');
 
 /***/ }),
 
+/***/ "./src/block/libs/signUp/signUp.js":
+/*!*****************************************!*\
+  !*** ./src/block/libs/signUp/signUp.js ***!
+  \*****************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
 /***/ "./src/uiCards.js":
 /*!************************!*\
   !*** ./src/uiCards.js ***!
@@ -170,6 +180,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/index.css */ "./src/styles/index.css");
 /* harmony import */ var _block_libs_card_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./block/libs/card/card */ "./src/block/libs/card/card.js");
 /* harmony import */ var _block_libs_card_card__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_block_libs_card_card__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _block_libs_signUp_signUp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./block/libs/signUp/signUp */ "./src/block/libs/signUp/signUp.js");
+/* harmony import */ var _block_libs_signUp_signUp__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_block_libs_signUp_signUp__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 

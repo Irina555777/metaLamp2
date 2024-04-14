@@ -1,0 +1,19 @@
+mixin signUp(title) 
+  .signUp_container
+    .signUp_Title=title
+    .mb20
+    +TextField('320', '', 'text', 'name', 'Имя') 
+    .mb10
+    +TextField('320', '', 'text', 'name', 'Фамилия') 
+    .mb10
+    +radioButtons('radioBattonName1','radioBattonValueMun', 'radioBattonIdMun', 'radioBattonValueWoman', 'radioBattonIdWoman')
+    .mb20
+    +inputDropdownTitle('дата рождения', '', 'width320')
+    .mb5
+    +TextField('320', '', 'text', 'date', 'ДД.ММ.ГГГГ') 
+    .mb20
+    +inputDropdownTitle('данные для входа в сервис', '', 'width320')
+    .mb5
+    +TextField('320', '', 'email', 'Email', 'Email') 
+    .mb10
+    +TextField('320', '', 'password', 'password', 'password') 

@@ -1,5 +1,6 @@
 import './styles/index.css';
 import './calendar.ts';
+import './block/libs/toggleButtons/togleButtons.js';
 
 //MIXIN DROPDOWNSUM
 
@@ -301,7 +302,7 @@ dropdownCheckboxWrap[1].addEventListener('click', dropdownCheckboxWrapClick1);
 //dropdownCheckboxWrap[2].addEventListener('click', dropdownCheckboxWrapClick2);
 
 //MIXIN toggleButtons
-const toggleButtons = document.getElementsByClassName('toggleButtons_container');
+/*const toggleButtons = document.getElementsByClassName('toggleButtons_container');
 const toggleButtonsWrap= document.getElementsByClassName('toggleButtons__wrap');
 let OnOff = 1;
 const toggleButtonsClick = function(){
@@ -325,7 +326,7 @@ const toggleButtonsClick1 = function(){
     }
 }
 toggleButtons[2].addEventListener('click', toggleButtonsClick1);
-toggleButtons[3].addEventListener('click', toggleButtonsClick1);
+toggleButtons[3].addEventListener('click', toggleButtonsClick1);*/
 
 //RANGE
 const rangeMinText = document.getElementById('rangeSlider_minValue');
