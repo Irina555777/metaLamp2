@@ -4,9 +4,10 @@ block content
   .uiCardsContainer
     div.columnLeft 
       +search 
-      //.mb40
-      +signUp('Регистрация аккаунта')
+      .mb40
+      +signUp('Регистрация аккаунта', 'Уже есть аккаунт на Toxin')
     div.columnCentr
+      +signIn
     div.columnRight 
       +card('card_carousel','carousel_btn__container','../../../block/libs/card/carousel1.png','../../../block/libs/card/carousel2.png','../../../block/libs/card/carousel3.png','../../../block/libs/card/carousel4.png','888', 'люкс', '9990', '630')
       .mb40

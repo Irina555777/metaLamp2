@@ -1,10 +1,10 @@
-mixin signUp(title, signUpText) 
-  .signUp_container
+mixin signIn(title) 
+  .signIn_container
     .signUp_Title=title
     .mb20
-    +TextField('320', '', 'text', 'name', 'Имя') 
+    +TextField('320', '', 'text', 'Email', 'Email') 
     .mb10
-    +TextField('320', '', 'text', 'name', 'Фамилия') 
+    +TextField('320', '', 'text', 'password', 'Пароль') 
     .mb10
     +radioButtons('radioBattonName1','radioBattonValueMun', 'radioBattonIdMun', 'radioBattonValueWoman', 'radioBattonIdWoman')
     .mb20
@@ -25,4 +25,3 @@ mixin signUp(title, signUpText)
     .signUp_wrap 
       .signUp_text=signUpText
       +buttons('buttons__width99', 'buttons__height44', 'buttons__defaultBorder', 'displayNone', 'войти', '')
-      

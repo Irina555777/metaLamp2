@@ -9,6 +9,17 @@
     font-weight: 700;
     color: $dark;
 }
+.signUp_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 320px;
+    height: 44px;
+}
+.signUp_text {
+    font-size: 14px;
+    line-height: 18px;
+}
 .mb5 {
     margin-bottom: 5px;
 }
@@ -17,4 +28,7 @@
 }
 .mb20 {
     margin-bottom: 20px;
+}
+.mb30 {
+    margin-bottom: 30px;
 }

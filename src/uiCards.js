@@ -1,6 +1,7 @@
 import './styles/index.css';
 import './block/libs/card/card';
-import './block/libs/signUp/signUp'
+import './block/libs/signUp/signUp';
+import './block/libs/toggleButtons/togleButtons.js';
 
 //Show dropdown
 const dropdownSumBtn4 = document.getElementById('dropdownSum_Btn4');
