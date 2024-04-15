@@ -1747,6 +1747,10 @@ a:active {
   margin-bottom: 40px;
 }
 
+.mr40 {
+  margin-right: 40px;
+}
+
 .search_container {
   width: 380px;
   height: 374px;
@@ -1928,12 +1932,46 @@ a:active {
   margin-bottom: 20px;
 }
 
-.mb30 {
-  margin-bottom: 30px;
+.mt30 {
+  margin-top: 30px;
 }
 
-h2 {
-  color: red;
+.signIn_container {
+  width: 380px;
+  padding: 40px 30px 30px 30px;
+  background: white;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+.signIp_Title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1F2041;
+}
+
+.signIp_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  height: 44px;
+}
+
+.signIp_text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mt30 {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */
