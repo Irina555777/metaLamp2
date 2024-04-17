@@ -1,0 +1,129 @@
+.reservation_container {
+    width: 380px;
+    padding: 40px 30px 30px 30px;
+    background: white;
+    box-shadow: 0px 0px 25px 0px #00000033;
+}
+.reservation_text__container {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+.reservation_number__container, .reservation_price__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100px;
+} 
+.reservation_number__container {
+    display: flex;
+    height: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+.reservation_number {
+    margin-right: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+}
+.reservation_suite {
+    font-size: 12px;
+    line-height: 14px;
+    color: $primary-color;
+}
+.reservation_price, .reservation_reviews-sum {
+    font-size: 14px;
+    line-height: 18px;
+    color: $dark;
+    opacity: .5;
+}
+.reservation_calendar_container {
+    display: flex;
+}
+.reservation_info__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+}
+.info_text__container {
+    position: relative;
+    display: flex;
+    font-size: 14px;
+    line-height: 18px;
+    color: $dark;
+    opacity: .75;
+    letter-spacing: .5px;
+}
+.info_daySum {
+    margin-right: 5px;
+}
+.discount_text {
+    margin-right: 4px;
+}
+.circle {
+    position: absolute;
+    left: 214px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding-left: 7px;
+    padding-bottom: 4px;
+    font-size: 12px;
+    color: $dark;
+    opacity: .25;
+    border: 1px solid rgba(31, 32, 65, .25);
+}
+.currency {
+    font-size: 16px;
+    color: $dark;
+    opacity: .75;
+}
+.reservation_totalSum__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 320px;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.info_line {
+    width: 200px;
+    height: 24px;
+    border-bottom: 1px dotted #1F204140;
+}
+.totalSum__container {
+    display: flex;
+    justify-content: flex-end;
+    width: 77px;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+.mb25 {
+    margin-bottom: 25px;
+}
+.mb30 {
+    margin-bottom: 30px;
+}
+.mr20 {
+    margin-right: 20px;
+}
+.w214 {
+    width: 214px;
+}
+.height24 {
+    height: 24px;
+}
+.height36 {
+    height: 36px;
+}
+.displayNone {
+    display: none;
+}

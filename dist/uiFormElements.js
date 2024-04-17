@@ -31,8 +31,8 @@ const toggleButtonsClick1 = function () {
     OnOff = 1;
   }
 };
-toggleButtons[2].addEventListener('click', toggleButtonsClick1);
-toggleButtons[3].addEventListener('click', toggleButtonsClick1);
+//toggleButtons[2].addEventListener('click', toggleButtonsClick1);
+//toggleButtons[3].addEventListener('click', toggleButtonsClick1);
 
 /***/ }),
 

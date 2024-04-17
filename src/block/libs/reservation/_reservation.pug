@@ -1,0 +1,63 @@
+mixin reservation(reservation_number, reservation_suite, reservation_price, reservation_daySum,discount_text1, diskount1,discount_text2, diskount2, info_serviceFee1, info_serviceFee2, displayNone1, displayNone2)
+  .reservation_container
+    .reservation_text__container
+      .reservation_number__container
+        .reservation_number №
+        .reservation_number=reservation_number
+        .reservation_suite=reservation_suite
+      .reservation_price__container  
+        .reservation_price=reservation_price
+        .reservation_price &#8381;
+        .reservation_price в сутки
+    .mb20    
+    .reservation_calendar_container 
+      div.mr20
+        +inputDropdownTitle('прибытие', '', 'w150')
+        .mb5
+        +calendar('w150', 'text', '11.05.2024')
+      div  
+        +inputDropdownTitle('выезд', '', 'w150')
+        .mb5
+        +calendar('w150', 'text', '23.05.2024')
+        .mb21
+    +inputDropdownTitle('гости', '', 'width320')
+    .mb5
+    +dropdownSum('dropdownSum__Width320','title__width206','', '','', '','3 гостя', '','', '', '','', '','', '', '','', '', '', '', '', '') 
+    .mb20 
+    .reservation_info__container.mb10.height24
+      .info_text__container
+        .info_price=reservation_price
+        div x
+        .info_daySum=reservation_daySum
+        div суток
+      .info_text__container  
+        .info_sum 39 000
+        .currency &#8381;
+    .reservation_info__container.mb10
+      .info_text__container.w214.height24
+        .info_daySum Сбор за услуги: 
+        .discount_text= discount_text1
+        .discount=diskount1
+        .currency(class=displayNone1) &#8381; 
+        .circle i
+      .info_text__container  
+        .info_serviceFee=info_serviceFee1
+        .currency &#8381;   
+    .reservation_info__container.mb30
+      .info_text__container.w214.height36
+        .info_daySum Сбор за дополнительные услуги: 
+        .discount_text= discount_text2
+        .discount=diskount2
+        .currency(class=displayNone2) &#8381; 
+        .circle i
+      .info_text__container  
+        .info_serviceFee=info_serviceFee2
+        .currency &#8381;   
+    .reservation_totalSum__container.mb25  
+      div итого
+      .info_line 
+      .totalSum__container
+        .totalSum 
+        .currency &#8381;      
+    +buttons('buttons__width320', 'buttons__height44', 'buttons__defaultBg','', 'забронировать', 'button_text__width')    
+        
