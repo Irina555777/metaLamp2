@@ -73,6 +73,11 @@ new HtmlWebpackPlugin({
   filename: 'WebsiteRoom.html',
   chunks: ['websiteRoom'],
 }),
+new HtmlWebpackPlugin({
+  template: path.resolve(__dirname, 'src/pages/pages/WebsiteSignInSignUp', 'WebsiteSignInSignUp.html'),
+  filename: 'WebsiteSignInSignUp.html',
+  chunks: ['websiteSignInSignUp'],
+}),
     new MiniCssExtractPlugin({
         filename: '[name].[contenthash].css',
     })

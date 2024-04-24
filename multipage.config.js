@@ -19,6 +19,7 @@ result.entry = {
     'websiteLanding': path.join(__dirname, '/src/websiteLanding.js'),
     'websiteSearchRoom': path.join(__dirname, '/src/websiteSearсhRoom.js'),
     'websiteRoom': path.join(__dirname, '/src/websiteRoom.js'),
+    'websiteSignInSignUp': path.join(__dirname, '/src/websiteSignInSignUp.js'),
 }
 
 result.pages = [
@@ -30,5 +31,6 @@ result.pages = [
     { chunks: ['websiteLanding'], page: 'WebsiteLanding.html', template: path.join(__dirname, 'src/pages/pages/Website-landing/WebsiteLanding.html') },
     { chunks: ['websiteSearchRoom'], page: 'WebsiteSearchRoom.html', template: path.join(__dirname, 'src/pages/pages/WebsiteSearchRoom/WebsiteSearchRoom.html') },
     { chunks: ['websiteRoom'], page: 'WebsiteRoom.html', template: path.join(__dirname, 'src/pages/pages/WebsiteRoom/WebsiteRoom.html') },
+    { chunks: ['websiteSignInSignUp'], page: 'WebsiteSignInSignUp.html', template: path.join(__dirname, 'src/pages/pages/WebsiteSignInSignUp/WebsiteSignInSignUp.html') },
 ]
 module.exports = result;
