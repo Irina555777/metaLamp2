@@ -63,6 +63,11 @@ new HtmlWebpackPlugin({
   filename: 'WebsiteLanding.html',
   chunks: ['websiteLanding'],
 }),
+new HtmlWebpackPlugin({
+  template: path.resolve(__dirname, 'src/pages/pages/WebsiteSearchRoom', 'WebsiteSearchRoom.html'),
+  filename: 'WebsiteSearchRoom.html',
+  chunks: ['websiteSearchRoom'],
+}),
     new MiniCssExtractPlugin({
         filename: '[name].[contenthash].css',
     })
