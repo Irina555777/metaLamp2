@@ -2126,4 +2126,12 @@ a:active {
   display: none;
 }
 
+h2 {
+  color: blueviolet;
+}
+
+.grey {
+  background: red;
+}
+
 /*# sourceMappingURL=index.css.map */

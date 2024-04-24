@@ -58,6 +58,11 @@ new HtmlWebpackPlugin({
   filename: 'UiColorsType.html',
   chunks: ['uiColorsType'],
 }),
+new HtmlWebpackPlugin({
+  template: path.resolve(__dirname, 'src/pages/pages/Website-landing', 'WebsiteLanding.html'),
+  filename: 'WebsiteLanding.html',
+  chunks: ['websiteLanding'],
+}),
     new MiniCssExtractPlugin({
         filename: '[name].[contenthash].css',
     })
