@@ -68,6 +68,11 @@ new HtmlWebpackPlugin({
   filename: 'WebsiteSearchRoom.html',
   chunks: ['websiteSearchRoom'],
 }),
+new HtmlWebpackPlugin({
+  template: path.resolve(__dirname, 'src/pages/pages/WebsiteRoom', 'WebsiteRoom.html'),
+  filename: 'WebsiteRoom.html',
+  chunks: ['websiteRoom'],
+}),
     new MiniCssExtractPlugin({
         filename: '[name].[contenthash].css',
     })

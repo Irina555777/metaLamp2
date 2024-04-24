@@ -18,6 +18,7 @@ result.entry = {
     'uiFormElements': path.join(__dirname, '/src/uiFormElements.js'),
     'websiteLanding': path.join(__dirname, '/src/websiteLanding.js'),
     'websiteSearchRoom': path.join(__dirname, '/src/websiteSearсhRoom.js'),
+    'websiteRoom': path.join(__dirname, '/src/websiteRoom.js'),
 }
 
 result.pages = [
@@ -28,5 +29,6 @@ result.pages = [
     { chunks: ['uiFormElements'], page: 'UiFormElements.html', template: path.join(__dirname, 'src/pages/pages/UI-form-elements/UiFormElements.html') },
     { chunks: ['websiteLanding'], page: 'WebsiteLanding.html', template: path.join(__dirname, 'src/pages/pages/Website-landing/WebsiteLanding.html') },
     { chunks: ['websiteSearchRoom'], page: 'WebsiteSearchRoom.html', template: path.join(__dirname, 'src/pages/pages/WebsiteSearchRoom/WebsiteSearchRoom.html') },
+    { chunks: ['websiteRoom'], page: 'WebsiteRoom.html', template: path.join(__dirname, 'src/pages/pages/WebsiteRoom/WebsiteRoom.html') },
 ]
 module.exports = result;
