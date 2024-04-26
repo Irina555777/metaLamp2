@@ -13,9 +13,9 @@ mixin header(displayNoneBtn, displayNoneUserName, header_userName, ml20)
       .ml20
       +select('select__width116','agreements', 'Соглашения', 'value2', 'value3', 'value4')
       .header_btnWrap(class=displayNoneBtn)
-        +buttons('buttons__width87', 'buttons__height34', 'buttons__defaultBorder', 'displayNone', 'войти', '')
+        +buttons('btnSignIn', 'buttons__width87', 'buttons__height34', 'buttons__defaultBorder', 'displayNone', 'войти', '')
         .ml20
-        +buttons('buttons__width196', 'buttons__height34', 'buttons__defaultBg','displayNone', 'зарегистрироваться', 'button_text__width') 
+        +buttons('btnSignUp', 'buttons__width196', 'buttons__height34', 'buttons__defaultBg','displayNone', 'зарегистрироваться', 'button_text__width') 
       div(class=ml20) 
       .heder_user(class=displayNoneUserName) 
         p=header_userName  

@@ -1,3 +1,11 @@
 extends ../../layout
 block content
-  h5 Hello
+  +header('', 'HeaderDisplayNone', '', '')
+  .SignInSignUp_Img__wrap
+    .SignInSignUp_Img  
+      .SignUp_popUp__wrap.displayNone(id='popUpSignUpWrap')
+        +signUp('Регистрация аккаунта', 'Уже есть аккаунт на Toxin')
+      .SignIn_popUp__wrap.displayNone(id='popUpSignInWrap')
+        +signIn('Войти', 'Нет аккаунта на Toxin?')  
+  +footer('', '', 'footer_main', 'footer_footer', '')
+    

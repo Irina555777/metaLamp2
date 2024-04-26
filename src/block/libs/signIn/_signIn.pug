@@ -6,7 +6,7 @@ mixin signIn(title, signUpText)
     .mb10
     +TextField('320', '', 'password', 'password', 'Пароль') 
     .mb20
-    +buttons('buttons__width320', 'buttons__height44', 'buttons__defaultBg','', 'войти', 'button_text__width') 
+    +buttons('','buttons__width320', 'buttons__height44', 'buttons__defaultBg','', 'войти', 'button_text__width') 
     .signIp_wrap.mt30 
       .signIp_text=signUpText
-      +buttons('buttons__width99', 'buttons__height44', 'buttons__defaultBorder', 'displayNone', 'создать', '')
+      +buttons('btnPopUpSignIn','buttons__width99', 'buttons__height44', 'buttons__defaultBorder', 'displayNone', 'создать', '')
