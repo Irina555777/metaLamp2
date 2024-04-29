@@ -1,4 +1,15 @@
 extends ../../layout
 block content
-  h2 Hello
+  +header('', 'HeaderDisplayNone', '', '')
+  .Landing_Img__wrap
+    .Landing_Img  
+      .Landing_search
+        +search
+      .Landing_popUp__wrap.displayNone(id='popUpSignUpWrap')
+        +signUp('Регистрация аккаунта', 'Уже есть аккаунт на Toxin')
+      .Landing_popUp__wrap.displayNone(id='popUpSignInWrap')
+        +signIn('Войти', 'Нет аккаунта на Toxin?') 
+      .Landing_text 
+        p Лучшие номера для вашей работы, отдыха и просто вдохновения   
+  +footer('', '', 'footer_main', 'footer_footer', '')
 
